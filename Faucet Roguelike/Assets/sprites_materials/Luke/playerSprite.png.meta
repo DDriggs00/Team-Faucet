@@ -1,0 +1,4920 @@
+fileFormatVersion: 2
+guid: fb1d3f2be9a2fe148ad2fa0f7a882dc2
+timeCreated: 1519420502
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: playerSprite_0
+    21300002: playerSprite_1
+    21300004: playerSprite_2
+    21300006: playerSprite_3
+    21300008: playerSprite_4
+    21300010: playerSprite_5
+    21300012: playerSprite_6
+    21300014: playerSprite_7
+    21300016: playerSprite_8
+    21300018: playerSprite_9
+    21300020: playerSprite_10
+    21300022: playerSprite_11
+    21300024: playerSprite_12
+    21300026: playerSprite_13
+    21300028: playerSprite_14
+    21300030: playerSprite_15
+    21300032: playerSprite_16
+    21300034: playerSprite_17
+    21300036: playerSprite_18
+    21300038: playerSprite_19
+    21300040: playerSprite_20
+    21300042: playerSprite_21
+    21300044: playerSprite_22
+    21300046: playerSprite_23
+    21300048: playerSprite_24
+    21300050: playerSprite_25
+    21300052: playerSprite_26
+    21300054: playerSprite_27
+    21300056: playerSprite_28
+    21300058: playerSprite_29
+    21300060: playerSprite_30
+    21300062: playerSprite_31
+    21300064: playerSprite_32
+    21300066: playerSprite_33
+    21300068: playerSprite_34
+    21300070: playerSprite_35
+    21300072: playerSprite_36
+    21300074: playerSprite_37
+    21300076: playerSprite_38
+    21300078: playerSprite_39
+    21300080: playerSprite_40
+    21300082: playerSprite_41
+    21300084: playerSprite_42
+    21300086: playerSprite_43
+    21300088: playerSprite_44
+    21300090: playerSprite_45
+    21300092: playerSprite_46
+    21300094: playerSprite_47
+    21300096: playerSprite_48
+    21300098: playerSprite_49
+    21300100: playerSprite_50
+    21300102: playerSprite_51
+    21300104: playerSprite_52
+    21300106: playerSprite_53
+    21300108: playerSprite_54
+    21300110: playerSprite_55
+    21300112: playerSprite_56
+    21300114: playerSprite_57
+    21300116: playerSprite_58
+    21300118: playerSprite_59
+    21300120: playerSprite_60
+    21300122: playerSprite_61
+    21300124: playerSprite_62
+    21300126: playerSprite_63
+    21300128: playerSprite_64
+    21300130: playerSprite_65
+    21300132: playerSprite_66
+    21300134: playerSprite_67
+    21300136: playerSprite_68
+    21300138: playerSprite_69
+    21300140: playerSprite_70
+    21300142: playerSprite_71
+    21300144: playerSprite_72
+    21300146: playerSprite_73
+    21300148: playerSprite_74
+    21300150: playerSprite_75
+    21300152: playerSprite_76
+    21300154: playerSprite_77
+    21300156: playerSprite_78
+    21300158: playerSprite_79
+    21300160: playerSprite_80
+    21300162: playerSprite_81
+    21300164: playerSprite_82
+    21300166: playerSprite_83
+    21300168: playerSprite_84
+    21300170: playerSprite_85
+    21300172: playerSprite_86
+    21300174: playerSprite_87
+    21300176: playerSprite_88
+    21300178: playerSprite_89
+    21300180: playerSprite_90
+    21300182: playerSprite_91
+    21300184: playerSprite_92
+    21300186: playerSprite_93
+    21300188: playerSprite_94
+    21300190: playerSprite_95
+    21300192: playerSprite_96
+    21300194: playerSprite_97
+    21300196: playerSprite_98
+    21300198: playerSprite_99
+    21300200: playerSprite_100
+    21300202: playerSprite_101
+    21300204: playerSprite_102
+    21300206: playerSprite_103
+    21300208: playerSprite_104
+    21300210: playerSprite_105
+    21300212: playerSprite_106
+    21300214: playerSprite_107
+    21300216: playerSprite_108
+    21300218: playerSprite_109
+    21300220: playerSprite_110
+    21300222: playerSprite_111
+    21300224: playerSprite_112
+    21300226: playerSprite_113
+    21300228: playerSprite_114
+    21300230: playerSprite_115
+    21300232: playerSprite_116
+    21300234: playerSprite_117
+    21300236: playerSprite_118
+    21300238: playerSprite_119
+    21300240: playerSprite_120
+    21300242: playerSprite_121
+    21300244: playerSprite_122
+    21300246: playerSprite_123
+    21300248: playerSprite_124
+    21300250: playerSprite_125
+    21300252: playerSprite_126
+    21300254: playerSprite_127
+    21300256: playerSprite_128
+    21300258: playerSprite_129
+    21300260: playerSprite_130
+    21300262: playerSprite_131
+    21300264: playerSprite_132
+    21300266: playerSprite_133
+    21300268: playerSprite_134
+    21300270: playerSprite_135
+    21300272: playerSprite_136
+    21300274: playerSprite_137
+    21300276: playerSprite_138
+    21300278: playerSprite_139
+    21300280: playerSprite_140
+    21300282: playerSprite_141
+    21300284: playerSprite_142
+    21300286: playerSprite_143
+    21300288: playerSprite_144
+    21300290: playerSprite_145
+    21300292: playerSprite_146
+    21300294: playerSprite_147
+    21300296: playerSprite_148
+    21300298: playerSprite_149
+    21300300: playerSprite_150
+    21300302: playerSprite_151
+    21300304: playerSprite_152
+    21300306: playerSprite_153
+    21300308: playerSprite_154
+    21300310: playerSprite_155
+    21300312: playerSprite_156
+    21300314: playerSprite_157
+    21300316: playerSprite_158
+    21300318: playerSprite_159
+    21300320: playerSprite_160
+    21300322: playerSprite_161
+    21300324: playerSprite_162
+    21300326: playerSprite_163
+    21300328: playerSprite_164
+    21300330: playerSprite_165
+    21300332: playerSprite_166
+    21300334: playerSprite_167
+    21300336: playerSprite_168
+    21300338: playerSprite_169
+    21300340: playerSprite_170
+    21300342: playerSprite_171
+    21300344: playerSprite_172
+    21300346: playerSprite_173
+    21300348: playerSprite_174
+    21300350: playerSprite_175
+    21300352: playerSprite_176
+    21300354: playerSprite_177
+    21300356: playerSprite_178
+    21300358: playerSprite_179
+    21300360: playerSprite_180
+    21300362: playerSprite_181
+    21300364: playerSprite_182
+    21300366: playerSprite_183
+    21300368: playerSprite_184
+    21300370: playerSprite_185
+    21300372: playerSprite_186
+    21300374: playerSprite_187
+    21300376: playerSprite_188
+    21300378: playerSprite_189
+    21300380: playerSprite_190
+    21300382: playerSprite_191
+    21300384: playerSprite_192
+    21300386: playerSprite_193
+    21300388: playerSprite_194
+    21300390: playerSprite_195
+    21300392: playerSprite_196
+    21300394: playerSprite_197
+    21300396: playerSprite_198
+    21300398: playerSprite_199
+    21300400: playerSprite_200
+    21300402: playerSprite_201
+    21300404: playerSprite_202
+    21300406: playerSprite_203
+    21300408: playerSprite_204
+    21300410: playerSprite_205
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: playerSprite_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 2049
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 2049
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_2
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 2049
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2049
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_4
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 2049
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 2049
+        width: 50
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_6
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 2049
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1985
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1985
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1985
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_10
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1985
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_11
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1985
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_12
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1985
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_13
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1985
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_14
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1921
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_15
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1921
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_16
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1921
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_17
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1921
+        width: 38
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_18
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 1921
+        width: 52
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_19
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 1921
+        width: 50
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_20
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1921
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_21
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1857
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_22
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1857
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_23
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1857
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_24
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1857
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_25
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1857
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_26
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1857
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_27
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1857
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_28
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1793
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_29
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1791
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_30
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1791
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_31
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1791
+        width: 26
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_32
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 1791
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_33
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 1791
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_34
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1791
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_35
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1791
+        width: 27
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_36
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1729
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_37
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1729
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_38
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1729
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_39
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1729
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_40
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1729
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_41
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1729
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_42
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1729
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_43
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1729
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_44
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1665
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_45
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1666
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_46
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1666
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_47
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1666
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_48
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1666
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_49
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1666
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_50
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1666
+        width: 29
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_51
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1666
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_52
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1601
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_53
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1601
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_54
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1601
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_55
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1601
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_56
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1601
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_57
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 1601
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_58
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1601
+        width: 39
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_59
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1601
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_60
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1538
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_61
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1538
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_62
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1537
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_63
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1536
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_64
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1537
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_65
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1538
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_66
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1537
+        width: 32
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_67
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1536
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_68
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1537
+        width: 33
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_69
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1473
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_70
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1473
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_71
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 1474
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_72
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1474
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_73
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1473
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_74
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1473
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_75
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1473
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_76
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 1473
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_77
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 1473
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_78
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1409
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_79
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1409
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_80
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1408
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_81
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1408
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_82
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 1408
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_83
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1409
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_84
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 1408
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_85
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1408
+        width: 31
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_86
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1408
+        width: 33
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_87
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1345
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_88
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1345
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_89
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1346
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_90
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1346
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_91
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1345
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_92
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1345
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_93
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1345
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_94
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 1345
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_95
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1345
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_96
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1281
+        width: 32
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_97
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 1280
+        width: 31
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_98
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1280
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_99
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 1280
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_100
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1280
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_101
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1280
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_102
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1216
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_103
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1216
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_104
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 1216
+        width: 38
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_105
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1216
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_106
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1216
+        width: 44
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_107
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1216
+        width: 41
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_108
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1152
+        width: 32
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_109
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1152
+        width: 30
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_110
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1152
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_111
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 1152
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_112
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1152
+        width: 37
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_113
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1152
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_114
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1089
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_115
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1089
+        width: 38
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_116
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 1089
+        width: 38
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_117
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1089
+        width: 42
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_118
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 1089
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_119
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1089
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_120
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1025
+        width: 37
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_121
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1023
+        width: 33
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_122
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 1023
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_123
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1023
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_124
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 1023
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_125
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 1023
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_126
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 1023
+        width: 29
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_127
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 1023
+        width: 30
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_128
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1023
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_129
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1023
+        width: 31
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_130
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 1023
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_131
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 1023
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_132
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 1023
+        width: 26
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_133
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 961
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_134
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 961
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_135
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 961
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_136
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 961
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_137
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 961
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_138
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 961
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_139
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 961
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_140
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 961
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_141
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 961
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_142
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 961
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_143
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 961
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_144
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 961
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_145
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 961
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_146
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 897
+        width: 33
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_147
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 898
+        width: 30
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_148
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 898
+        width: 29
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_149
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 897
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_150
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 897
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_151
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 897
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_152
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 897
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_153
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 897
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_154
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 897
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_155
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 897
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_156
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 897
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_157
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 897
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_158
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 897
+        width: 29
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_159
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 833
+        width: 39
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_160
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 833
+        width: 41
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_161
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 833
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_162
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 833
+        width: 48
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_163
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 833
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_164
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 833
+        width: 57
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_165
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 833
+        width: 56
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_166
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 833
+        width: 53
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_167
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 833
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_168
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 833
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_169
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 833
+        width: 44
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_170
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 833
+        width: 45
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_171
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 833
+        width: 49
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_172
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 769
+        width: 32
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_173
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 769
+        width: 33
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_174
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 769
+        width: 32
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_175
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 770
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_176
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 770
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_177
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 767
+        width: 36
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_178
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 641
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_179
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 640
+        width: 49
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_180
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 640
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_181
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 640
+        width: 61
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_182
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 640
+        width: 83
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_183
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 640
+        width: 79
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_184
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 447
+        width: 68
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_185
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 449
+        width: 43
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_186
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 449
+        width: 40
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_187
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 439
+        width: 59
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_188
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 449
+        width: 102
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_189
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 449
+        width: 99
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_190
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 439
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_191
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 439
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_192
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 439
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_193
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 439
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_194
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 254
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_195
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 257
+        width: 49
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_196
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 257
+        width: 48
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_197
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 257
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_198
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 238
+        width: 83
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_199
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 241
+        width: 79
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_200
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 62
+        width: 68
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_201
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 64
+        width: 43
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_202
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 64
+        width: 40
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_203
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 59
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_204
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 64
+        width: 101
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: playerSprite_205
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 64
+        width: 99
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline:
+    - - {x: -696.822, y: -949.78125}
+      - {x: -685.4748, y: -991.03125}
+      - {x: -681.3486, y: -995.15625}
+      - {x: -625.64404, y: -995.15625}
+      - {x: -625.64404, y: -979.6875}
+      - {x: -653.4963, y: -944.625}
+      - {x: -666.9066, y: -936.375}
+      - {x: -683.4117, y: -936.375}
+      - {x: -696.822, y: -939.46875}
+    - - {x: -497.73, y: -938.4375}
+      - {x: -502.88785, y: -940.5}
+      - {x: -502.88785, y: -949.78125}
+      - {x: -498.76157, y: -958.03125}
+      - {x: -492.57217, y: -992.0625}
+      - {x: -492.57217, y: -993.09375}
+      - {x: -467.81464, y: -993.09375}
+      - {x: -456.4674, y: -990}
+      - {x: -456.4674, y: -939.46875}
+      - {x: -465.7515, y: -938.4375}
+    - - {x: -313.07993, y: -936.375}
+      - {x: -313.07993, y: -975.5625}
+      - {x: -308.95364, y: -993.09375}
+      - {x: -269.75418, y: -993.09375}
+      - {x: -269.75418, y: -941.53125}
+      - {x: -282.13297, y: -936.375}
+    - - {x: -129.46138, y: -936.375}
+      - {x: -129.46138, y: -987.9375}
+      - {x: -112.956345, y: -993.09375}
+      - {x: -69.63062, y: -993.09375}
+      - {x: -67.5675, y: -986.90625}
+      - {x: -67.5675, y: -946.6875}
+      - {x: -70.662186, y: -936.375}
+    - - {x: 74.788445, y: -936.375}
+      - {x: 74.788445, y: -993.09375}
+      - {x: 141.84016, y: -993.09375}
+      - {x: 180.00806, y: -984.84375}
+      - {x: 180.00806, y: -948.75}
+      - {x: 136.68233, y: -936.375}
+    - - {x: 267.69107, y: -936.375}
+      - {x: 267.69107, y: -963.1875}
+      - {x: 269.75418, y: -971.4375}
+      - {x: 274.91202, y: -993.09375}
+      - {x: 306.89053, y: -993.09375}
+      - {x: 369.81598, y: -962.15625}
+      - {x: 369.81598, y: -946.6875}
+      - {x: 339.9006, y: -936.375}
+    - - {x: 102.64069, y: -742.5}
+      - {x: 100.57757, y: -741.46875}
+      - {x: 79.94627, y: -741.46875}
+      - {x: 77.88314, y: -770.34375}
+      - {x: 80.97784, y: -797.15625}
+      - {x: 84.07253, y: -800.25}
+      - {x: 91.29348, y: -800.25}
+      - {x: 80.97784, y: -800.25}
+      - {x: 50.03089, y: -772.40625}
+      - {x: 50.03089, y: -792}
+      - {x: 73.75688, y: -819.84375}
+      - {x: 136.68233, y: -819.84375}
+      - {x: 136.68233, y: -786.84375}
+      - {x: 121.20886, y: -747.65625}
+    - - {x: 271.81732, y: -741.46875}
+      - {x: 271.81732, y: -799.21875}
+      - {x: 274.91202, y: -802.3125}
+      - {x: 302.76425, y: -803.34375}
+      - {x: 317.20618, y: -790.96875}
+      - {x: 306.89053, y: -809.53125}
+      - {x: 281.1014, y: -807.46875}
+      - {x: 279.03827, y: -813.65625}
+      - {x: 280.06985, y: -816.75}
+      - {x: 333.7112, y: -816.75}
+      - {x: 353.31094, y: -797.15625}
+      - {x: 353.31094, y: -768.28125}
+      - {x: 303.79584, y: -741.46875}
+    - - {x: -671.0329, y: -741.46875}
+      - {x: -689.6011, y: -741.46875}
+      - {x: -698.88513, y: -768.28125}
+      - {x: -698.88513, y: -803.34375}
+      - {x: -667.9382, y: -803.34375}
+      - {x: -654.52783, y: -799.21875}
+      - {x: -654.52783, y: -750.75}
+      - {x: -667.9382, y: -742.5}
+    - - {x: -482.25653, y: -741.46875}
+      - {x: -499.79315, y: -741.46875}
+      - {x: -515.2666, y: -762.09375}
+      - {x: -515.2666, y: -788.90625}
+      - {x: -504.95096, y: -800.25}
+      - {x: -464.71994, y: -800.25}
+      - {x: -463.6884, y: -799.21875}
+      - {x: -463.6884, y: -750.75}
+      - {x: -474.00403, y: -743.53125}
+    - - {x: -317.20618, y: -741.46875}
+      - {x: -322.36398, y: -746.625}
+      - {x: -322.36398, y: -764.15625}
+      - {x: -305.85895, y: -799.21875}
+      - {x: -303.79584, y: -800.25}
+      - {x: -273.88046, y: -800.25}
+      - {x: -271.81732, y: -798.1875}
+      - {x: -271.81732, y: -749.71875}
+      - {x: -288.32236, y: -741.46875}
+    - - {x: -138.74547, y: -741.46875}
+      - {x: -138.74547, y: -788.90625}
+      - {x: -137.7139, y: -799.21875}
+      - {x: -132.55608, y: -800.25}
+      - {x: -77.88314, y: -800.25}
+      - {x: -77.88314, y: -745.59375}
+      - {x: -83.04096, y: -741.46875}
+    - - {x: -687.5379, y: -611.53125}
+      - {x: -688.5695, y: -612.5625}
+      - {x: -688.5695, y: -616.6875}
+      - {x: -686.50635, y: -618.75}
+      - {x: -682.3801, y: -618.75}
+      - {x: -681.3486, y: -616.6875}
+      - {x: -681.3486, y: -612.5625}
+      - {x: -682.3801, y: -611.53125}
+    - - {x: -494.6353, y: -611.53125}
+      - {x: -496.69846, y: -613.59375}
+      - {x: -496.69846, y: -616.6875}
+      - {x: -494.6353, y: -618.75}
+      - {x: -491.54062, y: -618.75}
+      - {x: -489.47748, y: -616.6875}
+      - {x: -489.47748, y: -614.625}
+      - {x: -492.57217, y: -611.53125}
+    - - {x: -108.830086, y: -612.5625}
+      - {x: -110.89321, y: -614.625}
+      - {x: -110.89321, y: -616.6875}
+      - {x: -108.830086, y: -618.75}
+      - {x: -106.76695, y: -618.75}
+      - {x: -104.70383, y: -616.6875}
+      - {x: -104.70383, y: -614.625}
+      - {x: -106.76695, y: -612.5625}
+    - - {x: 84.07253, y: -611.53125}
+      - {x: 82.0094, y: -613.59375}
+      - {x: 82.0094, y: -616.6875}
+      - {x: 84.07253, y: -618.75}
+      - {x: 87.16722, y: -618.75}
+      - {x: 89.230354, y: -616.6875}
+      - {x: 89.230354, y: -614.625}
+      - {x: 86.13566, y: -611.53125}
+    - - {x: 274.91202, y: -618.75}
+      - {x: 282.13297, y: -618.75}
+      - {x: 282.13297, y: -612.5625}
+      - {x: 281.1014, y: -611.53125}
+      - {x: 273.88046, y: -611.53125}
+      - {x: 273.88046, y: -616.6875}
+    - - {x: -694.7589, y: -552.75}
+      - {x: -718.48486, y: -581.625}
+      - {x: -718.48486, y: -610.5}
+      - {x: -653.4963, y: -610.5}
+      - {x: -647.3069, y: -574.40625}
+      - {x: -647.3069, y: -552.75}
+    - - {x: -465.7515, y: -553.78125}
+      - {x: -485.35123, y: -553.78125}
+      - {x: -502.88785, y: -561}
+      - {x: -503.9194, y: -567.1875}
+      - {x: -503.9194, y: -602.25}
+      - {x: -491.54062, y: -608.4375}
+      - {x: -470.90933, y: -608.4375}
+      - {x: -466.78308, y: -607.40625}
+      - {x: -464.71994, y: -595.03125}
+      - {x: -457.499, y: -570.28125}
+      - {x: -457.499, y: -556.875}
+    - - {x: -274.91202, y: -552.75}
+      - {x: -291.41705, y: -552.75}
+      - {x: -306.89053, y: -557.90625}
+      - {x: -306.89053, y: -597.09375}
+      - {x: -300.70114, y: -607.40625}
+      - {x: -294.51175, y: -608.4375}
+      - {x: -278.0067, y: -608.4375}
+      - {x: -263.5648, y: -587.8125}
+      - {x: -263.5648, y: -556.875}
+    - - {x: -109.86165, y: -552.75}
+      - {x: -119.14574, y: -554.8125}
+      - {x: -124.30356, y: -575.4375}
+      - {x: -124.30356, y: -598.125}
+      - {x: -108.830086, y: -607.40625}
+      - {x: -106.76695, y: -608.4375}
+      - {x: -79.94627, y: -608.4375}
+      - {x: -62.409668, y: -585.75}
+      - {x: -62.409668, y: -555.84375}
+      - {x: -64.4728, y: -552.75}
+    - - {x: 11.862995, y: -581.625}
+      - {x: 27.336468, y: -590.90625}
+      - {x: 77.88314, y: -608.4375}
+      - {x: 116.05104, y: -608.4375}
+      - {x: 117.0826, y: -602.25}
+      - {x: 117.0826, y: -552.75}
+      - {x: 39.715244, y: -552.75}
+      - {x: 11.862995, y: -557.90625}
+    - - {x: 248.09132, y: -552.75}
+      - {x: 205.79718, y: -566.15625}
+      - {x: 205.79718, y: -587.8125}
+      - {x: 273.88046, y: -608.4375}
+      - {x: 308.95364, y: -608.4375}
+      - {x: 308.95364, y: -552.75}
+    - - {x: -515.2666, y: -407.34375}
+      - {x: -507.0141, y: -417.65625}
+      - {x: -465.7515, y: -417.65625}
+      - {x: -463.6884, y: -416.625}
+      - {x: -463.6884, y: -370.21875}
+      - {x: -476.06714, y: -361.96875}
+      - {x: -486.3828, y: -361.96875}
+      - {x: -515.2666, y: -383.625}
+    - - {x: -298.638, y: -361.96875}
+      - {x: -322.36398, y: -396}
+      - {x: -322.36398, y: -417.65625}
+      - {x: -271.81732, y: -417.65625}
+      - {x: -271.81732, y: -377.4375}
+      - {x: -283.16452, y: -361.96875}
+    - - {x: -92.32505, y: -360.9375}
+      - {x: -102.64069, y: -360.9375}
+      - {x: -131.5245, y: -376.40625}
+      - {x: -141.84016, y: -382.59375}
+      - {x: -141.84016, y: -406.3125}
+      - {x: -134.6192, y: -409.40625}
+      - {x: -132.55608, y: -409.40625}
+      - {x: -130.49295, y: -407.34375}
+      - {x: -109.86165, y: -417.65625}
+      - {x: -84.07253, y: -417.65625}
+      - {x: -78.9147, y: -414.5625}
+      - {x: -77.88314, y: -409.40625}
+      - {x: -77.88314, y: -378.46875}
+      - {x: -79.94627, y: -369.1875}
+    - - {x: 80.97784, y: -345.46875}
+      - {x: 62.409668, y: -349.59375}
+      - {x: 50.03089, y: -370.21875}
+      - {x: 50.03089, y: -412.5}
+      - {x: 56.22028, y: -417.65625}
+      - {x: 116.05104, y: -417.65625}
+      - {x: 117.0826, y: -416.625}
+      - {x: 127.398254, y: -386.71875}
+      - {x: 136.68233, y: -358.875}
+      - {x: 136.68233, y: -345.46875}
+    - - {x: 320.30087, y: -348.5625}
+      - {x: 279.03827, y: -348.5625}
+      - {x: 273.88046, y: -356.8125}
+      - {x: 305.85895, y: -359.90625}
+      - {x: 280.06985, y: -359.90625}
+      - {x: 270.78577, y: -384.65625}
+      - {x: 270.78577, y: -417.65625}
+      - {x: 332.67966, y: -417.65625}
+      - {x: 353.31094, y: -411.46875}
+      - {x: 353.31094, y: -367.125}
+      - {x: 342.9953, y: -352.6875}
+    - - {x: -684.44324, y: -360.9375}
+      - {x: -698.88513, y: -368.15625}
+      - {x: -698.88513, y: -390.84375}
+      - {x: -690.6326, y: -416.625}
+      - {x: -654.52783, y: -416.625}
+      - {x: -654.52783, y: -372.28125}
+      - {x: -659.68567, y: -360.9375}
+    - - {x: -429.64673, y: -249.5625}
+      - {x: -432.74142, y: -257.8125}
+      - {x: -432.74142, y: -290.8125}
+      - {x: -403.8576, y: -290.8125}
+      - {x: -393.54196, y: -289.78125}
+      - {x: -393.54196, y: -250.59375}
+      - {x: -399.73135, y: -249.5625}
+    - - {x: -753.5581, y: -226.875}
+      - {x: -753.5581, y: -288.75}
+      - {x: -718.48486, y: -288.75}
+      - {x: -718.48486, y: -234.09375}
+      - {x: -737.05304, y: -226.875}
+    - - {x: -687.5379, y: -228.9375}
+      - {x: -688.5695, y: -234.09375}
+      - {x: -688.5695, y: -284.625}
+      - {x: -679.2854, y: -288.75}
+      - {x: -652.4647, y: -288.75}
+      - {x: -652.4647, y: -239.25}
+      - {x: -659.68567, y: -228.9375}
+    - - {x: -622.5494, y: -238.21875}
+      - {x: -623.58093, y: -239.25}
+      - {x: -623.58093, y: -287.71875}
+      - {x: -615.32837, y: -288.75}
+      - {x: -592.634, y: -288.75}
+      - {x: -588.5077, y: -281.53125}
+      - {x: -588.5077, y: -247.5}
+      - {x: -607.07587, y: -238.21875}
+    - - {x: -558.59235, y: -242.34375}
+      - {x: -559.6239, y: -243.375}
+      - {x: -559.6239, y: -285.65625}
+      - {x: -557.5608, y: -287.71875}
+      - {x: -525.5823, y: -287.71875}
+      - {x: -524.5507, y: -284.625}
+      - {x: -524.5507, y: -250.59375}
+      - {x: -542.0873, y: -242.34375}
+    - - {x: -459.5621, y: -258.84375}
+      - {x: -464.71994, y: -249.5625}
+      - {x: -495.66687, y: -249.5625}
+      - {x: -495.66687, y: -287.71875}
+      - {x: -459.5621, y: -287.71875}
+    - - {x: -761.8106, y: -168.09375}
+      - {x: -761.8106, y: -217.59375}
+      - {x: -750.4634, y: -224.8125}
+      - {x: -724.67426, y: -224.8125}
+      - {x: -719.5164, y: -213.46875}
+      - {x: -719.5164, y: -170.15625}
+      - {x: -731.8952, y: -168.09375}
+    - - {x: -667.9382, y: -168.09375}
+      - {x: -685.4748, y: -168.09375}
+      - {x: -697.8536, y: -170.15625}
+      - {x: -697.8536, y: -189.75}
+      - {x: -692.69574, y: -209.34375}
+      - {x: -684.44324, y: -224.8125}
+      - {x: -665.87506, y: -224.8125}
+      - {x: -658.6541, y: -222.75}
+      - {x: -653.4963, y: -215.53125}
+      - {x: -653.4963, y: -184.59375}
+      - {x: -655.55945, y: -176.34375}
+    - - {x: -629.7703, y: -168.09375}
+      - {x: -633.89655, y: -170.15625}
+      - {x: -633.89655, y: -189.75}
+      - {x: -624.6125, y: -224.8125}
+      - {x: -590.57086, y: -224.8125}
+      - {x: -581.28674, y: -215.53125}
+      - {x: -581.28674, y: -187.6875}
+      - {x: -598.82336, y: -168.09375}
+    - - {x: -569.9396, y: -168.09375}
+      - {x: -569.9396, y: -209.34375}
+      - {x: -557.5608, y: -224.8125}
+      - {x: -533.8348, y: -224.8125}
+      - {x: -518.3613, y: -214.5}
+      - {x: -518.3613, y: -187.6875}
+      - {x: -532.8032, y: -168.09375}
+    - - {x: -497.73, y: -168.09375}
+      - {x: -505.9825, y: -169.125}
+      - {x: -505.9825, y: -183.5625}
+      - {x: -499.79315, y: -217.59375}
+      - {x: -492.57217, y: -224.8125}
+      - {x: -464.71994, y: -224.8125}
+      - {x: -450.278, y: -206.25}
+      - {x: -450.278, y: -185.625}
+      - {x: -476.06714, y: -168.09375}
+    - - {x: -381.16318, y: -195.9375}
+      - {x: -381.16318, y: -188.71875}
+      - {x: -396.63666, y: -171.1875}
+      - {x: -409.01544, y: -168.09375}
+      - {x: -433.77298, y: -168.09375}
+      - {x: -442.0255, y: -171.1875}
+      - {x: -442.0255, y: -185.625}
+      - {x: -432.74142, y: -223.78125}
+      - {x: -427.58362, y: -224.8125}
+      - {x: -407.9839, y: -224.8125}
+      - {x: -405.92075, y: -223.78125}
+      - {x: -403.8576, y: -215.53125}
+      - {x: -383.22632, y: -199.03125}
+    - - {x: -378.06848, y: -168.09375}
+      - {x: -378.06848, y: -198}
+      - {x: -370.84753, y: -224.8125}
+      - {x: -340.93216, y: -224.8125}
+      - {x: -318.23773, y: -196.96875}
+      - {x: -318.23773, y: -180.46875}
+      - {x: -345.0584, y: -168.09375}
+    - - {x: -304.8274, y: -168.09375}
+      - {x: -314.11148, y: -169.125}
+      - {x: -314.11148, y: -199.03125}
+      - {x: -306.89053, y: -224.8125}
+      - {x: -276.97516, y: -224.8125}
+      - {x: -257.37543, y: -193.875}
+      - {x: -257.37543, y: -183.5625}
+      - {x: -282.13297, y: -168.09375}
+    - - {x: -217.1444, y: -168.09375}
+      - {x: -250.15446, y: -168.09375}
+      - {x: -250.15446, y: -194.90625}
+      - {x: -237.77568, y: -224.8125}
+      - {x: -211.98656, y: -224.8125}
+      - {x: -196.51309, y: -203.15625}
+      - {x: -196.51309, y: -185.625}
+      - {x: -205.79718, y: -175.3125}
+    - - {x: -178.97649, y: -168.09375}
+      - {x: -186.19745, y: -169.125}
+      - {x: -186.19745, y: -188.71875}
+      - {x: -182.07118, y: -201.09375}
+      - {x: -172.78711, y: -224.8125}
+      - {x: -150.09268, y: -224.8125}
+      - {x: -138.74547, y: -211.40625}
+      - {x: -138.74547, y: -172.21875}
+      - {x: -148.02954, y: -168.09375}
+    - - {x: -112.956345, y: -168.09375}
+      - {x: -122.240425, y: -173.25}
+      - {x: -122.240425, y: -186.65625}
+      - {x: -113.98791, y: -224.8125}
+      - {x: -86.13566, y: -224.8125}
+      - {x: -73.75688, y: -219.65625}
+      - {x: -73.75688, y: -168.09375}
+    - - {x: -46.9362, y: -168.09375}
+      - {x: -57.251846, y: -170.15625}
+      - {x: -57.251846, y: -181.5}
+      - {x: -54.15715, y: -187.6875}
+      - {x: -48.99933, y: -223.78125}
+      - {x: -43.841503, y: -224.8125}
+      - {x: -24.241772, y: -224.8125}
+      - {x: -9.799866, y: -217.59375}
+      - {x: -9.799866, y: -168.09375}
+    - - {x: 32.49429, y: -168.09375}
+      - {x: 13.926125, y: -168.09375}
+      - {x: 6.705171, y: -171.1875}
+      - {x: 6.705171, y: -184.59375}
+      - {x: 17.020819, y: -222.75}
+      - {x: 20.115513, y: -224.8125}
+      - {x: 41.778374, y: -224.8125}
+      - {x: 58.28341, y: -209.34375}
+      - {x: 58.28341, y: -194.90625}
+      - {x: 46.9362, y: -173.25}
+    - - {x: -733.9584, y: -101.0625}
+      - {x: -743.24243, y: -99}
+      - {x: -751.49493, y: -99}
+      - {x: -754.58966, y: -100.03125}
+      - {x: -755.6212, y: -103.125}
+      - {x: -755.6212, y: -158.8125}
+      - {x: -753.5581, y: -160.875}
+      - {x: -719.5164, y: -160.875}
+      - {x: -719.5164, y: -111.375}
+    - - {x: -549.3082, y: -99}
+      - {x: -561.687, y: -99}
+      - {x: -561.687, y: -120.65625}
+      - {x: -560.65546, y: -137.15625}
+      - {x: -555.4976, y: -159.84375}
+      - {x: -547.2451, y: -160.875}
+      - {x: -536.92944, y: -160.875}
+      - {x: -533.8348, y: -158.8125}
+      - {x: -529.7085, y: -133.03125}
+      - {x: -529.7085, y: -108.28125}
+    - - {x: -477.09872, y: -102.09375}
+      - {x: -489.47748, y: -99}
+      - {x: -497.73, y: -99}
+      - {x: -497.73, y: -141.28125}
+      - {x: -494.6353, y: -156.75}
+      - {x: -483.28812, y: -160.875}
+      - {x: -474.00403, y: -160.875}
+      - {x: -469.87775, y: -158.8125}
+      - {x: -465.7515, y: -129.9375}
+      - {x: -465.7515, y: -109.3125}
+    - - {x: -433.77298, y: -99}
+      - {x: -433.77298, y: -140.25}
+      - {x: -428.61517, y: -160.875}
+      - {x: -404.8892, y: -160.875}
+      - {x: -400.7629, y: -153.65625}
+      - {x: -400.7629, y: -111.375}
+      - {x: -404.8892, y: -99}
+    - - {x: -358.46875, y: -99}
+      - {x: -369.81598, y: -99}
+      - {x: -369.81598, y: -158.8125}
+      - {x: -363.6266, y: -160.875}
+      - {x: -341.9637, y: -160.875}
+      - {x: -336.8059, y: -129.9375}
+      - {x: -336.8059, y: -108.28125}
+      - {x: -346.09, y: -102.09375}
+    - - {x: -294.51175, y: -99}
+      - {x: -305.85895, y: -99}
+      - {x: -305.85895, y: -152.625}
+      - {x: -302.76425, y: -160.875}
+      - {x: -275.94357, y: -160.875}
+      - {x: -272.84888, y: -135.09375}
+      - {x: -272.84888, y: -109.3125}
+      - {x: -282.13297, y: -102.09375}
+    - - {x: -241.90195, y: -99}
+      - {x: -241.90195, y: -127.875}
+      - {x: -239.8388, y: -157.78125}
+      - {x: -229.52316, y: -160.875}
+      - {x: -215.08125, y: -160.875}
+      - {x: -208.89188, y: -136.125}
+      - {x: -208.89188, y: -106.21875}
+      - {x: -227.46004, y: -99}
+    - - {x: -177.94493, y: -99}
+      - {x: -177.94493, y: -144.375}
+      - {x: -175.88179, y: -156.75}
+      - {x: -169.69241, y: -160.875}
+      - {x: -153.18738, y: -160.875}
+      - {x: -148.02954, y: -159.84375}
+      - {x: -144.93486, y: -126.84375}
+      - {x: -144.93486, y: -110.34375}
+      - {x: -156.28206, y: -99}
+    - - {x: -113.98791, y: -99}
+      - {x: -113.98791, y: -147.46875}
+      - {x: -104.70383, y: -160.875}
+      - {x: -87.16722, y: -160.875}
+      - {x: -84.07253, y: -159.84375}
+      - {x: -80.97784, y: -141.28125}
+      - {x: -80.97784, y: -107.25}
+      - {x: -98.514435, y: -99}
+    - - {x: -50.03089, y: -99}
+      - {x: -50.03089, y: -125.8125}
+      - {x: -44.87307, y: -159.84375}
+      - {x: -41.778374, y: -160.875}
+      - {x: -26.304903, y: -160.875}
+      - {x: -20.115513, y: -159.84375}
+      - {x: -17.020819, y: -141.28125}
+      - {x: -17.020819, y: -107.25}
+      - {x: -34.55742, y: -99}
+    - - {x: 34.55742, y: -99}
+      - {x: 13.926125, y: -99}
+      - {x: 13.926125, y: -140.25}
+      - {x: 15.989254, y: -158.8125}
+      - {x: 28.368032, y: -160.875}
+      - {x: 39.715244, y: -160.875}
+      - {x: 40.74681, y: -157.78125}
+      - {x: 46.9362, y: -135.09375}
+      - {x: 46.9362, y: -105.1875}
+    - - {x: -678.25385, y: -99}
+      - {x: -690.6326, y: -99}
+      - {x: -690.6326, y: -157.78125}
+      - {x: -688.5695, y: -159.84375}
+      - {x: -658.6541, y: -159.84375}
+      - {x: -657.62256, y: -156.75}
+      - {x: -657.62256, y: -110.34375}
+      - {x: -670.00134, y: -103.125}
+    - - {x: -625.64404, y: -99}
+      - {x: -625.64404, y: -140.25}
+      - {x: -622.5494, y: -159.84375}
+      - {x: -598.82336, y: -159.84375}
+      - {x: -593.6655, y: -148.5}
+      - {x: -593.6655, y: -106.21875}
+      - {x: -608.1074, y: -99}
+    - - {x: -743.24243, y: -40.21875}
+      - {x: -752.5265, y: -46.40625}
+      - {x: -752.5265, y: -80.4375}
+      - {x: -750.4634, y: -95.90625}
+      - {x: -746.3371, y: -96.9375}
+      - {x: -722.61115, y: -96.9375}
+      - {x: -710.23236, y: -85.59375}
+      - {x: -710.23236, y: -43.3125}
+      - {x: -719.5164, y: -40.21875}
+    - - {x: -672.06445, y: -40.21875}
+      - {x: -690.6326, y: -46.40625}
+      - {x: -690.6326, y: -80.4375}
+      - {x: -681.3486, y: -96.9375}
+      - {x: -654.52783, y: -96.9375}
+      - {x: -646.2753, y: -70.125}
+      - {x: -646.2753, y: -40.21875}
+    - - {x: -591.6024, y: -40.21875}
+      - {x: -609.139, y: -40.21875}
+      - {x: -626.6756, y: -47.4375}
+      - {x: -634.9281, y: -70.125}
+      - {x: -634.9281, y: -82.5}
+      - {x: -617.39154, y: -95.90625}
+      - {x: -615.32837, y: -96.9375}
+      - {x: -597.7918, y: -96.9375}
+      - {x: -587.47614, y: -78.375}
+      - {x: -582.3183, y: -55.6875}
+      - {x: -582.3183, y: -44.34375}
+    - - {x: -545.182, y: -40.21875}
+      - {x: -563.7502, y: -47.4375}
+      - {x: -569.9396, y: -60.84375}
+      - {x: -569.9396, y: -87.65625}
+      - {x: -561.687, y: -96.9375}
+      - {x: -532.8032, y: -96.9375}
+      - {x: -528.67694, y: -95.90625}
+      - {x: -518.3613, y: -54.65625}
+      - {x: -518.3613, y: -44.34375}
+      - {x: -527.6454, y: -40.21875}
+    - - {x: -462.6568, y: -40.21875}
+      - {x: -480.19342, y: -40.21875}
+      - {x: -496.69846, y: -48.46875}
+      - {x: -510.1088, y: -67.03125}
+      - {x: -510.1088, y: -76.3125}
+      - {x: -492.57217, y: -94.875}
+      - {x: -486.3828, y: -96.9375}
+      - {x: -464.71994, y: -96.9375}
+      - {x: -456.4674, y: -71.15625}
+      - {x: -454.4043, y: -60.84375}
+      - {x: -454.4043, y: -43.3125}
+    - - {x: -429.64673, y: -40.21875}
+      - {x: -435.83612, y: -41.25}
+      - {x: -450.278, y: -58.78125}
+      - {x: -450.278, y: -72.1875}
+      - {x: -425.52048, y: -96.9375}
+      - {x: -401.7945, y: -96.9375}
+      - {x: -390.44727, y: -66}
+      - {x: -390.44727, y: -40.21875}
+    - - {x: -365.68973, y: -40.21875}
+      - {x: -385.28946, y: -50.53125}
+      - {x: -385.28946, y: -71.15625}
+      - {x: -361.56345, y: -96.9375}
+      - {x: -337.83746, y: -96.9375}
+      - {x: -326.49026, y: -66}
+      - {x: -326.49026, y: -40.21875}
+    - - {x: -311.01678, y: -40.21875}
+      - {x: -318.23773, y: -56.71875}
+      - {x: -318.23773, y: -69.09375}
+      - {x: -300.70114, y: -94.875}
+      - {x: -290.3855, y: -96.9375}
+      - {x: -273.88046, y: -96.9375}
+      - {x: -262.53323, y: -68.0625}
+      - {x: -262.53323, y: -40.21875}
+    - - {x: -223.33377, y: -40.21875}
+      - {x: -240.87038, y: -43.3125}
+      - {x: -252.21759, y: -57.75}
+      - {x: -252.21759, y: -72.1875}
+      - {x: -237.77568, y: -96.9375}
+      - {x: -210.955, y: -96.9375}
+      - {x: -198.57622, y: -72.1875}
+      - {x: -198.57622, y: -41.25}
+      - {x: -203.73404, y: -40.21875}
+    - - {x: -151.12424, y: -40.21875}
+      - {x: -161.4399, y: -40.21875}
+      - {x: -176.91336, y: -48.46875}
+      - {x: -182.07118, y: -61.875}
+      - {x: -182.07118, y: -79.40625}
+      - {x: -172.78711, y: -93.84375}
+      - {x: -165.56615, y: -96.9375}
+      - {x: -149.06111, y: -96.9375}
+      - {x: -142.87172, y: -95.90625}
+      - {x: -134.6192, y: -55.6875}
+      - {x: -134.6192, y: -44.34375}
+      - {x: -135.65077, y: -42.28125}
+    - - {x: -77.88314, y: -40.21875}
+      - {x: -118.11417, y: -40.21875}
+      - {x: -118.11417, y: -96.9375}
+      - {x: -80.97784, y: -96.9375}
+      - {x: -70.662186, y: -64.96875}
+      - {x: -70.662186, y: -43.3125}
+      - {x: -71.693756, y: -43.3125}
+    - - {x: -34.55742, y: -40.21875}
+      - {x: -51.062458, y: -47.4375}
+      - {x: -54.15715, y: -53.625}
+      - {x: -54.15715, y: -85.59375}
+      - {x: -41.778374, y: -96.9375}
+      - {x: -12.89456, y: -96.9375}
+      - {x: -6.705171, y: -69.09375}
+      - {x: -6.705171, y: -40.21875}
+    - - {x: 27.336468, y: -40.21875}
+      - {x: 12.89456, y: -47.4375}
+      - {x: 5.6736064, y: -64.96875}
+      - {x: 5.6736064, y: -82.5}
+      - {x: 17.020819, y: -96.9375}
+      - {x: 53.125587, y: -96.9375}
+      - {x: 57.251846, y: -83.53125}
+      - {x: 57.251846, y: -43.3125}
+      - {x: 52.09402, y: -40.21875}
+    - - {x: -661.74884, y: 20.625}
+      - {x: -680.31696, y: 20.625}
+      - {x: -687.5379, y: 13.40625}
+      - {x: -687.5379, y: -25.78125}
+      - {x: -685.4748, y: -35.0625}
+      - {x: -660.7172, y: -35.0625}
+      - {x: -651.43317, y: -27.84375}
+      - {x: -651.43317, y: -13.40625}
+      - {x: -659.68567, y: 17.53125}
+    - - {x: -597.7918, y: 21.65625}
+      - {x: -602.94965, y: 21.65625}
+      - {x: -615.32837, y: 19.59375}
+      - {x: -622.5494, y: 14.4375}
+      - {x: -622.5494, y: -21.65625}
+      - {x: -620.4862, y: -27.84375}
+      - {x: -612.2337, y: -35.0625}
+      - {x: -598.82336, y: -35.0625}
+      - {x: -591.6024, y: -33}
+      - {x: -588.5077, y: -24.75}
+      - {x: -588.5077, y: -2.0625}
+      - {x: -593.6655, y: 18.5625}
+    - - {x: -559.6239, y: 21.65625}
+      - {x: -559.6239, y: -28.875}
+      - {x: -552.40295, y: -35.0625}
+      - {x: -535.8979, y: -35.0625}
+      - {x: -530.7401, y: -34.03125}
+      - {x: -530.7401, y: 19.59375}
+      - {x: -533.8348, y: 21.65625}
+    - - {x: -465.7515, y: 18.5625}
+      - {x: -469.87775, y: 21.65625}
+      - {x: -477.09872, y: 21.65625}
+      - {x: -488.44592, y: 18.5625}
+      - {x: -495.66687, y: 12.375}
+      - {x: -495.66687, y: -28.875}
+      - {x: -485.35123, y: -35.0625}
+      - {x: -468.8462, y: -35.0625}
+      - {x: -467.81464, y: -31.96875}
+      - {x: -462.6568, y: -18.5625}
+      - {x: -462.6568, y: -10.3125}
+    - - {x: -402.82605, y: 21.65625}
+      - {x: -421.39423, y: 21.65625}
+      - {x: -431.70987, y: 15.46875}
+      - {x: -431.70987, y: -28.875}
+      - {x: -420.36264, y: -35.0625}
+      - {x: -404.8892, y: -35.0625}
+      - {x: -403.8576, y: -31.96875}
+      - {x: -400.7629, y: -21.65625}
+      - {x: -400.7629, y: 13.40625}
+    - - {x: -340.93216, y: 21.65625}
+      - {x: -362.59503, y: 21.65625}
+      - {x: -367.75284, y: 12.375}
+      - {x: -367.75284, y: -29.90625}
+      - {x: -358.46875, y: -35.0625}
+      - {x: -340.93216, y: -35.0625}
+      - {x: -335.77435, y: -18.5625}
+      - {x: -335.77435, y: 8.25}
+      - {x: -338.86902, y: 18.5625}
+    - - {x: -292.4486, y: 21.65625}
+      - {x: -303.79584, y: 17.53125}
+      - {x: -303.79584, y: -16.5}
+      - {x: -301.7327, y: -25.78125}
+      - {x: -293.4802, y: -35.0625}
+      - {x: -282.13297, y: -35.0625}
+      - {x: -273.88046, y: -33}
+      - {x: -269.75418, y: -17.53125}
+      - {x: -269.75418, y: -1.03125}
+      - {x: -274.91202, y: 21.65625}
+    - - {x: -238.80725, y: 21.65625}
+      - {x: -239.8388, y: 18.5625}
+      - {x: -239.8388, y: -29.90625}
+      - {x: -232.61786, y: -35.0625}
+      - {x: -218.17595, y: -35.0625}
+      - {x: -210.955, y: -33}
+      - {x: -204.76561, y: -15.46875}
+      - {x: -204.76561, y: 0}
+      - {x: -211.98656, y: 21.65625}
+    - - {x: -164.53458, y: 21.65625}
+      - {x: -175.88179, y: 16.5}
+      - {x: -175.88179, y: -8.25}
+      - {x: -171.75554, y: -24.75}
+      - {x: -165.56615, y: -35.0625}
+      - {x: -153.18738, y: -35.0625}
+      - {x: -145.96642, y: -33}
+      - {x: -141.84016, y: -17.53125}
+      - {x: -141.84016, y: 0}
+      - {x: -146.99799, y: 21.65625}
+    - - {x: -99.546005, y: 21.65625}
+      - {x: -111.92478, y: 16.5}
+      - {x: -111.92478, y: -20.625}
+      - {x: -102.64069, y: -35.0625}
+      - {x: -87.16722, y: -35.0625}
+      - {x: -82.0094, y: -34.03125}
+      - {x: -82.0094, y: 20.625}
+      - {x: -83.04096, y: 21.65625}
+    - - {x: -43.841503, y: 21.65625}
+      - {x: -47.967762, y: 14.4375}
+      - {x: -47.967762, y: -16.5}
+      - {x: -39.715244, y: -35.0625}
+      - {x: -19.083948, y: -35.0625}
+      - {x: -18.052383, y: -33}
+      - {x: -18.052383, y: 17.53125}
+      - {x: -19.083948, y: 21.65625}
+    - - {x: 28.368032, y: 21.65625}
+      - {x: 15.989254, y: 16.5}
+      - {x: 15.989254, y: -20.625}
+      - {x: 25.273336, y: -35.0625}
+      - {x: 40.74681, y: -35.0625}
+      - {x: 45.904633, y: -34.03125}
+      - {x: 45.904633, y: 20.625}
+      - {x: 44.87307, y: 21.65625}
+    - - {x: -733.9584, y: 23.71875}
+      - {x: -745.30554, y: 23.71875}
+      - {x: -751.49493, y: 17.53125}
+      - {x: -754.58966, y: 3.09375}
+      - {x: -754.58966, y: -28.875}
+      - {x: -753.5581, y: -33}
+      - {x: -715.3902, y: -33}
+      - {x: -714.35864, y: -28.875}
+      - {x: -714.35864, y: -3.09375}
+      - {x: -720.548, y: 16.5}
+    - - {x: -747.3687, y: 87.65625}
+      - {x: -760.77905, y: 84.5625}
+      - {x: -760.77905, y: 67.03125}
+      - {x: -753.5581, y: 30.9375}
+      - {x: -722.61115, y: 30.9375}
+      - {x: -719.5164, y: 61.875}
+      - {x: -719.5164, y: 80.4375}
+      - {x: -730.86365, y: 87.65625}
+    - - {x: -694.7589, y: 85.59375}
+      - {x: -694.7589, y: 66}
+      - {x: -684.44324, y: 31.96875}
+      - {x: -679.2854, y: 30.9375}
+      - {x: -667.9382, y: 30.9375}
+      - {x: -653.4963, y: 35.0625}
+      - {x: -653.4963, y: 78.375}
+      - {x: -656.591, y: 85.59375}
+    - - {x: -600.8865, y: 87.65625}
+      - {x: -617.39154, y: 87.65625}
+      - {x: -630.8019, y: 84.5625}
+      - {x: -630.8019, y: 73.21875}
+      - {x: -624.6125, y: 45.375}
+      - {x: -620.4862, y: 31.96875}
+      - {x: -616.36, y: 30.9375}
+      - {x: -599.8549, y: 30.9375}
+      - {x: -592.634, y: 34.03125}
+      - {x: -589.53925, y: 70.125}
+      - {x: -589.53925, y: 79.40625}
+    - - {x: -535.8979, y: 87.65625}
+      - {x: -552.40295, y: 87.65625}
+      - {x: -565.8133, y: 84.5625}
+      - {x: -565.8133, y: 52.59375}
+      - {x: -558.59235, y: 30.9375}
+      - {x: -530.7401, y: 30.9375}
+      - {x: -520.42444, y: 42.28125}
+      - {x: -520.42444, y: 69.09375}
+      - {x: -522.48755, y: 79.40625}
+    - - {x: -498.76157, y: 87.65625}
+      - {x: -500.8247, y: 86.625}
+      - {x: -500.8247, y: 45.375}
+      - {x: -492.57217, y: 30.9375}
+      - {x: -453.3727, y: 30.9375}
+      - {x: -453.3727, y: 87.65625}
+    - - {x: -436.86768, y: 87.65625}
+      - {x: -436.86768, y: 42.28125}
+      - {x: -427.58362, y: 30.9375}
+      - {x: -398.6998, y: 30.9375}
+      - {x: -392.5104, y: 53.625}
+      - {x: -392.5104, y: 87.65625}
+    - - {x: -753.5581, y: 156.75}
+      - {x: -753.5581, y: 94.875}
+      - {x: -719.5164, y: 94.875}
+      - {x: -718.48486, y: 95.90625}
+      - {x: -718.48486, y: 147.46875}
+      - {x: -738.0846, y: 156.75}
+    - - {x: -678.25385, y: 156.75}
+      - {x: -688.5695, y: 156.75}
+      - {x: -688.5695, y: 95.90625}
+      - {x: -686.50635, y: 94.875}
+      - {x: -661.74884, y: 94.875}
+      - {x: -655.55945, y: 96.9375}
+      - {x: -655.55945, y: 144.375}
+      - {x: -668.9698, y: 154.6875}
+    - - {x: -602.94965, y: 154.6875}
+      - {x: -625.64404, y: 154.6875}
+      - {x: -625.64404, y: 99}
+      - {x: -622.5494, y: 94.875}
+      - {x: -593.6655, y: 94.875}
+      - {x: -592.634, y: 97.96875}
+      - {x: -592.634, y: 130.96875}
+      - {x: -594.6971, y: 148.5}
+    - - {x: -549.3082, y: 155.71875}
+      - {x: -558.59235, y: 155.71875}
+      - {x: -558.59235, y: 94.875}
+      - {x: -526.61383, y: 94.875}
+      - {x: -526.61383, y: 148.5}
+      - {x: -537.96106, y: 152.625}
+    - - {x: -494.6353, y: 156.75}
+      - {x: -494.6353, y: 94.875}
+      - {x: -461.62524, y: 94.875}
+      - {x: -454.4043, y: 102.09375}
+      - {x: -454.4043, y: 149.53125}
+      - {x: -472.97244, y: 156.75}
+    - - {x: -400.7629, y: 156.75}
+      - {x: -431.70987, y: 156.75}
+      - {x: -431.70987, y: 94.875}
+      - {x: -402.82605, y: 94.875}
+      - {x: -387.35257, y: 106.21875}
+      - {x: -387.35257, y: 136.125}
+      - {x: -393.54196, y: 155.71875}
+    - - {x: -738.0846, y: 215.53125}
+      - {x: -752.5265, y: 209.34375}
+      - {x: -752.5265, y: 187.6875}
+      - {x: -748.40027, y: 161.90625}
+      - {x: -744.274, y: 158.8125}
+      - {x: -721.5796, y: 158.8125}
+      - {x: -711.2639, y: 199.03125}
+      - {x: -711.2639, y: 213.46875}
+      - {x: -717.4533, y: 215.53125}
+    - - {x: -661.74884, y: 213.46875}
+      - {x: -681.3486, y: 213.46875}
+      - {x: -690.6326, y: 206.25}
+      - {x: -690.6326, y: 158.8125}
+      - {x: -660.7172, y: 158.8125}
+      - {x: -659.68567, y: 159.84375}
+      - {x: -649.37006, y: 193.875}
+      - {x: -649.37006, y: 211.40625}
+    - - {x: -611.20215, y: 215.53125}
+      - {x: -626.6756, y: 210.375}
+      - {x: -626.6756, y: 185.625}
+      - {x: -621.51776, y: 158.8125}
+      - {x: -591.6024, y: 158.8125}
+      - {x: -585.413, y: 179.4375}
+      - {x: -585.413, y: 215.53125}
+    - - {x: -548.2767, y: 215.53125}
+      - {x: -565.8133, y: 207.28125}
+      - {x: -567.8764, y: 194.90625}
+      - {x: -567.8764, y: 176.34375}
+      - {x: -561.687, y: 158.8125}
+      - {x: -522.48755, y: 158.8125}
+      - {x: -522.48755, y: 215.53125}
+    - - {x: -463.6884, y: 215.53125}
+      - {x: -485.35123, y: 215.53125}
+      - {x: -499.79315, y: 209.34375}
+      - {x: -507.0141, y: 202.125}
+      - {x: -507.0141, y: 178.40625}
+      - {x: -497.73, y: 158.8125}
+      - {x: -470.90933, y: 158.8125}
+      - {x: -466.78308, y: 161.90625}
+      - {x: -459.5621, y: 183.5625}
+      - {x: -459.5621, y: 212.4375}
+    - - {x: -430.67828, y: 215.53125}
+      - {x: -439.96237, y: 205.21875}
+      - {x: -439.96237, y: 165}
+      - {x: -431.70987, y: 158.8125}
+      - {x: -397.6682, y: 158.8125}
+      - {x: -395.6051, y: 175.3125}
+      - {x: -395.6051, y: 215.53125}
+    - - {x: -681.3486, y: 277.40625}
+      - {x: -689.6011, y: 257.8125}
+      - {x: -689.6011, y: 233.0625}
+      - {x: -685.4748, y: 222.75}
+      - {x: -655.55945, y: 222.75}
+      - {x: -655.55945, y: 269.15625}
+      - {x: -658.6541, y: 277.40625}
+    - - {x: -603.9812, y: 277.40625}
+      - {x: -613.26526, y: 277.40625}
+      - {x: -625.64404, y: 262.96875}
+      - {x: -625.64404, y: 238.21875}
+      - {x: -621.51776, y: 222.75}
+      - {x: -593.6655, y: 222.75}
+      - {x: -592.634, y: 225.84375}
+      - {x: -592.634, y: 256.78125}
+      - {x: -594.6971, y: 270.1875}
+    - - {x: -551.3714, y: 278.4375}
+      - {x: -560.65546, y: 259.875}
+      - {x: -560.65546, y: 232.03125}
+      - {x: -557.5608, y: 222.75}
+      - {x: -528.67694, y: 222.75}
+      - {x: -526.61383, y: 228.9375}
+      - {x: -526.61383, y: 267.09375}
+      - {x: -534.86633, y: 278.4375}
+    - - {x: -485.35123, y: 278.4375}
+      - {x: -496.69846, y: 266.0625}
+      - {x: -496.69846, y: 223.78125}
+      - {x: -495.66687, y: 222.75}
+      - {x: -464.71994, y: 222.75}
+      - {x: -455.43585, y: 245.4375}
+      - {x: -455.43585, y: 266.0625}
+      - {x: -470.90933, y: 278.4375}
+    - - {x: -420.36264, y: 278.4375}
+      - {x: -432.74142, y: 269.15625}
+      - {x: -432.74142, y: 223.78125}
+      - {x: -431.70987, y: 222.75}
+      - {x: -399.73135, y: 222.75}
+      - {x: -388.38416, y: 244.40625}
+      - {x: -388.38416, y: 261.9375}
+      - {x: -400.7629, y: 278.4375}
+    - - {x: -742.2109, y: 278.4375}
+      - {x: -753.5581, y: 270.1875}
+      - {x: -753.5581, y: 224.8125}
+      - {x: -752.5265, y: 223.78125}
+      - {x: -718.48486, y: 223.78125}
+      - {x: -718.48486, y: 268.125}
+      - {x: -725.7058, y: 278.4375}
+    - - {x: -760.77905, y: 343.40625}
+      - {x: -760.77905, y: 323.8125}
+      - {x: -748.40027, y: 289.78125}
+      - {x: -745.30554, y: 287.71875}
+      - {x: -725.7058, y: 287.71875}
+      - {x: -719.5164, y: 297}
+      - {x: -719.5164, y: 338.25}
+      - {x: -724.67426, y: 343.40625}
+    - - {x: -695.79047, y: 342.375}
+      - {x: -696.822, y: 341.34375}
+      - {x: -696.822, y: 324.84375}
+      - {x: -685.4748, y: 287.71875}
+      - {x: -659.68567, y: 287.71875}
+      - {x: -655.55945, y: 290.8125}
+      - {x: -655.55945, y: 341.34375}
+      - {x: -661.74884, y: 342.375}
+    - - {x: -468.8462, y: 343.40625}
+      - {x: -499.79315, y: 343.40625}
+      - {x: -504.95096, y: 341.34375}
+      - {x: -504.95096, y: 328.96875}
+      - {x: -498.76157, y: 300.09375}
+      - {x: -492.57217, y: 288.75}
+      - {x: -486.3828, y: 287.71875}
+      - {x: -469.87775, y: 287.71875}
+      - {x: -465.7515, y: 290.8125}
+      - {x: -463.6884, y: 297}
+      - {x: -463.6884, y: 338.25}
+    - - {x: -410.047, y: 342.375}
+      - {x: -428.61517, y: 342.375}
+      - {x: -440.99396, y: 339.28125}
+      - {x: -440.99396, y: 320.71875}
+      - {x: -435.83612, y: 300.09375}
+      - {x: -423.45734, y: 287.71875}
+      - {x: -403.8576, y: 287.71875}
+      - {x: -399.73135, y: 294.9375}
+      - {x: -399.73135, y: 335.15625}
+    - - {x: -362.59503, y: 343.40625}
+      - {x: -377.03693, y: 340.3125}
+      - {x: -377.03693, y: 322.78125}
+      - {x: -367.75284, y: 287.71875}
+      - {x: -340.93216, y: 287.71875}
+      - {x: -335.77435, y: 319.6875}
+      - {x: -335.77435, y: 338.25}
+      - {x: -347.12155, y: 343.40625}
+    - - {x: -283.16452, y: 343.40625}
+      - {x: -297.60645, y: 343.40625}
+      - {x: -313.07993, y: 340.3125}
+      - {x: -313.07993, y: 324.84375}
+      - {x: -303.79584, y: 288.75}
+      - {x: -299.66956, y: 287.71875}
+      - {x: -278.0067, y: 287.71875}
+      - {x: -270.78577, y: 313.5}
+      - {x: -270.78577, y: 336.1875}
+      - {x: -272.84888, y: 338.25}
+    - - {x: -247.05977, y: 343.40625}
+      - {x: -249.1229, y: 342.375}
+      - {x: -249.1229, y: 328.96875}
+      - {x: -235.71255, y: 287.71875}
+      - {x: -216.11282, y: 287.71875}
+      - {x: -207.8603, y: 289.78125}
+      - {x: -206.82874, y: 292.875}
+      - {x: -206.82874, y: 340.3125}
+      - {x: -211.98656, y: 343.40625}
+    - - {x: -614.2968, y: 343.40625}
+      - {x: -626.6756, y: 341.34375}
+      - {x: -632.865, y: 339.28125}
+      - {x: -632.865, y: 331.03125}
+      - {x: -620.4862, y: 291.84375}
+      - {x: -616.36, y: 288.75}
+      - {x: -592.634, y: 288.75}
+      - {x: -591.6024, y: 301.125}
+      - {x: -591.6024, y: 337.21875}
+      - {x: -607.07587, y: 343.40625}
+    - - {x: -556.5292, y: 343.40625}
+      - {x: -568.90796, y: 341.34375}
+      - {x: -568.90796, y: 323.8125}
+      - {x: -557.5608, y: 289.78125}
+      - {x: -554.46606, y: 288.75}
+      - {x: -533.8348, y: 288.75}
+      - {x: -527.6454, y: 320.71875}
+      - {x: -527.6454, y: 339.28125}
+      - {x: -537.96106, y: 343.40625}
+    - - {x: -624.6125, y: 412.5}
+      - {x: -625.64404, y: 411.46875}
+      - {x: -625.64404, y: 356.8125}
+      - {x: -617.39154, y: 350.625}
+      - {x: -595.72864, y: 350.625}
+      - {x: -592.634, y: 353.71875}
+      - {x: -590.57086, y: 359.90625}
+      - {x: -590.57086, y: 404.25}
+      - {x: -607.07587, y: 412.5}
+    - - {x: -560.65546, y: 411.46875}
+      - {x: -560.65546, y: 356.8125}
+      - {x: -559.6239, y: 350.625}
+      - {x: -532.8032, y: 350.625}
+      - {x: -526.61383, y: 363}
+      - {x: -526.61383, y: 403.21875}
+      - {x: -544.15045, y: 411.46875}
+    - - {x: -476.06714, y: 412.5}
+      - {x: -498.76157, y: 412.5}
+      - {x: -498.76157, y: 350.625}
+      - {x: -462.6568, y: 350.625}
+      - {x: -462.6568, y: 402.1875}
+      - {x: -471.9409, y: 411.46875}
+    - - {x: -369.81598, y: 412.5}
+      - {x: -369.81598, y: 364.03125}
+      - {x: -364.65814, y: 350.625}
+      - {x: -335.77435, y: 350.625}
+      - {x: -334.74277, y: 360.9375}
+      - {x: -334.74277, y: 405.28125}
+      - {x: -342.9953, y: 412.5}
+    - - {x: -289.3539, y: 411.46875}
+      - {x: -305.85895, y: 411.46875}
+      - {x: -305.85895, y: 350.625}
+      - {x: -270.78577, y: 350.625}
+      - {x: -270.78577, y: 403.21875}
+      - {x: -281.1014, y: 410.4375}
+    - - {x: -227.46004, y: 412.5}
+      - {x: -240.87038, y: 412.5}
+      - {x: -241.90195, y: 411.46875}
+      - {x: -241.90195, y: 364.03125}
+      - {x: -235.71255, y: 350.625}
+      - {x: -211.98656, y: 350.625}
+      - {x: -205.79718, y: 361.96875}
+      - {x: -205.79718, y: 400.125}
+      - {x: -209.92343, y: 405.28125}
+    - - {x: -753.5581, y: 412.5}
+      - {x: -753.5581, y: 356.8125}
+      - {x: -752.5265, y: 352.6875}
+      - {x: -749.4318, y: 351.65625}
+      - {x: -720.548, y: 351.65625}
+      - {x: -718.48486, y: 352.6875}
+      - {x: -718.48486, y: 401.15625}
+      - {x: -728.80054, y: 412.5}
+    - - {x: -689.6011, y: 412.5}
+      - {x: -689.6011, y: 351.65625}
+      - {x: -654.52783, y: 351.65625}
+      - {x: -654.52783, y: 405.28125}
+      - {x: -672.06445, y: 412.5}
+    - - {x: -433.77298, y: 412.5}
+      - {x: -433.77298, y: 357.84375}
+      - {x: -431.70987, y: 351.65625}
+      - {x: -398.6998, y: 351.65625}
+      - {x: -398.6998, y: 405.28125}
+      - {x: -406.9523, y: 412.5}
+    - - {x: -745.30554, y: 471.28125}
+      - {x: -752.5265, y: 467.15625}
+      - {x: -752.5265, y: 442.40625}
+      - {x: -748.40027, y: 418.6875}
+      - {x: -742.2109, y: 415.59375}
+      - {x: -729.8321, y: 415.59375}
+      - {x: -722.61115, y: 417.65625}
+      - {x: -711.2639, y: 453.75}
+      - {x: -711.2639, y: 471.28125}
+    - - {x: -672.06445, y: 470.25}
+      - {x: -688.5695, y: 466.125}
+      - {x: -688.5695, y: 418.6875}
+      - {x: -681.3486, y: 415.59375}
+      - {x: -654.52783, y: 415.59375}
+      - {x: -647.3069, y: 442.40625}
+      - {x: -647.3069, y: 470.25}
+    - - {x: -464.71994, y: 471.28125}
+      - {x: -481.22498, y: 471.28125}
+      - {x: -496.69846, y: 467.15625}
+      - {x: -496.69846, y: 439.3125}
+      - {x: -494.6353, y: 418.6875}
+      - {x: -487.41437, y: 415.59375}
+      - {x: -464.71994, y: 415.59375}
+      - {x: -457.499, y: 440.34375}
+      - {x: -455.43585, y: 453.75}
+      - {x: -455.43585, y: 468.1875}
+    - - {x: -391.47885, y: 467.15625}
+      - {x: -400.7629, y: 470.25}
+      - {x: -426.55203, y: 470.25}
+      - {x: -432.74142, y: 469.21875}
+      - {x: -432.74142, y: 419.71875}
+      - {x: -430.67828, y: 415.59375}
+      - {x: -413.1417, y: 415.59375}
+      - {x: -401.7945, y: 418.6875}
+      - {x: -396.63666, y: 427.96875}
+      - {x: -397.6682, y: 439.3125}
+      - {x: -391.47885, y: 455.8125}
+    - - {x: -368.78442, y: 471.28125}
+      - {x: -368.78442, y: 415.59375}
+      - {x: -333.7112, y: 415.59375}
+      - {x: -327.52182, y: 438.28125}
+      - {x: -327.52182, y: 471.28125}
+    - - {x: -272.84888, y: 471.28125}
+      - {x: -304.8274, y: 471.28125}
+      - {x: -304.8274, y: 443.4375}
+      - {x: -301.7327, y: 417.65625}
+      - {x: -293.4802, y: 415.59375}
+      - {x: -280.06985, y: 415.59375}
+      - {x: -268.72263, y: 432.09375}
+      - {x: -263.5648, y: 456.84375}
+      - {x: -263.5648, y: 468.1875}
+    - - {x: -209.92343, y: 471.28125}
+      - {x: -240.87038, y: 471.28125}
+      - {x: -240.87038, y: 432.09375}
+      - {x: -239.8388, y: 417.65625}
+      - {x: -231.58629, y: 416.625}
+      - {x: -224.36534, y: 415.59375}
+      - {x: -214.0497, y: 415.59375}
+      - {x: -209.92343, y: 419.71875}
+      - {x: -199.60779, y: 460.96875}
+      - {x: -199.60779, y: 468.1875}
+    - - {x: -617.39154, y: 471.28125}
+      - {x: -624.6125, y: 468.1875}
+      - {x: -624.6125, y: 431.0625}
+      - {x: -622.5494, y: 417.65625}
+      - {x: -620.4862, y: 416.625}
+      - {x: -592.634, y: 416.625}
+      - {x: -583.3499, y: 438.28125}
+      - {x: -583.3499, y: 470.25}
+      - {x: -585.413, y: 471.28125}
+    - - {x: -545.182, y: 471.28125}
+      - {x: -560.65546, y: 467.15625}
+      - {x: -560.65546, y: 448.59375}
+      - {x: -552.40295, y: 416.625}
+      - {x: -528.67694, y: 416.625}
+      - {x: -519.3929, y: 455.8125}
+      - {x: -519.3929, y: 468.1875}
+      - {x: -528.67694, y: 471.28125}
+    - - {x: -557.5608, y: 535.21875}
+      - {x: -561.687, y: 533.15625}
+      - {x: -561.687, y: 484.6875}
+      - {x: -560.65546, y: 478.5}
+      - {x: -533.8348, y: 478.5}
+      - {x: -527.6454, y: 479.53125}
+      - {x: -527.6454, y: 517.6875}
+      - {x: -535.8979, y: 535.21875}
+    - - {x: -296.5749, y: 535.21875}
+      - {x: -304.8274, y: 518.71875}
+      - {x: -304.8274, y: 493.96875}
+      - {x: -301.7327, y: 481.59375}
+      - {x: -299.66956, y: 478.5}
+      - {x: -269.75418, y: 478.5}
+      - {x: -269.75418, y: 535.21875}
+    - - {x: -605.01276, y: 535.21875}
+      - {x: -623.58093, y: 535.21875}
+      - {x: -625.64404, y: 534.1875}
+      - {x: -625.64404, y: 479.53125}
+      - {x: -596.76025, y: 479.53125}
+      - {x: -590.57086, y: 490.875}
+      - {x: -590.57086, y: 513.5625}
+      - {x: -593.6655, y: 528}
+    - - {x: -475.03558, y: 535.21875}
+      - {x: -487.41437, y: 535.21875}
+      - {x: -497.73, y: 519.75}
+      - {x: -497.73, y: 482.625}
+      - {x: -496.69846, y: 479.53125}
+      - {x: -467.81464, y: 479.53125}
+      - {x: -463.6884, y: 480.5625}
+      - {x: -462.6568, y: 495}
+      - {x: -462.6568, y: 511.5}
+      - {x: -466.78308, y: 524.90625}
+    - - {x: -358.46875, y: 535.21875}
+      - {x: -368.78442, y: 532.125}
+      - {x: -369.81598, y: 520.78125}
+      - {x: -369.81598, y: 491.90625}
+      - {x: -363.6266, y: 479.53125}
+      - {x: -334.74277, y: 479.53125}
+      - {x: -334.74277, y: 534.1875}
+      - {x: -337.83746, y: 535.21875}
+    - - {x: -228.49161, y: 535.21875}
+      - {x: -239.8388, y: 531.09375}
+      - {x: -241.90195, y: 515.625}
+      - {x: -241.90195, y: 496.03125}
+      - {x: -235.71255, y: 479.53125}
+      - {x: -205.79718, y: 479.53125}
+      - {x: -205.79718, y: 535.21875}
+    - - {x: -741.1793, y: 535.21875}
+      - {x: -753.5581, y: 528}
+      - {x: -753.5581, y: 491.90625}
+      - {x: -751.49493, y: 480.5625}
+      - {x: -718.48486, y: 480.5625}
+      - {x: -718.48486, y: 520.78125}
+      - {x: -725.7058, y: 535.21875}
+    - - {x: -666.9066, y: 535.21875}
+      - {x: -681.3486, y: 535.21875}
+      - {x: -689.6011, y: 522.84375}
+      - {x: -689.6011, y: 486.75}
+      - {x: -687.5379, y: 480.5625}
+      - {x: -661.74884, y: 480.5625}
+      - {x: -654.52783, y: 490.875}
+      - {x: -654.52783, y: 510.46875}
+      - {x: -656.591, y: 528}
+    - - {x: -421.39423, y: 535.21875}
+      - {x: -433.77298, y: 529.03125}
+      - {x: -433.77298, y: 489.84375}
+      - {x: -427.58362, y: 480.5625}
+      - {x: -401.7945, y: 480.5625}
+      - {x: -398.6998, y: 482.625}
+      - {x: -398.6998, y: 528}
+      - {x: -405.92075, y: 535.21875}
+    - - {x: -734.9899, y: 600.1875}
+      - {x: -753.5581, y: 600.1875}
+      - {x: -760.77905, y: 598.125}
+      - {x: -760.77905, y: 583.6875}
+      - {x: -748.40027, y: 545.53125}
+      - {x: -743.24243, y: 543.46875}
+      - {x: -728.80054, y: 543.46875}
+      - {x: -723.6427, y: 546.5625}
+      - {x: -719.5164, y: 573.375}
+      - {x: -719.5164, y: 594}
+    - - {x: -693.7273, y: 600.1875}
+      - {x: -696.822, y: 597.09375}
+      - {x: -696.822, y: 559.96875}
+      - {x: -684.44324, y: 543.46875}
+      - {x: -655.55945, y: 543.46875}
+      - {x: -655.55945, y: 598.125}
+      - {x: -660.7172, y: 600.1875}
+    - - {x: -620.4862, y: 600.1875}
+      - {x: -631.83344, y: 597.09375}
+      - {x: -632.865, y: 594}
+      - {x: -632.865, y: 584.71875}
+      - {x: -621.51776, y: 544.5}
+      - {x: -619.45465, y: 543.46875}
+      - {x: -596.76025, y: 543.46875}
+      - {x: -591.6024, y: 550.6875}
+      - {x: -591.6024, y: 597.09375}
+      - {x: -606.0443, y: 600.1875}
+    - - {x: -527.6454, y: 594}
+      - {x: -533.8348, y: 600.1875}
+      - {x: -565.8133, y: 600.1875}
+      - {x: -568.90796, y: 599.15625}
+      - {x: -568.90796, y: 582.65625}
+      - {x: -558.59235, y: 551.71875}
+      - {x: -555.4976, y: 543.46875}
+      - {x: -544.15045, y: 543.46875}
+      - {x: -533.8348, y: 545.53125}
+      - {x: -530.7401, y: 546.5625}
+      - {x: -527.6454, y: 556.875}
+    - - {x: -460.5937, y: 599.15625}
+      - {x: -467.81464, y: 600.1875}
+      - {x: -495.66687, y: 600.1875}
+      - {x: -502.88785, y: 596.0625}
+      - {x: -502.88785, y: 578.53125}
+      - {x: -493.60376, y: 543.46875}
+      - {x: -470.90933, y: 543.46875}
+      - {x: -468.8462, y: 544.5}
+      - {x: -460.5937, y: 561}
+    - - {x: -432.74142, y: 600.1875}
+      - {x: -438.93082, y: 596.0625}
+      - {x: -438.93082, y: 578.53125}
+      - {x: -429.64673, y: 543.46875}
+      - {x: -406.9523, y: 543.46875}
+      - {x: -404.8892, y: 544.5}
+      - {x: -393.54196, y: 553.78125}
+      - {x: -393.54196, y: 600.1875}
+    - - {x: -369.81598, y: 600.1875}
+      - {x: -374.9738, y: 597.09375}
+      - {x: -374.9738, y: 578.53125}
+      - {x: -365.68973, y: 543.46875}
+      - {x: -342.9953, y: 543.46875}
+      - {x: -340.93216, y: 544.5}
+      - {x: -332.67966, y: 547.59375}
+      - {x: -332.67966, y: 592.96875}
+      - {x: -336.8059, y: 600.1875}
+    - - {x: -296.5749, y: 600.1875}
+      - {x: -313.07993, y: 598.125}
+      - {x: -313.07993, y: 582.65625}
+      - {x: -300.70114, y: 543.46875}
+      - {x: -285.22766, y: 543.46875}
+      - {x: -273.88046, y: 545.53125}
+      - {x: -270.78577, y: 572.34375}
+      - {x: -270.78577, y: 591.9375}
+      - {x: -285.22766, y: 600.1875}
+    - - {x: -753.5581, y: 668.25}
+      - {x: -753.5581, y: 609.46875}
+      - {x: -751.49493, y: 607.40625}
+      - {x: -719.5164, y: 607.40625}
+      - {x: -718.48486, y: 608.4375}
+      - {x: -718.48486, y: 662.0625}
+      - {x: -726.73737, y: 668.25}
+    - - {x: -671.0329, y: 668.25}
+      - {x: -688.5695, y: 668.25}
+      - {x: -688.5695, y: 609.46875}
+      - {x: -686.50635, y: 608.4375}
+      - {x: -658.6541, y: 608.4375}
+      - {x: -656.591, y: 622.875}
+      - {x: -656.591, y: 664.125}
+    - - {x: -624.6125, y: 668.25}
+      - {x: -624.6125, y: 631.125}
+      - {x: -623.58093, y: 610.5}
+      - {x: -615.32837, y: 608.4375}
+      - {x: -592.634, y: 608.4375}
+      - {x: -592.634, y: 665.15625}
+      - {x: -605.01276, y: 668.25}
+    - - {x: -560.65546, y: 668.25}
+      - {x: -560.65546, y: 608.4375}
+      - {x: -530.7401, y: 608.4375}
+      - {x: -528.67694, y: 619.78125}
+      - {x: -528.67694, y: 661.03125}
+      - {x: -549.3082, y: 668.25}
+    - - {x: -496.69846, y: 667.21875}
+      - {x: -496.69846, y: 620.8125}
+      - {x: -490.50906, y: 608.4375}
+      - {x: -465.7515, y: 608.4375}
+      - {x: -464.71994, y: 609.46875}
+      - {x: -464.71994, y: 655.875}
+      - {x: -469.87775, y: 667.21875}
+    - - {x: -413.1417, y: 667.21875}
+      - {x: -432.74142, y: 667.21875}
+      - {x: -432.74142, y: 617.71875}
+      - {x: -427.58362, y: 608.4375}
+      - {x: -402.82605, y: 608.4375}
+      - {x: -401.7945, y: 610.5}
+      - {x: -400.7629, y: 638.34375}
+      - {x: -400.7629, y: 655.875}
+      - {x: -409.01544, y: 666.1875}
+    - - {x: -349.1847, y: 667.21875}
+      - {x: -368.78442, y: 667.21875}
+      - {x: -368.78442, y: 631.125}
+      - {x: -366.72128, y: 611.53125}
+      - {x: -358.46875, y: 608.4375}
+      - {x: -341.9637, y: 608.4375}
+      - {x: -336.8059, y: 609.46875}
+      - {x: -335.77435, y: 635.25}
+      - {x: -335.77435, y: 654.84375}
+      - {x: -345.0584, y: 666.1875}
+    - - {x: -290.3855, y: 668.25}
+      - {x: -304.8274, y: 668.25}
+      - {x: -304.8274, y: 609.46875}
+      - {x: -298.638, y: 608.4375}
+      - {x: -273.88046, y: 608.4375}
+      - {x: -272.84888, y: 610.5}
+      - {x: -271.81732, y: 620.8125}
+      - {x: -271.81732, y: 661.03125}
+    - - {x: -737.05304, y: 728.0625}
+      - {x: -752.5265, y: 721.875}
+      - {x: -752.5265, y: 704.34375}
+      - {x: -750.4634, y: 673.40625}
+      - {x: -745.30554, y: 671.34375}
+      - {x: -724.67426, y: 671.34375}
+      - {x: -711.2639, y: 708.46875}
+      - {x: -711.2639, y: 727.03125}
+      - {x: -717.4533, y: 728.0625}
+    - - {x: -659.68567, y: 728.0625}
+      - {x: -680.31696, y: 728.0625}
+      - {x: -688.5695, y: 723.9375}
+      - {x: -688.5695, y: 678.5625}
+      - {x: -687.5379, y: 671.34375}
+      - {x: -663.81195, y: 671.34375}
+      - {x: -659.68567, y: 674.4375}
+      - {x: -647.3069, y: 710.53125}
+      - {x: -647.3069, y: 726}
+    - - {x: -609.139, y: 728.0625}
+      - {x: -624.6125, y: 722.90625}
+      - {x: -624.6125, y: 679.59375}
+      - {x: -623.58093, y: 671.34375}
+      - {x: -596.76025, y: 671.34375}
+      - {x: -583.3499, y: 710.53125}
+      - {x: -583.3499, y: 726}
+      - {x: -591.6024, y: 728.0625}
+    - - {x: -556.5292, y: 728.0625}
+      - {x: -560.65546, y: 723.9375}
+      - {x: -560.65546, y: 702.28125}
+      - {x: -556.5292, y: 671.34375}
+      - {x: -521.456, y: 671.34375}
+      - {x: -519.3929, y: 677.53125}
+      - {x: -519.3929, y: 727.03125}
+      - {x: -522.48755, y: 728.0625}
+    - - {x: -466.78308, y: 728.0625}
+      - {x: -495.66687, y: 728.0625}
+      - {x: -499.79315, y: 727.03125}
+      - {x: -499.79315, y: 678.5625}
+      - {x: -497.73, y: 671.34375}
+      - {x: -468.8462, y: 671.34375}
+      - {x: -465.7515, y: 673.40625}
+      - {x: -457.499, y: 711.5625}
+      - {x: -457.499, y: 723.9375}
+    - - {x: -432.74142, y: 728.0625}
+      - {x: -438.93082, y: 718.78125}
+      - {x: -438.93082, y: 677.53125}
+      - {x: -430.67828, y: 671.34375}
+      - {x: -397.6682, y: 671.34375}
+      - {x: -393.54196, y: 703.3125}
+      - {x: -393.54196, y: 728.0625}
+    - - {x: -362.59503, y: 728.0625}
+      - {x: -371.87912, y: 723.9375}
+      - {x: -371.87912, y: 683.71875}
+      - {x: -365.68973, y: 671.34375}
+      - {x: -334.74277, y: 671.34375}
+      - {x: -329.58496, y: 689.90625}
+      - {x: -329.58496, y: 724.96875}
+      - {x: -333.7112, y: 728.0625}
+    - - {x: -304.8274, y: 728.0625}
+      - {x: -304.8274, y: 697.125}
+      - {x: -300.70114, y: 674.4375}
+      - {x: -293.4802, y: 671.34375}
+      - {x: -271.81732, y: 671.34375}
+      - {x: -263.5648, y: 694.03125}
+      - {x: -263.5648, y: 728.0625}
+    - - {x: -686.50635, y: 789.9375}
+      - {x: -686.50635, y: 735.28125}
+      - {x: -685.4748, y: 733.21875}
+      - {x: -655.55945, y: 733.21875}
+      - {x: -655.55945, y: 782.71875}
+      - {x: -668.9698, y: 789.9375}
+    - - {x: -616.36, y: 790.96875}
+      - {x: -621.51776, y: 778.59375}
+      - {x: -621.51776, y: 737.34375}
+      - {x: -612.2337, y: 733.21875}
+      - {x: -592.634, y: 733.21875}
+      - {x: -592.634, y: 786.84375}
+      - {x: -593.6655, y: 790.96875}
+    - - {x: -553.4345, y: 790.96875}
+      - {x: -557.5608, y: 784.78125}
+      - {x: -557.5608, y: 747.65625}
+      - {x: -550.33984, y: 733.21875}
+      - {x: -532.8032, y: 733.21875}
+      - {x: -529.7085, y: 735.28125}
+      - {x: -528.67694, y: 748.6875}
+      - {x: -528.67694, y: 778.59375}
+      - {x: -536.92944, y: 790.96875}
+    - - {x: -483.28812, y: 789.9375}
+      - {x: -485.35123, y: 788.90625}
+      - {x: -492.57217, y: 783.75}
+      - {x: -492.57217, y: 746.625}
+      - {x: -487.41437, y: 733.21875}
+      - {x: -468.8462, y: 733.21875}
+      - {x: -464.71994, y: 735.28125}
+      - {x: -463.6884, y: 752.8125}
+      - {x: -463.6884, y: 777.5625}
+      - {x: -471.9409, y: 789.9375}
+    - - {x: -428.61517, y: 789.9375}
+      - {x: -428.61517, y: 733.21875}
+      - {x: -405.92075, y: 733.21875}
+      - {x: -400.7629, y: 734.25}
+      - {x: -399.73135, y: 746.625}
+      - {x: -399.73135, y: 782.71875}
+      - {x: -407.9839, y: 789.9375}
+    - - {x: -355.37408, y: 789.9375}
+      - {x: -364.65814, y: 779.625}
+      - {x: -364.65814, y: 738.375}
+      - {x: -351.2478, y: 733.21875}
+      - {x: -340.93216, y: 733.21875}
+      - {x: -335.77435, y: 750.75}
+      - {x: -335.77435, y: 783.75}
+      - {x: -345.0584, y: 789.9375}
+    - - {x: -281.1014, y: 790.96875}
+      - {x: -293.4802, y: 790.96875}
+      - {x: -301.7327, y: 781.6875}
+      - {x: -301.7327, y: 739.40625}
+      - {x: -288.32236, y: 733.21875}
+      - {x: -276.97516, y: 733.21875}
+      - {x: -275.94357, y: 737.34375}
+      - {x: -271.81732, y: 764.15625}
+      - {x: -271.81732, y: 782.71875}
+    - - {x: -728.80054, y: 790.96875}
+      - {x: -741.1793, y: 790.96875}
+      - {x: -753.5581, y: 782.71875}
+      - {x: -753.5581, y: 745.59375}
+      - {x: -746.3371, y: 735.28125}
+      - {x: -724.67426, y: 735.28125}
+      - {x: -718.48486, y: 747.65625}
+      - {x: -718.48486, y: 771.375}
+    - - {x: -747.3687, y: 855.9375}
+      - {x: -760.77905, y: 853.875}
+      - {x: -760.77905, y: 843.5625}
+      - {x: -756.6528, y: 836.34375}
+      - {x: -748.40027, y: 802.3125}
+      - {x: -745.30554, y: 799.21875}
+      - {x: -732.92676, y: 799.21875}
+      - {x: -721.5796, y: 801.28125}
+      - {x: -719.5164, y: 826.03125}
+      - {x: -719.5164, y: 848.71875}
+      - {x: -731.8952, y: 855.9375}
+    - - {x: -665.87506, y: 855.9375}
+      - {x: -684.44324, y: 855.9375}
+      - {x: -696.822, y: 853.875}
+      - {x: -696.822, y: 837.375}
+      - {x: -685.4748, y: 801.28125}
+      - {x: -679.2854, y: 799.21875}
+      - {x: -661.74884, y: 799.21875}
+      - {x: -657.62256, y: 801.28125}
+      - {x: -655.55945, y: 821.90625}
+      - {x: -655.55945, y: 849.75}
+    - - {x: -601.918, y: 855.9375}
+      - {x: -621.51776, y: 855.9375}
+      - {x: -632.865, y: 852.84375}
+      - {x: -632.865, y: 838.40625}
+      - {x: -621.51776, y: 801.28125}
+      - {x: -615.32837, y: 799.21875}
+      - {x: -599.8549, y: 799.21875}
+      - {x: -595.72864, y: 802.3125}
+      - {x: -591.6024, y: 831.1875}
+      - {x: -591.6024, y: 849.75}
+    - - {x: -559.6239, y: 855.9375}
+      - {x: -568.90796, y: 851.8125}
+      - {x: -568.90796, y: 840.46875}
+      - {x: -553.4345, y: 799.21875}
+      - {x: -531.77167, y: 799.21875}
+      - {x: -527.6454, y: 810.5625}
+      - {x: -527.6454, y: 851.8125}
+      - {x: -532.8032, y: 855.9375}
+    - - {x: -486.3828, y: 855.9375}
+      - {x: -498.76157, y: 853.875}
+      - {x: -504.95096, y: 851.8125}
+      - {x: -504.95096, y: 847.6875}
+      - {x: -499.79315, y: 842.53125}
+      - {x: -497.73, y: 838.40625}
+      - {x: -491.54062, y: 832.21875}
+      - {x: -494.6353, y: 834.28125}
+      - {x: -499.79315, y: 834.28125}
+      - {x: -503.9194, y: 833.25}
+      - {x: -498.76157, y: 815.71875}
+      - {x: -489.47748, y: 799.21875}
+      - {x: -463.6884, y: 799.21875}
+      - {x: -463.6884, y: 855.9375}
+    - - {x: -399.73135, y: 852.84375}
+      - {x: -411.07858, y: 855.9375}
+      - {x: -440.99396, y: 855.9375}
+      - {x: -440.99396, y: 830.15625}
+      - {x: -426.55203, y: 799.21875}
+      - {x: -406.9523, y: 799.21875}
+      - {x: -404.8892, y: 800.25}
+      - {x: -403.8576, y: 803.34375}
+      - {x: -403.8576, y: 807.46875}
+      - {x: -399.73135, y: 825}
+    - - {x: -344.02686, y: 855.9375}
+      - {x: -367.75284, y: 855.9375}
+      - {x: -377.03693, y: 854.90625}
+      - {x: -377.03693, y: 832.21875}
+      - {x: -372.91068, y: 819.84375}
+      - {x: -362.59503, y: 799.21875}
+      - {x: -340.93216, y: 799.21875}
+      - {x: -337.83746, y: 802.3125}
+      - {x: -335.77435, y: 828.09375}
+      - {x: -335.77435, y: 848.71875}
+    - - {x: -732.92676, y: 922.96875}
+      - {x: -742.2109, y: 925.03125}
+      - {x: -751.49493, y: 925.03125}
+      - {x: -753.5581, y: 924}
+      - {x: -753.5581, y: 868.3125}
+      - {x: -752.5265, y: 864.1875}
+      - {x: -749.4318, y: 863.15625}
+      - {x: -719.5164, y: 863.15625}
+      - {x: -718.48486, y: 864.1875}
+      - {x: -718.48486, y: 912.65625}
+    - - {x: -668.9698, y: 922.96875}
+      - {x: -680.31696, y: 925.03125}
+      - {x: -688.5695, y: 925.03125}
+      - {x: -689.6011, y: 920.90625}
+      - {x: -689.6011, y: 873.46875}
+      - {x: -688.5695, y: 864.1875}
+      - {x: -687.5379, y: 863.15625}
+      - {x: -655.55945, y: 863.15625}
+      - {x: -654.52783, y: 865.21875}
+      - {x: -654.52783, y: 910.59375}
+      - {x: -655.55945, y: 912.65625}
+    - - {x: -610.1706, y: 925.03125}
+      - {x: -624.6125, y: 925.03125}
+      - {x: -624.6125, y: 870.375}
+      - {x: -621.51776, y: 863.15625}
+      - {x: -596.76025, y: 863.15625}
+      - {x: -592.634, y: 865.21875}
+      - {x: -591.6024, y: 872.4375}
+      - {x: -591.6024, y: 916.78125}
+    - - {x: -549.3082, y: 925.03125}
+      - {x: -560.65546, y: 925.03125}
+      - {x: -564.78174, y: 912.65625}
+      - {x: -564.78174, y: 871.40625}
+      - {x: -561.687, y: 863.15625}
+      - {x: -525.5823, y: 863.15625}
+      - {x: -523.5191, y: 870.375}
+      - {x: -523.5191, y: 896.15625}
+      - {x: -528.67694, y: 919.875}
+    - - {x: -471.9409, y: 925.03125}
+      - {x: -502.88785, y: 925.03125}
+      - {x: -508.04565, y: 918.84375}
+      - {x: -508.04565, y: 867.28125}
+      - {x: -503.9194, y: 863.15625}
+      - {x: -468.8462, y: 863.15625}
+      - {x: -463.6884, y: 865.21875}
+      - {x: -452.34116, y: 888.9375}
+      - {x: -452.34116, y: 906.46875}
+      - {x: -459.5621, y: 916.78125}
+    - - {x: -439.96237, y: 925.03125}
+      - {x: -443.05707, y: 906.46875}
+      - {x: -443.05707, y: 888.9375}
+      - {x: -429.64673, y: 863.15625}
+      - {x: -394.57352, y: 863.15625}
+      - {x: -389.4157, y: 870.375}
+      - {x: -389.4157, y: 910.59375}
+      - {x: -400.7629, y: 925.03125}
+    - - {x: -369.81598, y: 925.03125}
+      - {x: -371.87912, y: 907.5}
+      - {x: -371.87912, y: 872.4375}
+      - {x: -368.78442, y: 864.1875}
+      - {x: -363.6266, y: 863.15625}
+      - {x: -334.74277, y: 863.15625}
+      - {x: -332.67966, y: 865.21875}
+      - {x: -332.67966, y: 906.46875}
+      - {x: -340.93216, y: 925.03125}
+    - - {x: -737.05304, y: 983.8125}
+      - {x: -752.5265, y: 978.65625}
+      - {x: -752.5265, y: 943.59375}
+      - {x: -750.4634, y: 929.15625}
+      - {x: -745.30554, y: 927.09375}
+      - {x: -724.67426, y: 927.09375}
+      - {x: -711.2639, y: 964.21875}
+      - {x: -711.2639, y: 982.78125}
+      - {x: -717.4533, y: 983.8125}
+    - - {x: -656.591, y: 983.8125}
+      - {x: -674.12756, y: 983.8125}
+      - {x: -688.5695, y: 978.65625}
+      - {x: -688.5695, y: 936.375}
+      - {x: -687.5379, y: 928.125}
+      - {x: -684.44324, y: 927.09375}
+      - {x: -662.7804, y: 927.09375}
+      - {x: -655.55945, y: 946.6875}
+      - {x: -647.3069, y: 972.46875}
+      - {x: -647.3069, y: 979.6875}
+    - - {x: -610.1706, y: 983.8125}
+      - {x: -624.6125, y: 977.625}
+      - {x: -624.6125, y: 954.9375}
+      - {x: -620.4862, y: 930.1875}
+      - {x: -616.36, y: 927.09375}
+      - {x: -601.918, y: 927.09375}
+      - {x: -594.6971, y: 931.21875}
+      - {x: -583.3499, y: 970.40625}
+      - {x: -583.3499, y: 979.6875}
+      - {x: -592.634, y: 983.8125}
+    - - {x: -560.65546, y: 983.8125}
+      - {x: -560.65546, y: 927.09375}
+      - {x: -530.7401, y: 927.09375}
+      - {x: -527.6454, y: 928.125}
+      - {x: -519.3929, y: 952.875}
+      - {x: -519.3929, y: 983.8125}
+    - - {x: -489.47748, y: 983.8125}
+      - {x: -496.69846, y: 982.78125}
+      - {x: -496.69846, y: 930.1875}
+      - {x: -495.66687, y: 927.09375}
+      - {x: -468.8462, y: 927.09375}
+      - {x: -455.43585, y: 950.8125}
+      - {x: -455.43585, y: 979.6875}
+      - {x: -467.81464, y: 983.8125}
+    - - {x: -424.48892, y: 983.8125}
+      - {x: -432.74142, y: 980.71875}
+      - {x: -432.74142, y: 938.4375}
+      - {x: -431.70987, y: 929.15625}
+      - {x: -430.67828, y: 927.09375}
+      - {x: -398.6998, y: 927.09375}
+      - {x: -391.47885, y: 953.90625}
+      - {x: -391.47885, y: 979.6875}
+      - {x: -397.6682, y: 983.8125}
+    - - {x: -334.74277, y: 983.8125}
+      - {x: -356.40564, y: 983.8125}
+      - {x: -368.78442, y: 979.6875}
+      - {x: -368.78442, y: 941.53125}
+      - {x: -366.72128, y: 929.15625}
+      - {x: -356.40564, y: 927.09375}
+      - {x: -341.9637, y: 927.09375}
+      - {x: -338.86902, y: 930.1875}
+      - {x: -327.52182, y: 968.34375}
+      - {x: -327.52182, y: 980.71875}
+    - - {x: -744.274, y: 1046.7188}
+      - {x: -753.5581, y: 1029.1875}
+      - {x: -753.5581, y: 991.03125}
+      - {x: -718.48486, y: 991.03125}
+      - {x: -718.48486, y: 1035.375}
+      - {x: -731.8952, y: 1046.7188}
+    - - {x: -675.1592, y: 1046.7188}
+      - {x: -688.5695, y: 1038.4688}
+      - {x: -689.6011, y: 1035.375}
+      - {x: -689.6011, y: 1004.4375}
+      - {x: -686.50635, y: 991.03125}
+      - {x: -654.52783, y: 991.03125}
+      - {x: -654.52783, y: 1045.6875}
+      - {x: -658.6541, y: 1046.7188}
+    - - {x: -617.39154, y: 1046.7188}
+      - {x: -624.6125, y: 1031.25}
+      - {x: -624.6125, y: 1002.375}
+      - {x: -621.51776, y: 991.03125}
+      - {x: -594.6971, y: 991.03125}
+      - {x: -591.6024, y: 992.0625}
+      - {x: -591.6024, y: 1034.3438}
+      - {x: -601.918, y: 1046.7188}
+    - - {x: -549.3082, y: 1046.7188}
+      - {x: -558.59235, y: 1037.4375}
+      - {x: -564.78174, y: 1025.0625}
+      - {x: -564.78174, y: 1009.59375}
+      - {x: -558.59235, y: 991.03125}
+      - {x: -523.5191, y: 991.03125}
+      - {x: -523.5191, y: 1044.6562}
+      - {x: -531.77167, y: 1046.7188}
+    - - {x: -487.41437, y: 1046.7188}
+      - {x: -508.04565, y: 1034.3438}
+      - {x: -508.04565, y: 1011.65625}
+      - {x: -495.66687, y: 991.03125}
+      - {x: -455.43585, y: 991.03125}
+      - {x: -452.34116, y: 1004.4375}
+      - {x: -452.34116, y: 1040.5312}
+      - {x: -462.6568, y: 1046.7188}
+    - - {x: -428.61517, y: 1046.7188}
+      - {x: -443.05707, y: 1036.4062}
+      - {x: -443.05707, y: 1016.8125}
+      - {x: -430.67828, y: 991.03125}
+      - {x: -389.4157, y: 991.03125}
+      - {x: -389.4157, y: 1046.7188}
+    - - {x: -361.56345, y: 1046.7188}
+      - {x: -372.91068, y: 1030.2188}
+      - {x: -372.91068, y: 1001.34375}
+      - {x: -369.81598, y: 993.09375}
+      - {x: -365.68973, y: 991.03125}
+      - {x: -331.64807, y: 991.03125}
+      - {x: -331.64807, y: 1043.625}
+      - {x: -336.8059, y: 1046.7188}
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
