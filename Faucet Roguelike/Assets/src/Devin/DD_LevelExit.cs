@@ -14,6 +14,9 @@ public class DD_LevelExit : DD_Obstacle
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
+		//prompt to exit
+		//save
+
 		if(collision.tag == "Player" && mUnlocked) //if Exit is unlocked and player is colliding
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().name);	//reload scene

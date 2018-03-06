@@ -12,5 +12,6 @@ public class Sounds
     public AudioClip clip;
     public AudioSource source;
     public string name;
+    public bool loop;
 
 }

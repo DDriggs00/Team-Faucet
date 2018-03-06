@@ -143,7 +143,7 @@ public class AP_DungeonGenerator : MonoBehaviour {
             isValid = true;
             Vector2 curDir = dirs[curDirIndex];
             
-            int exitRoom = 0;
+//            int exitRoom = 0;
             // initialize another vector array with unit positions based on random direction curDirIndex and random dir perp to that random direction
             // 0,0 is bottom left of big room
             if (dirs[curDirIndex] == mNorth)

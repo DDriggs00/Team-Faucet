@@ -51,4 +51,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efae274564236b141b31aba556659936, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - volume: 0
+    pitch: 0
+    clip: {fileID: 8300000, guid: 64ab4b86fe44cda4c8404e551f77b5b6, type: 3}
+    source: {fileID: 0}
+    name: 
+    loop: 0
+  - volume: 0
+    pitch: 0
+    clip: {fileID: 8300000, guid: 557c1a1bc2dd6f147b918af826526818, type: 3}
+    source: {fileID: 0}
+    name: 
+    loop: 0
+  - volume: 0
+    pitch: 0
+    clip: {fileID: 8300000, guid: 59b428849a462bb4e85b526fe4ed5c16, type: 3}
+    source: {fileID: 0}
+    name: 
+    loop: 0
+  - volume: 0
+    pitch: 0
+    clip: {fileID: 8300000, guid: 64ab4b86fe44cda4c8404e551f77b5b6, type: 3}
+    source: {fileID: 0}
+    name: 
+    loop: 0
+  - volume: 0
+    pitch: 0
+    clip: {fileID: 8300000, guid: 5857fd0da8654bc428a846721e80f9e3, type: 3}
+    source: {fileID: 0}
+    name: 
+    loop: 0
+  - volume: 0.05
+    pitch: 1
+    clip: {fileID: 8300000, guid: c5ebaeaa48758154c82c56cbf23caf67, type: 3}
+    source: {fileID: 0}
+    name: 
+    loop: 1
+  - volume: 0
+    pitch: 0
+    clip: {fileID: 8300000, guid: 5105ced06e40adf4cb1c9ae825b08ac9, type: 3}
+    source: {fileID: 0}
+    name: 
+    loop: 1
+  - volume: 0
+    pitch: 0
+    clip: {fileID: 8300000, guid: 2b4d5a649efa9b5468a199005cb384bd, type: 3}
+    source: {fileID: 0}
+    name: swordSwing
+    loop: 0
+  - volume: 0
+    pitch: 0
+    clip: {fileID: 8300000, guid: e99f1cf1399580446852a19cce663da7, type: 3}
+    source: {fileID: 0}
+    name: levelFinish
+    loop: 0
+  placeHolderTheme: 0

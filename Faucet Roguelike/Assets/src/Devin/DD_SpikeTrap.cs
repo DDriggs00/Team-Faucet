@@ -5,25 +5,20 @@ using UnityEngine;
 public class DD_SpikeTrap : DD_Obstacle 
 {
 	private uint mDamage = 10;
+	private static int mObstaclesCreated = 0;
 
-	public void create()
+//Do on Initialization
+	void Start()
 	{
-		Debug.Log("Spike Trap Created");
+		// mDamage = Random(seed + mObstaclesCreated * 5)
 	}
-
-	public void create(uint d)
-	{
-		mDamage = d;
-		Debug.Log("Spike Trap Created with damage " + d);
-	}
-
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if(collision.tag == "Player")
 		{
 			LH_Health playerHP = collision.gameObject.GetComponent<LH_Health>();
 			playerHP.doDamage(mDamage);
-			Debug.Log("Player damaged");
+			// Debug.Log("Player damaged");
 		}
 	}
 }
