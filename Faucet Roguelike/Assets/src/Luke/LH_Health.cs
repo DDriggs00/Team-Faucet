@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 public class LH_Health : MonoBehaviour {
-	private int healthPoints;
+	private int healthPoints = 100;
 	private void changeHealth(int changeAmt)
 	{
 		if ( (changeAmt + healthPoints) <= 100)
@@ -11,16 +11,30 @@ public class LH_Health : MonoBehaviour {
 		{
 			healthPoints += changeAmt;
 		}
+		else if ( (changeAmt + healthPoints) >= 100)
+		{
+			healthPoints = 100;
+		}
+
+		if(healthPoints < 0)
+		{
+			Debug.Log("LH_Health: Player died.");
+			healthPoints = 100;
+		}
+		Debug.Log("LH_Health: HP changed to: " + healthPoints);
+
 	}
 	public void doDamage(uint dmgAmt)
 	/*must call with a positive amount for damage */
 	{
 		int a = Convert.ToInt32(dmgAmt);
+		//play sound
 		changeHealth(-a);
 	}
 	public void Heal(int healAmt)
 	{
 		changeHealth(healAmt);
+		//play sound
 	}
 	public int getHP()
 	{
@@ -29,6 +43,7 @@ public class LH_Health : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		//Debug.Log("Instance of LH_Health Created...");
 		
 	}
 	

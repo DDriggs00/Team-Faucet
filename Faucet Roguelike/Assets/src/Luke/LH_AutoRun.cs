@@ -17,7 +17,9 @@ public class LH_AutoRun : MonoBehaviour
 		pathThroughDungeon=FindObjectOfType<AP_DungeonGenerator>().GetPathThroughDungeon();
 		//gets list of Vector2's that guide the Player through level
         playerMovement = FindObjectOfType<LH_Movement>();
-		//creates an instance of LH_Movment to guide Player through level
+        //creates an instance of LH_Movment to guide Player through level
+        playerMovement.speedCoefficient=5;
+		//Slows demo down a bit.
 	}
 	void Update () {
 	}
@@ -28,7 +30,7 @@ public class LH_AutoRun : MonoBehaviour
 		//Debug.Log("Distance: " + dist);
 		if(dist<minDist)
 		{
-            Debug.Log("Incrementing Index");
+            //Debug.Log("Incrementing Index");
 			nextIndex++;
 			//return;
 		}
