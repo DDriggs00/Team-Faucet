@@ -87,3 +87,9 @@ MonoBehaviour:
     type: 2}
   cOpenFloor: {fileID: 1322480809054300, guid: 34df4b6fa97da1e4c94320685f5b99a9, type: 2}
   mUnitSize: 15
+  roomType: 0
+  traps: []
+  treasure: []
+  enemies: []
+  obstacles:
+  - {fileID: 1177484476955890, guid: 416b2fb0d775f0147bc6ff63eadf6d16, type: 2}

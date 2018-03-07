@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DungeonTiles : MonoBehaviour {
-    [SerializeField]
-    GameObject topLeftWall, topRightWall, botLeftWall, botRightWall,
-                    midLeftWall, midRightWall, midTopWall, midBotWall,
-                    leftDoor, rightDoor, botDoor, topDoor, floor;
-    public enum WallPos { top, bot, left, right, topLeft, topRight, botLeft, botRight };
-    public enum DoorPos { top, bot, left, right };
-    /*
+	[SerializeField]
+	GameObject topLeftWall, topRightWall, botLeftWall, botRightWall,
+	midLeftWall, midRightWall, midTopWall, midBotWall,
+	leftDoor, rightDoor, botDoor, topDoor, floor;
+	public enum WallPos { top, bot, left, right, topLeft, topRight, botLeft, botRight };
+	public enum DoorPos { top, bot, left, right };
+	/*
     public GameObject GetWall (WallPos p)
     {
         switch (p)
