@@ -4,22 +4,30 @@ using UnityEngine;
 using System;
 public class LH_Health : MonoBehaviour {
 	private int healthPoints = 100;
+	LH_Attack attack;
+    void Start()
+    {
+        attack = this.GetComponent<LH_Attack>();
+    }
 	private void changeHealth(int changeAmt)
 	{
-		if ( (changeAmt + healthPoints) <= 100)
-		/*checks to make sure hp stays under 100 */
+		if(attack.isInvincible==false)
 		{
-			healthPoints += changeAmt;
-		}
-		else if ( (changeAmt + healthPoints) >= 100)
-		{
-			healthPoints = 100;
-		}
+			if ( (changeAmt + healthPoints) <= 100)
+			/*checks to make sure hp stays under 100 */
+			{
+				healthPoints += changeAmt;
+			}
+			else if ( (changeAmt + healthPoints) >= 100)
+			{
+				healthPoints = 100;
+			}
 
-		if(healthPoints < 0)
-		{
-			Debug.Log("LH_Health: Player died.");
-			healthPoints = 100;
+			if(healthPoints < 0)
+			{
+				Debug.Log("LH_Health: Player died.");
+				healthPoints = 100;
+			}
 		}
 		Debug.Log("LH_Health: HP changed to: " + healthPoints);
 
@@ -40,12 +48,7 @@ public class LH_Health : MonoBehaviour {
 	{
 		return healthPoints;
 	}
-
 	// Use this for initialization
-	void Start () {
-		//Debug.Log("Instance of LH_Health Created...");
-		
-	}
 	
 	// Update is called once per frame
 	void Update () {

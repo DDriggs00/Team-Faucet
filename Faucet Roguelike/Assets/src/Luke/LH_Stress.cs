@@ -6,39 +6,27 @@ using System;
 public class LH_Stress : MonoBehaviour
 {
     List<Vector2> pathThroughDungeon;
-    int nextIndex = 1; //index of next waypoint
-    private Vector2 normDir;
-    //normalized vector in the direction of the next waypoint
+    private Vector2 randomDir;
     LH_Movement playerMovement;
-    System.Random rand = new System.Random();
-
-    //AudioManager audio = FindObjectOfType<AudioManager>();
-
+    System.Random randNum = new System.Random();
     private float horz, vert;
-
-    //List < Vector2 > yourList = myfunction();
     void Start()
     {
-        //FindObjectOfType<AudioManager>().zgStressTest();
         pathThroughDungeon = FindObjectOfType<AP_DungeonGenerator>().GetPathThroughDungeon();
         //gets list of Vector2's that guide the Player through level
         playerMovement = this.GetComponent<LH_Movement>();
-        //playerMovement = FindObjectOfType<LH_Movement>() as LH_Movement;
-        //creates an instance of LH_Movment to guide Player through level
-        playerMovement.speedCoefficient = 50;
-        //Speeds demo up.
+        playerMovement.speedCoefficient = 50; //speeds demo up
+
     }
     void Update()
     {
     }
-
     void FixedUpdate()
     {
-        horz=rand.Next(-10,10);
-        vert=rand.Next(-10,10);
+        horz=randNum.Next(-10,10);
+        vert=randNum.Next(-10,10);
 
-        normDir.Set(horz,vert); 
-        normDir.Normalize();
-        playerMovement.movePlayer(normDir);
+        randomDir.Set(horz,vert); 
+        playerMovement.movePlayer(randomDir);
     }
 }

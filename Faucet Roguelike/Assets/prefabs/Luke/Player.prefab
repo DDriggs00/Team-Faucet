@@ -19,6 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4126712361705224}
+  - component: {fileID: 114125446528493884}
   - component: {fileID: 114534866732254322}
   - component: {fileID: 114195659407110166}
   - component: {fileID: 114445040331906844}
@@ -94,6 +95,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2de867e1fb34c74e9dbc09dfc81d8e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114125446528493884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979723690872998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4abe299a715be5747b6ee473ecd3c0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyCollision: 0
+  usingWeapon: 0
+  facingEnemy: 0
+  isInvincible: 0
 --- !u!114 &114195659407110166
 MonoBehaviour:
   m_ObjectHideFlags: 1

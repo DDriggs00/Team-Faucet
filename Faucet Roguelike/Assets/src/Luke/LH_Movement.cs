@@ -38,7 +38,7 @@ public class LH_Movement : MonoBehaviour
 
     public void movePlayer(Vector2 dir)
 	{
-        //FindObjectOfType<AudioManager>().playSound("swordSwing");
+        dir.Normalize();
 		rigidPlayer.velocity=dir*speedCoefficient;
 	}
 }

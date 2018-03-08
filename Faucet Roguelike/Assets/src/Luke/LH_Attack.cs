@@ -3,15 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LH_Attack : MonoBehaviour {
-
 	// Use this for initialization
-
-	//AudioManager audio = FindObjectOfType<AudioManager>();
-	//LH_Movement movingPlayer = FindObjectOfType<LH_Movement>();
-	//Rigidbody2D ridgid
+    public bool enemyCollision;
+    public bool usingWeapon;
+    public bool facingEnemy;
+    public bool isInvincible;
 
 	void Start () {
-		
+        enemyCollision=false;
+        usingWeapon=false;
+        facingEnemy=false;
+        isInvincible=false;	
 	}
 	
 	// Update is called once per frame
@@ -20,16 +22,15 @@ public class LH_Attack : MonoBehaviour {
 	}
 	void FixedUpdate()
 	{
-        //audio.playSound("swordSwing");
-        //OnTriggerEnter2D(movingPlayer.rigidPlayer);
+        
     }
-    /*
-    private void OnTriggerEnter2D(Collider2D collision)
+    public bool canTakeDamage()
     {
-        if (collision.tag == "Enemy")
+        if(!isInvincible)
         {
-            audio.playSound("swordSwing");
+           return false;
         }
+        else
+            return true;
     }
-    */
 }
