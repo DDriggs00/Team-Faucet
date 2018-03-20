@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class LH_Attack : MonoBehaviour {
-
 	// Use this for initialization
+    public bool enemyCollision;
+    public bool usingWeapon;
+    public bool facingEnemy;
+    public bool isInvincible;
 
-	AudioManager audio = FindObjectOfType<AudioManager>();
 	void Start () {
-		
+        enemyCollision=false;
+        usingWeapon=false;
+        facingEnemy=false;
+        isInvincible=false;	
 	}
 	
 	// Update is called once per frame
@@ -17,19 +22,15 @@ public class LH_Attack : MonoBehaviour {
 	}
 	void FixedUpdate()
 	{
-        //LH_Health playerHP = collision.gameObject.GetComponent<LH_Health>();
-		//Enemy gameEnemy = collision
-	
-	}
-    private void OnTriggerEnter2D(Collider2D collision)
+        
+    }
+    public bool canTakeDamage()
     {
-        if (collision.tag == "Enemy")
+        if(!isInvincible)
         {
-            audio.playSound("swordSwing");
-			//collision.gameObject.GetComponent<Enemy>
-			//LH_Health playerHP = collision.gameObject.GetComponent<LH_Health>();
-            //playerHP.doDamage(mDamage);
-            // Debug.Log("Player damaged");
+           return false;
         }
+        else
+            return true;
     }
 }

@@ -16,7 +16,7 @@ public abstract class AP_RoomType : MonoBehaviour {
 
 	public virtual void SetBounds(AP_Room room)
 	{
-		
+
 		center = room.GetPosition();
 		size = room.GetSize();
 		extents = size / 2f;
