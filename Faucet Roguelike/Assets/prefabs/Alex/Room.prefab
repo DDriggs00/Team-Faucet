@@ -86,6 +86,31 @@ MonoBehaviour:
   cStraightWall: {fileID: 1217974450606466, guid: 741a43c15abf04045b2117c919949f97,
     type: 2}
   cOpenFloor: {fileID: 1322480809054300, guid: 34df4b6fa97da1e4c94320685f5b99a9, type: 2}
+  cDoorEdges:
+  - {fileID: 1858673196762196, guid: c98b957dfbec46143afaa29f5f0b3e7c, type: 2}
+  - {fileID: 1388069077031412, guid: bf5798ad33498f648bb6a8e78ed48cdf, type: 2}
+  - {fileID: 1884405521967828, guid: d4b6cb0f47f3428438408b651ed90084, type: 2}
+  - {fileID: 1605823168387770, guid: d00d3459281be164c90c47e7233c8fbc, type: 2}
+  cWallEdges:
+  - {fileID: 1695500769789736, guid: 48247b0d9d8a2e34e97f3e71b30295a1, type: 2}
+  - {fileID: 1491002163107520, guid: 8f8d81c4c66a8844695d9d301fc70559, type: 2}
+  - {fileID: 1759244388521776, guid: 95a70a3adb1e44e42adb6717e4b61d33, type: 2}
+  - {fileID: 1376674119426228, guid: 2482ab0ce73174b4481c5a4a0587e387, type: 2}
+  cOpenEdges:
+  - {fileID: 1229889620411772, guid: 445f2ce20683661409fa7b0fcdf902c1, type: 2}
+  - {fileID: 1140018960147458, guid: 2137c77e256c4a24990a118b783c245e, type: 2}
+  - {fileID: 1529145070251070, guid: 39675d75d57c3714792b4f0a97f7f0c8, type: 2}
+  - {fileID: 1370017066954242, guid: bb6a8bcf8683d3e409d9d4b010c6365a, type: 2}
+  cInnerCorners:
+  - {fileID: 1183870161752076, guid: bdebeb016c249d045bf7501609ce0d50, type: 2}
+  - {fileID: 1815002089605272, guid: c05090708debb42469033ab7f9793317, type: 2}
+  - {fileID: 1470725515606128, guid: 0b2f471b3ba294b4ca339279b9679121, type: 2}
+  - {fileID: 1749715385969970, guid: 4ec0c02da8a18e14dbddd3fdfc8e4528, type: 2}
+  cWallSegments:
+  - {fileID: 1196022562811706, guid: 7e55a607a47121444b88b1f9a09d337a, type: 2}
+  - {fileID: 1289622006044222, guid: 67040b69091453349b16271b393de8ea, type: 2}
+  - {fileID: 1478018013749662, guid: 62c1debb5ce98bf4bbbca6f7be597ef1, type: 2}
+  - {fileID: 1263490088965640, guid: 28d1cadfa46761749979f9d80f24a8b2, type: 2}
   mUnitSize: 15
   roomType: 0
   traps: []
