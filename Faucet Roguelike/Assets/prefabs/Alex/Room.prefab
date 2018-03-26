@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4041930075507494}
   - component: {fileID: 114277234232807782}
   - component: {fileID: 61497167558194278}
+  - component: {fileID: 114821097951750852}
   m_Layer: 0
   m_Name: Room
   m_TagString: Room
@@ -118,3 +119,15 @@ MonoBehaviour:
   enemies: []
   obstacles:
   - {fileID: 1177484476955890, guid: 416b2fb0d775f0147bc6ff63eadf6d16, type: 2}
+--- !u!114 &114821097951750852
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1471853501270712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 611ce31bac1ed484491b41e52fe15407, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  block: {fileID: 1138737064719460, guid: eab4c938b2bafb44ca61566d19758a29, type: 2}
