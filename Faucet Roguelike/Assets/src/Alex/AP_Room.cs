@@ -7,6 +7,9 @@ public class AP_Room : MonoBehaviour
 	public GameObject cDoorEdge, cOpenEdge, cWallEdge, cFloor;
 	public GameObject cWallCorner, cStraightWall, cOpenFloor;
 
+	public GameObject[] cDoorEdges, cWallEdges, cOpenEdges,	// 0 is top, 1 left, 2 bot, 3 right, think counter-clockwise
+						cInnerCorners,	// 0 top left, work counterclockwise
+						cWallSegments;	// 0 top, work counterclockwise
 	[SerializeField]
 	float mUnitSize = 15;
 
@@ -40,9 +43,9 @@ public class AP_Room : MonoBehaviour
 	{
 		for(int i = 0; i < 4; i++)
 		{
-			GameObject newEdge = Instantiate(GetEdge(mRoomEdges[i]));
+			GameObject newEdge = Instantiate(GetEdge(mRoomEdges[i], i));
 			newEdge.transform.position = mUnitPos * mUnitSize;
-			newEdge.transform.rotation = Quaternion.Euler(new Vector3(0, 0, i * 90));
+//			newEdge.transform.rotation = Quaternion.Euler(new Vector3(0, 0, i * 90));
 			newEdge.transform.parent = this.transform;
 		}
 		//Generate Corners
@@ -53,80 +56,26 @@ public class AP_Room : MonoBehaviour
 			float rotation = 90;
 			switch (c) 
 			{
-			case 0:	// top left
-				cornerObj = cWallCorner;
+			case 0:		//top left
+				cornerObj = GetCorner(c, 0, 1);
 				cornerPos = new Vector2 (-mUnitSize / 2 + .5f, mUnitSize / 2 - .5f);
-				if (mRoomEdges [0] == EdgeType.open) { 		// north open
-					if (mRoomEdges [1] == EdgeType.open)	// west open
-						cornerObj = cOpenFloor;
-					else {
-						cornerObj = cStraightWall;
-						rotation = 90;
-					}
-				} else if (mRoomEdges [1] == EdgeType.open) 
-				{
-					cornerObj = cStraightWall;
-					rotation = 0;
-				}
 				break;
-			case 1:	//bottom left
-				cornerObj = cWallCorner;
+			case 1: 	// bot left
+				cornerObj = GetCorner(c, 2, 1);
 				cornerPos = new Vector2 (-mUnitSize / 2 + .5f, -mUnitSize / 2 + .5f);
-				if (mRoomEdges [1] == EdgeType.open) 		// west open
-				{
-					if (mRoomEdges [2] == EdgeType.open)	// south open
-						cornerObj = cOpenFloor;
-					else 
-					{
-						cornerObj = cStraightWall;
-						rotation = 180;
-					}
-				}
-				else if (mRoomEdges [2] == EdgeType.open)
-					cornerObj = cStraightWall;
 				break;
-			case 2: // bottom right
-				cornerObj = cWallCorner;
+			case 2: 	// bot right
+				cornerObj = GetCorner(c, 2, 3);
 				cornerPos = new Vector2 (mUnitSize / 2 - .5f, -mUnitSize / 2 + .5f);
-				if (mRoomEdges [2] == EdgeType.open) { 		// south open
-					if (mRoomEdges [3] == EdgeType.open)	// east open
-						cornerObj = cOpenFloor;
-					else {
-						cornerObj = cStraightWall;
-						rotation = -90;
-					}
-				} else if (mRoomEdges [3] == EdgeType.open) 
-				{
-					cornerObj = cStraightWall;
-					rotation = 180;
-				}
 				break;
-			case 3: // top right
-				cornerObj = cWallCorner;
+			default:	// top right
+				cornerObj = GetCorner(c, 0, 3);
 				cornerPos = new Vector2 (mUnitSize / 2 - .5f, mUnitSize / 2 - .5f);
-				if (mRoomEdges [3] == EdgeType.open) { 		// east open
-					if (mRoomEdges [0] == EdgeType.open)	// north open
-						cornerObj = cOpenFloor;
-					else 
-					{
-						cornerObj = cStraightWall;
-						rotation = 0;
-					}
-				} else if (mRoomEdges [0] == EdgeType.open) 
-				{
-					cornerObj = cStraightWall;
-					rotation = -90;
-				}
 				break;
 			}
 			GameObject newCorner = Instantiate (cornerObj);
 			newCorner.transform.parent = this.transform;
 			newCorner.transform.localPosition = cornerPos;
-			if (cornerObj == cWallCorner)
-				newCorner.transform.rotation = Quaternion.Euler (new Vector3 (0, 0, c * 90));
-			else if (cornerObj == cStraightWall) {
-				newCorner.transform.rotation = Quaternion.Euler(new Vector3 (0,0,rotation));
-			}
 		}
 
 
@@ -225,18 +174,70 @@ public class AP_Room : MonoBehaviour
 			return 3;
 	}
 
-	GameObject GetEdge(EdgeType et)
+	GameObject GetEdge(EdgeType et, int side)
 	{
 		switch (et)
 		{
 		case EdgeType.door:
-			return cDoorEdge;
+			return cDoorEdges[side];
 		case EdgeType.open:
-			return cOpenEdge;
+			return cOpenEdges[side];
 		case EdgeType.wall:
-			return cWallEdge;
+			return cWallEdges[side];
 		}
-		return cWallEdge;
+		return cWallEdges[side];
+	}
+
+	GameObject GetCorner(int corner, int vertSide, int horSide)
+	{
+		// if sideOne and SideTwo are both open, return floor tile
+		if (mRoomEdges [vertSide] == EdgeType.open && mRoomEdges [horSide] == EdgeType.open)
+		{
+			return cOpenFloor;
+		}
+		// if sideOne and Side Two are neither open, return wall corner
+		else if (mRoomEdges [vertSide] != EdgeType.open && mRoomEdges [horSide] != EdgeType.open)
+		{
+			return cInnerCorners [corner];
+		}
+		// if only one side is open, return a wall edge
+		else
+		{
+			if(mRoomEdges[vertSide] == EdgeType.open)
+			{
+				switch(corner)
+				{
+				case 0:			// top left, return left wall
+					// break left out intentionally
+				case 1:			// bot left, return left wall
+					return cWallSegments[1];
+					break;
+				case 2:			// bot right, return right wall
+	//				break left out intentionally
+				default:		// top right, return right wall
+					return cWallSegments[3];
+					break;
+				}
+			}
+			else
+			{
+				switch(corner)
+				{
+				case 0:			// top left, return top wall
+					return cWallSegments[0];
+					break;
+				case 1:			// bot left, return bot wall
+					// break left out intentionally
+				case 2:			// bot right, return bot wall
+					return cWallSegments[2];
+					break;
+				default:		// top right, return top wall
+					return cWallSegments [0];
+					break;
+				}
+			}
+		}
+
 	}
 
 	public void SetRoomType(RoomType rType)

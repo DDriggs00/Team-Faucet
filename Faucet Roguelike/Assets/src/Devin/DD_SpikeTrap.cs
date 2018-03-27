@@ -5,7 +5,6 @@ using UnityEngine;
 public class DD_SpikeTrap : DD_Obstacle 
 {
 	private uint mDamage = 10;
-	private static int mObstaclesCreated = 0;
 
 //Do on Initialization
 	void Start()
