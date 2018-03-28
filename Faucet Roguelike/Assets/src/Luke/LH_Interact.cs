@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LH : MonoBehaviour {
+public class LH_Interact : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

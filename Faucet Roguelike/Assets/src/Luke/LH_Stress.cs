@@ -5,17 +5,17 @@ using System;
 
 public class LH_Stress : MonoBehaviour
 {
-    List<Vector2> pathThroughDungeon;
-    private Vector2 randomDir;
-    LH_Movement playerMovement;
-    System.Random randNum = new System.Random();
-    private float horz, vert;
+    List<Vector2> mPathThroughDungeon;
+    private Vector2 mRandomDir;
+    LH_Movement mPlayerMovment;
+    System.Random mRandNum = new System.Random();
+    private float mHorz, mVert;
     void Start()
     {
-        pathThroughDungeon = FindObjectOfType<AP_DungeonGenerator>().GetPathThroughDungeon();
+        mPathThroughDungeon = FindObjectOfType<AP_DungeonGenerator>().GetPathThroughDungeon();
         //gets list of Vector2's that guide the Player through level
-        playerMovement = this.GetComponent<LH_Movement>();
-        playerMovement.speedCoefficient = 50; //speeds demo up
+        mPlayerMovment = this.GetComponent<LH_Movement>();
+        mPlayerMovment.mSpeedCoefficient = 50; //speeds demo up
 
     }
     void Update()
@@ -23,10 +23,10 @@ public class LH_Stress : MonoBehaviour
     }
     void FixedUpdate()
     {
-        horz=randNum.Next(-10,10);
-        vert=randNum.Next(-10,10);
+        mHorz=mRandNum.Next(-10,10);
+        mVert=mRandNum.Next(-10,10);
 
-        randomDir.Set(horz,vert); 
-        playerMovement.movePlayer(randomDir);
+        mRandomDir.Set(mHorz,mVert); 
+        mPlayerMovment.movePlayer(mRandomDir);
     }
 }

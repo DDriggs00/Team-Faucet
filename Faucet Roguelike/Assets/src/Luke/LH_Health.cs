@@ -3,33 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 public class LH_Health : MonoBehaviour {
-	private int healthPoints = 100;
-	LH_Attack attack;
+	private int mHealthPoints = 100;
+	LH_Attack mAttack;
     void Start()
     {
-        attack = this.GetComponent<LH_Attack>();
+        mAttack = this.GetComponent<LH_Attack>();
     }
 	private void changeHealth(int changeAmt)
 	{
-		if(attack.isInvincible==false)
+		if(mAttack.mIsInvincible==false)
 		{
-			if ( (changeAmt + healthPoints) <= 100)
+			if ( (changeAmt + mHealthPoints) <= 100)
 			/*checks to make sure hp stays under 100 */
 			{
-				healthPoints += changeAmt;
+				mHealthPoints += changeAmt;
 			}
-			else if ( (changeAmt + healthPoints) >= 100)
+			else if ( (changeAmt + mHealthPoints) >= 100)
 			{
-				healthPoints = 100;
+				mHealthPoints = 100;
 			}
 
-			if(healthPoints < 0)
+			if(mHealthPoints < 0)
 			{
 				Debug.Log("LH_Health: Player died.");
-				healthPoints = 100;
+				mHealthPoints = 100;
 			}
 		}
-		Debug.Log("LH_Health: HP changed to: " + healthPoints);
+		Debug.Log("LH_Health: HP changed to: " + mHealthPoints);
 
 	}
 	public void doDamage(uint dmgAmt)
@@ -46,7 +46,7 @@ public class LH_Health : MonoBehaviour {
 	}
 	public int getHP()
 	{
-		return healthPoints;
+		return mHealthPoints;
 	}
 	// Use this for initialization
 	

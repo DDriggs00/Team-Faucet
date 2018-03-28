@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class LH_Movement : MonoBehaviour 
 {
-	public Rigidbody2D rigidPlayer;
-	public int speedCoefficient=5;
-    Vector2 userInput;
+	public Rigidbody2D mRigidPlayer;
+	public int mSpeedCoefficient=5;
+    Vector2 mUserInput;
 
 
     // Use this for initialization
     void Start () 
 	{
 		//Debug.Log("The Player is here!");
-        rigidPlayer = GetComponent<Rigidbody2D>();
+        mRigidPlayer = GetComponent<Rigidbody2D>();
 
 	}
 
 	// Update is called once per frame
 	void Update () 
 	{
-        userInput = GetMoveInput();
+        mUserInput = GetMoveInput();
     }
 
     Vector2 GetMoveInput()
@@ -33,13 +33,13 @@ public class LH_Movement : MonoBehaviour
 
     void FixedUpdate()
 	{
-        movePlayer(userInput);
+        movePlayer(mUserInput);
 	}
 
     public void movePlayer(Vector2 dir)
 	{
         dir.Normalize();
-		rigidPlayer.velocity=dir*speedCoefficient;
+		mRigidPlayer.velocity=dir*mSpeedCoefficient;
 	}
 }
 

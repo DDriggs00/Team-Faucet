@@ -24,11 +24,12 @@ GameObject:
   - component: {fileID: 114195659407110166}
   - component: {fileID: 114445040331906844}
   - component: {fileID: 50210519119845838}
-  - component: {fileID: 58774673422807582}
   - component: {fileID: 114848781454513370}
   - component: {fileID: 212990137843214514}
   - component: {fileID: 114088229207964590}
   - component: {fileID: 114638307981935532}
+  - component: {fileID: 61840522216432522}
+  - component: {fileID: 58774673422807582}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -75,7 +76,7 @@ CircleCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1979723690872998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -84,6 +85,31 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.3
+--- !u!61 &61840522216432522
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979723690872998}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.38, y: 0.53}
+    newSize: {x: 0.32, y: 0.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.38, y: 0.53}
+  m_EdgeRadius: 0
 --- !u!114 &114088229207964590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -106,10 +132,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4abe299a715be5747b6ee473ecd3c0d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCollision: 0
-  usingWeapon: 0
-  facingEnemy: 0
-  isInvincible: 0
+  mEnemyCollision: 0
+  mUsingWeapon: 0
+  mFacingEnemy: 0
+  mIsInvincible: 0
 --- !u!114 &114195659407110166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,8 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c41a241b1dea3b34aafa29109732da79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rigidPlayer: {fileID: 0}
-  speedCoefficient: 5
+  mRigidPlayer: {fileID: 0}
+  mSpeedCoefficient: 5
 --- !u!114 &114534866732254322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -151,7 +177,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1979723690872998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a35a8b379793f81499337dbee18e7179, type: 3}
   m_Name: 

@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class LH_Attack : MonoBehaviour {
 	// Use this for initialization
-    public bool enemyCollision;
-    public bool usingWeapon;
-    public bool facingEnemy;
-    public bool isInvincible;
+    public bool mEnemyCollision;
+    public bool mUsingWeapon;
+    public bool mFacingEnemy;
+    public bool mIsInvincible;
 
 	void Start () {
-        enemyCollision=false;
-        usingWeapon=false;
-        facingEnemy=false;
-        isInvincible=false;	
+        mEnemyCollision=false;
+        mUsingWeapon=false;
+        mFacingEnemy=false;
+        mIsInvincible=false;	
 	}
 	
 	// Update is called once per frame
@@ -26,7 +26,7 @@ public class LH_Attack : MonoBehaviour {
     }
     public bool canTakeDamage()
     {
-        if(!isInvincible)
+        if(!mIsInvincible)
         {
            return false;
         }
