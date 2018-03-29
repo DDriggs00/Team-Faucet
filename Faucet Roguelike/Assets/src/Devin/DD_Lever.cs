@@ -10,6 +10,8 @@ public class DD_Lever : DD_Obstacle
 	DD_Lever()
 	{
 		Debug.Log("Lever Created");
+		SetObstacleType(ObstacleType.lever);
+		addObstacle();
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -17,8 +19,8 @@ public class DD_Lever : DD_Obstacle
 
 		if(collision.tag == "Player")
 		{
-			// LH_Interact playerInteract = collision.gameObject.GetComponent<LH_Interact>();
-			// playerInteract.showInteraction(this);
+			LH_Interact playerInteract = collision.gameObject.GetComponent<LH_Interact>();
+			playerInteract.AssignInteractible(this);
 			mCanActivate = true;
 			Debug.Log("Player Lever Message Shown");
 		}
@@ -28,15 +30,22 @@ public class DD_Lever : DD_Obstacle
 	{
 		if(collision.tag == "Player")
 		{
-			// LH_Health playerInteract = collision.gameObject.GetComponent<LH_Interact>();
-			// playerInteract.hideInteraction(this);
+			LH_Interact playerInteract = collision.gameObject.GetComponent<LH_Interact>();
+			playerInteract.RemoveInteractible(this);
 			mCanActivate = false;
 			Debug.Log("Player Lever Message Hidden");
 		}
 	}
 
 	private void Interact() {
-		
+		if(mLeverState) {
+			// BlockDoor();
+			mLeverState = false;
+		}
+		else {
+			// BreakBlocks();
+			mLeverState = true;
+		}
 	}
 	
 }
