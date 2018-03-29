@@ -27,6 +27,9 @@ public class AP_RoomPopulator : MonoBehaviour {
 	private List <Vector3> gridPositions = new List <Vector3> ();	//A list of possible locations to place tiles.
 
 	AP_Room room;
+	AP_RoomType rType;
+//ROOM TYPE should be built in to the room populator
+// Room populator should be abstract and each child room type class should then determine its populating items.
 
 	public void Setup(AP_Room r)
 	{
@@ -34,6 +37,7 @@ public class AP_RoomPopulator : MonoBehaviour {
 		rows = r.GetSize () - 3;
 		columns = rows;
 		offset = r.GetPosition ();
+		rType = room.GetComponent<AP_RoomType> ();
 	}
 
 	//Clears our list gridPositions and prepares it to generate a new board.
@@ -88,6 +92,8 @@ public class AP_RoomPopulator : MonoBehaviour {
 			GameObject tileChoice = tileArray[Random.Range (0, tileArray.Length)];
 
 			//Instantiate tileChoice at the position returned by RandomPosition with no change in rotation
+
+
 			GameObject newObj = Instantiate(tileChoice);//, randomPosition + offset, Quaternion.identity);
 			newObj.transform.parent = room.transform;
 			newObj.transform.localPosition = randomPosition;

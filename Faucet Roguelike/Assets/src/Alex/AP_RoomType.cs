@@ -4,6 +4,11 @@ using UnityEngine;
 
 public abstract class AP_RoomType : MonoBehaviour {
 
+
+	// THOUGHTS
+	// method to return list of items and enemies to the AP_RoomPopulator class to use to populate room
+	// perhaps return a struct that contains a list of items and a list of enemies
+
 	protected Vector2 center;
 	protected int size;
 	protected float extents;
@@ -13,6 +18,12 @@ public abstract class AP_RoomType : MonoBehaviour {
 	// track positions of enemies and items placed so far to avoid overlapping object placement.
 	protected List<Vector2> enemyPositions;
 	protected List<Vector2> itemPositions;
+
+	protected struct population
+	{
+		List<GameObject> enemies;
+		List<GameObject> items;
+	}
 
 	public virtual void SetBounds(AP_Room room)
 	{

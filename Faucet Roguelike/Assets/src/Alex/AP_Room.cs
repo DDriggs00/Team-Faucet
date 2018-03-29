@@ -35,6 +35,7 @@ public class AP_Room : MonoBehaviour
 		SetUnitPos(pos);
 		this.transform.position = pos * mUnitSize;
 		SetID(id);
+// ADD ROOM POPULATOR BASED ON ROOM TYPE
 		roomPop = gameObject.AddComponent<AP_RoomPopulator> ();
 		roomPop.Setup (this);
 	}
