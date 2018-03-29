@@ -4,16 +4,21 @@ using UnityEngine;
 
 public class DD_HealSpot : DD_Obstacle 
 {
-	private int mHealing = 10;
+	private int mHealing;	//Amount of HP to heal
 	DD_HealSpot()
 	{
+		mHealing = 10;
 		Debug.Log("Heal Spot Created");
+		SetObstacleType(ObstacleType.healSpot);
+		addObstacle();
 	}
 
 	DD_HealSpot(int h)
 	{
 		mHealing = h;
 		Debug.Log("Heal Spot Created");
+		SetObstacleType(ObstacleType.healSpot);
+		addObstacle();
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -22,7 +27,7 @@ public class DD_HealSpot : DD_Obstacle
 		{
 			LH_Health playerHP = collision.gameObject.GetComponent<LH_Health>();
 			playerHP.Heal(mHealing);
-			// Debug.Log("Player Health = " + playerHP.getHP());
+			Destroy(this.gameObject);
 		}
 	}
 }

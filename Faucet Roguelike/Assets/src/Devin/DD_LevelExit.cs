@@ -9,7 +9,7 @@ public class DD_LevelExit : DD_Obstacle
 
 	DD_LevelExit()
 	{	
-		Debug.Log("LevelExit Created");
+		Debug.Log("Level Exit Created");
 		SetObstacleType(ObstacleType.levelExit);
 		addObstacle(); 
 	}
