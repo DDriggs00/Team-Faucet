@@ -22,7 +22,7 @@ public class InventoryController : MonoBehaviour
             for (int y = 1; y <= inventorySize.y; y++)
             {
                 GameObject slot = Instantiate(slotPrefab) as GameObject;
-                slot.transform.parent = this.transform; //make slot child of inv
+                slot.transform.SetParent(this.transform); //make slot child of inv
                 slot.name = "slot_" + x + "_" + y; //slot name is x and y value
                 slot.GetComponent<RectTransform>().anchoredPosition = new Vector3(windowSize.x / (inventorySize.x + 1) * x, windowSize.y / (inventorySize.y + 1) * -y, 0);
 
@@ -30,7 +30,7 @@ public class InventoryController : MonoBehaviour
                 {
 
                     GameObject item = Instantiate(itemPrefab) as GameObject;
-                    item.transform.parent = slot.transform;
+                    item.transform.SetParent(slot.transform);
                     item.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
                     Item i = item.GetComponent<Item>();
 
@@ -64,10 +64,25 @@ public class InventoryController : MonoBehaviour
         {
             canDragItem = false;
 
-            if (selectedSlot == null) selectedItem.parent = originalSlot; //if no selected parent is original
+            if (selectedSlot == null) selectedItem.SetParent(originalSlot); //if no selected parent is original
             else
             {
-                selectedItem.parent = selectedSlot; //parent is selected slot
+                if (selectedSlot.childCount > 0)
+                { //Stackable Items
+                    if (selectedItem.name == selectedSlot.GetChild(0).name &&
+                       (selectedItem.GetComponent<Item>().type == Item.Type.consumable || //stackable items
+                       (selectedItem.GetComponent<Item>().type == Item.Type.misc)))       //stackable items
+                    {
+                        Debug.Log("We stacked 2 items");
+                    }
+                    //Swappable Items  
+                    else
+                    {
+                       selectedSlot.GetChild(0).SetParent(originalSlot);
+                       foreach (Transform t in originalSlot) t.localPosition = Vector3.zero;
+                    }
+                }
+                selectedItem.SetParent(selectedSlot); //parent is selected slot
             }
             selectedItem.localPosition = Vector3.zero; //selected Item goes back to origin
             selectedItem.GetComponent<Collider>().enabled = true;

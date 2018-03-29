@@ -8,6 +8,7 @@ public class Item : MonoBehaviour
     public new string name;
     public enum Type { equip, consumable, misc };
     public Type type;
+    public int amount;
 
     public Sprite sprite;
 
