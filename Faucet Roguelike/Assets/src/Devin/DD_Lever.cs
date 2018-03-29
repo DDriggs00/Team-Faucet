@@ -36,7 +36,7 @@ public class DD_Lever : DD_Obstacle
 	}
 
 	private void Interact() {
-
+		
 	}
 	
 }

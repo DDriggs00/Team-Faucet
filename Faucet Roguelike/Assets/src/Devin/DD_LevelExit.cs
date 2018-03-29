@@ -7,9 +7,10 @@ public class DD_LevelExit : DD_Obstacle
 {
 	bool mUnlocked = true;		//for showing the unlock status of the exit
 
-	public void create()
-	{
+	DD_LevelExit()
+	{	
 		Debug.Log("LevelExit Created");
+		// SetObstacleType(LevelExit); 
 	}
 
 	private void OnTriggerEnter2D(Collider2D collision)

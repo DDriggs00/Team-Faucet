@@ -5,12 +5,12 @@ using UnityEngine;
 public class DD_HealSpot : DD_Obstacle 
 {
 	private int mHealing = 10;
-	public void create()
+	DD_HealSpot()
 	{
 		Debug.Log("Heal Spot Created");
 	}
 
-	public void create(int h)
+	DD_HealSpot(int h)
 	{
 		mHealing = h;
 		Debug.Log("Heal Spot Created");

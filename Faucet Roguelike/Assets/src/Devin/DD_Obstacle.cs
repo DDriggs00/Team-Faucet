@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DD_Obstacle : MonoBehaviour 
+public class DD_Obstacle : MonoBehaviour
 {
 
+	private static int mTotalNumObstacles = 0;
 
 	public enum ObstacleType
 	{
-		spikeTrap, HealSpot, LevelExit, PressurePlate
+		spikeTrap, healSpot, levelExit, pressurePlate
 	};
 
 	private ObstacleType mObsType;
@@ -16,5 +17,9 @@ public class DD_Obstacle : MonoBehaviour
 	public ObstacleType GetObstacleType()
 	{
 		return mObsType;
+	}
+	public void SetObstacleType(ObstacleType obs)
+	{
+		mObsType = obs;
 	}
 }
