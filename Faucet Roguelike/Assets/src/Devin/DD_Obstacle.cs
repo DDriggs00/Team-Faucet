@@ -9,7 +9,7 @@ public class DD_Obstacle : MonoBehaviour
 
 	public enum ObstacleType
 	{
-		spikeTrap, healSpot, levelExit, pressurePlate
+		spikeTrap, healSpot, levelExit, pressurePlate, lever
 	};
 
 	private ObstacleType mObsType;
@@ -21,5 +21,12 @@ public class DD_Obstacle : MonoBehaviour
 	public void SetObstacleType(ObstacleType obs)
 	{
 		mObsType = obs;
+	}
+
+	public void addObstacle() {
+		mTotalNumObstacles++;
+	}
+	public int getNumObstacles() {
+		return mTotalNumObstacles;
 	}
 }
