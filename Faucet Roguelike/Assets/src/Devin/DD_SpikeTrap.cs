@@ -6,10 +6,15 @@ public class DD_SpikeTrap : DD_Obstacle
 {
 	private uint mDamage = 10;
 
-//Do on Initialization
-	void Start()
+	DD_SpikeTrap()
 	{
+		Debug.Log("Spiketrap Created");
 		// mDamage = Random(seed + mObstaclesCreated * 5)
+	}
+	DD_SpikeTrap(uint d)
+	{
+		Debug.Log("Spiketrap Created");
+		mDamage = d;
 	}
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
