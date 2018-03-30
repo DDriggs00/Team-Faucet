@@ -7,7 +7,7 @@ public class DD_HealSpot : DD_Obstacle
 	private int mHealing;	//Amount of HP to heal
 	DD_HealSpot()
 	{
-		mHealing = 10;
+		mHealing = 50;
 		Debug.Log("Heal Spot Created");
 		SetObstacleType(ObstacleType.healSpot);
 		addObstacle();
@@ -27,7 +27,7 @@ public class DD_HealSpot : DD_Obstacle
 		{
 			LH_Health playerHP = collision.gameObject.GetComponent<LH_Health>();
 			playerHP.Heal(mHealing);
-			Destroy(this.gameObject);
+			// Destroy(this.gameObject);
 		}
 	}
 }
