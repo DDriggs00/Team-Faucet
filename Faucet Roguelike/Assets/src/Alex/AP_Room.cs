@@ -22,6 +22,8 @@ public class AP_Room : MonoBehaviour
 
 	public enum RoomType { start, mid, end, mainPath, branch, treasure, trap, baddy};
 	public RoomType roomType;
+	public DD_GenObstacle obstacleGenerator;
+
 	List<AP_Room> mMergedRooms = new List<AP_Room>();
 	AP_RoomPopulator roomPop;
 
@@ -35,8 +37,7 @@ public class AP_Room : MonoBehaviour
 		SetUnitPos(pos);
 		this.transform.position = pos * mUnitSize;
 		SetID(id);
-		roomPop = GetRoomPopulator();		// Add room populator based on room type
-		roomPop.Setup (this);
+
 	}
 
 	public void GenerateRoom()
@@ -241,7 +242,11 @@ public class AP_Room : MonoBehaviour
 	}
 
 	public void SetRoomType(RoomType rType)
-	{ roomType = rType;}
+	{ 
+		roomType = rType;
+		roomPop = GetRoomPopulator();		// Add room populator based on room type
+		roomPop.Setup (this, obstacleGenerator);
+	}
 	public RoomType GetRoomType()
 	{ return roomType; }
 	public AP_RoomPopulator GetPop()
@@ -256,7 +261,7 @@ public class AP_Room : MonoBehaviour
 				cam.SetTarget(transform.position);
 			else if (!cam.IsInBigRoom())
 			{
-				print("merged room count = " + mMergedRooms.Count);
+//				print("merged room count = " + mMergedRooms.Count);
 				float minX = transform.position.x;
 				float maxX = minX;
 				float minY = transform.position.y;

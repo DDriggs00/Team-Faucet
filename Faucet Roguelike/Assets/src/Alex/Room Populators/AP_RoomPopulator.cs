@@ -20,26 +20,28 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 			maximum = max;
 		}
 	}
-	public Count wallCount = new Count (5, 9);						//Lower and upper limit for our random number of walls per level.
-	public Count foodCount = new Count (1, 5);						//Lower and upper limit for our random number of food items per level.
-
-	public Count obstacleCount = new Count (5, 9);					// lower and upper limit for random number of obstacles in room
-	public Count interactableCount = new Count(1, 4);
+	public Count obstacleCount;					// lower and upper limit for random number of obstacles in room
+	public Count interactableCount;
 
 	private List <Vector3> gridPositions = new List <Vector3> ();	//A list of possible locations to place tiles.
 
-	AP_Room room;
+	protected AP_Room room;
+	protected DD_GenObstacle obstacleGenerator;
 
-	public void Setup(AP_Room r)
+	public virtual void Setup(AP_Room r, DD_GenObstacle g)
 	{
+		obstacleGenerator = g;
 		room = r;
 		rows = r.GetSize () - 3;
 		columns = rows;
 		offset = r.GetPosition ();
+
+		obstacleCount = new Count (5, 9);
+		interactableCount = new Count (1, 4);
 	}
 
 	//Clears our list gridPositions and prepares it to generate a new board.
-	void InitializeList ()
+	protected void InitializeList ()
 	{
 		//Clear our list gridPositions.
 		gridPositions.Clear ();
@@ -58,7 +60,7 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 
 
 	//RandomPosition returns a random position from our list gridPositions.
-	Vector3 RandomPosition ()
+	protected Vector3 RandomPosition ()
 	{
 		//Declare an integer randomIndex, set it's value to a random number between 0 and the count of items in our List gridPositions.
 		int randomIndex = Random.Range (0, gridPositions.Count);
@@ -105,20 +107,28 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 		InitializeList ();
 
 		//Instantiate a random number of obstacles based on minimum and maximum, at randomized positions.
-		LayoutObjectAtRandom (room.obstacles, obstacleCount.minimum, obstacleCount.maximum);
+//		LayoutObjectAtRandom (room.obstacles, obstacleCount.minimum, obstacleCount.maximum);
 
 		// Create a random number of inert obstacles, calling Devin's method
 		int obstacleAmount = Random.Range(obstacleCount.minimum, obstacleCount.maximum+1);
 		for (int o = 0; o < obstacleAmount; o++)
 		{
-			print ("Call Devin's get an inert block method");
+			Vector3 randomPosition = RandomPosition ();
+			GameObject rock = Instantiate (obstacleGenerator.generateRock ());
+			rock.transform.parent = room.transform;
+			rock.transform.localPosition = randomPosition;
+
 		}
 
 		// Create a random number of interactable items, calling Devin's method
 		int interactableAmount = Random.Range(interactableCount.minimum, interactableCount.maximum+1);
 		for (int i = 0; i < interactableAmount; i++)
 		{
-			print ("Call Devin's get interactible method");
+			Vector3 randomPosition = RandomPosition ();
+			GameObject interactable = Instantiate (obstacleGenerator.generateInteractable(50));
+				interactable.transform.parent = room.transform;
+				interactable.transform.localPosition = randomPosition;
+				
 		}
 
 		// Create a semi-random number of enemies, calling Garrett's method.

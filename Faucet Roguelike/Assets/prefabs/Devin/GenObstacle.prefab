@@ -55,4 +55,5 @@ MonoBehaviour:
   - {fileID: 1177484476955890, guid: c4d34aa8175b4114abd487d5fa5bddca, type: 2}
   badInteractables:
   - {fileID: 1177484476955890, guid: 416b2fb0d775f0147bc6ff63eadf6d16, type: 2}
-  rocks: []
+  rocks:
+  - {fileID: 1300970728636512, guid: d8c3e93b3df5b564ab5684ef7b6ea8bf, type: 2}

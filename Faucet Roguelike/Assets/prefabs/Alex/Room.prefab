@@ -114,6 +114,8 @@ MonoBehaviour:
   - {fileID: 1263490088965640, guid: 28d1cadfa46761749979f9d80f24a8b2, type: 2}
   mUnitSize: 15
   roomType: 0
+  obstacleGenerator: {fileID: 114615532332060096, guid: 6f338297707bc8348b3e4943c3ac6038,
+    type: 2}
   traps: []
   treasure: []
   enemies: []
