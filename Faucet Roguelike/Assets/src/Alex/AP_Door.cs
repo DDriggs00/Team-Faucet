@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AP_Door : MonoBehaviour
+public class AP_Door : ScriptableObject
 {
 	//    Room parentRoom;    // which room does this door come from?
 	Vector2 origin;     // unit position of the room this door is expanding from

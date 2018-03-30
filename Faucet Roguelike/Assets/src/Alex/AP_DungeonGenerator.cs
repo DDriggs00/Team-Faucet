@@ -34,11 +34,19 @@ public class AP_DungeonGenerator : MonoBehaviour {
 	List<AP_Door> ExpandingDoors = new List<AP_Door>();
 	Vector2 bannedMainPathDir;
 
-	AP_Count mMainPath = new AP_Count (8, 12);							// min/max main path rooms. eventually to be modified by difficulty/level
+	protected struct Count
+	{
+		public int minimum, maximum;
+		public Count(int min, int max)
+		{
+			minimum = min;
+			maximum = max;
+		}
+	}
+	Count mMainPath = new Count (8, 12);							// min/max main path rooms. eventually to be modified by difficulty/level
 	float minMainPathPortion = 0.25f;                                   // min main path number of rooms as a portion of total main path
-
-	AP_Count mBranches = new AP_Count (3, 7);							// min/max number of branches    
-	AP_Count mBranchLength = new AP_Count(2,5);							// min/max branch length
+	Count mBranches = new Count (3, 7);							// min/max number of branches    
+	Count mBranchLength = new Count(2,5);							// min/max branch length
 
 	[Header("Populating Objects")]
 	public GameObject player;
@@ -93,46 +101,35 @@ public class AP_DungeonGenerator : MonoBehaviour {
 
 	void GenerateDungeon()
 	{
-		int countToMid, countToEnd;
+		
 		int dungeonSpan = Random.Range(mMainPath.minimum, mMainPath.maximum+1);
-		int minDist = Mathf.CeilToInt(minMainPathPortion * dungeonSpan);
+		int minDist = Mathf.CeilToInt(minMainPathPortion * dungeonSpan); 
+		int countToMid= Random.Range(minDist, dungeonSpan - minDist);
+		int countToEnd = dungeonSpan - countToMid;
 
-		countToMid = Random.Range(minDist, dungeonSpan - minDist);
-		countToEnd = dungeonSpan - countToMid;
-
-		AP_Room startRoom = CreateRoom(Vector2.zero);                      //create starting room, add it to dungeon rooms list
+		AP_Room startRoom = CreateRoom(Vector2.zero);               //create starting room, add it to dungeon rooms list
 		startRoom.SetRoomType(AP_Room.RoomType.start);
+		ExpandMainPathDoors(startRoom);								// add doors to start room, then call expand making sure rooms only expand 'away' from start room
 
-		// add doors to start room, then call expand making sure rooms only expand 'away' from start room
-		ExpandMainPathDoors(startRoom);
-
-		for (int i = 0; i < countToMid; i++)
-		{                                                           // until a distance to middle room has been reached
+		for (int i = 0; i < countToMid; i++)						// builds path between start room and mid room
+		{                                                           
 			AP_Room newRoom = ExpandRoom();
 			newRoom.SetRoomType(AP_Room.RoomType.mainPath);
-
-			if (i != countToMid - 1)
-				ExpandMainPathDoors(newRoom);
+			if (i != countToMid - 1)								// I only main path to continue expanding until the next room is the middle room
+				ExpandMainPathDoors(newRoom);	
 		}
+			
+		BuildBigRoom(false);                                        // passing false tells method this is the middle room
 
-		// then build the middle room, which should be four room units combined.
-		BuildBigRoom(false);                                             // generates the middle room, and adds an exit door for continuing main path
-		//        ExpandRoom();
-		//        return;
-		// continue expanding from middle room
-		// once distance to end room is reached, built end room
-		for (int i = 0; i < countToEnd; i++)
-		{                                                           // until a distance to middle room has been reached
+		for (int i = 0; i < countToEnd; i++)						// expand main path from mid room to end room
+		{                                                           
 			AP_Room newRoom = ExpandRoom();
 			newRoom.SetRoomType(AP_Room.RoomType.mainPath);
-			if (i != countToEnd - 1)
+			if (i != countToEnd - 1)								// no more main path when the  next room is the end room
 				ExpandMainPathDoors(newRoom);
 		}
-
-		// call build big room, passing that this is the end room
-		BuildBigRoom(true);
-		// randomly shuffle the doors remaining in the expandingDoors list
-		// then starting at the first door in the list, start expanding branches from those doors.
+			
+		BuildBigRoom(true);											// passing true tells method this is the end room
 
 		GenerateBranchPaths();
 
@@ -142,17 +139,12 @@ public class AP_DungeonGenerator : MonoBehaviour {
 
 	void BuildBigRoom(bool isEndRoom)
 	{
-		// get unit position of last room in dungeon room list as the previous room to big room
-		Vector2 origin = DungeonRooms[DungeonRooms.Count - 1].GetUnitPos();
-		// get random directions
+		Vector2 origin = DungeonRooms[DungeonRooms.Count - 1].GetUnitPos();	// get unit position of last room in dungeon room list to know the previous room to big room
 		Vector2[] dirs = GetRandomDirections();
-		// vector2 array to represent offset of each room section composing the big room, based on 0,0 bing the bottom left section
-		Vector2[] sectionOffsets = {Vector2.zero, Vector2.right, new Vector2(1,1), Vector2.up};
+		Vector2[] sectionOffsets = {Vector2.zero, Vector2.right, new Vector2(1,1), Vector2.up};	// offsets of four rooms composing the big room with 0,0 as the bottom left room section
 		Vector2[] sectionPositions = new Vector2[4];
 		bool isValid = true;
 		int curDirIndex = 0;
-		// do {...} while (big room in 2d array isn't valid)
-		// ...
 		int offset = 0;                             // stores random offset of big room from origin room
 		offset = (Random.value > 0.5) ? 0 : -1;     // for now as big rooms are 2x2, either no offset, or -1 offset are possible
 		int attempts = 0;                           // used to track attempt iterations to place big room, to use both possible offsets 
@@ -161,29 +153,16 @@ public class AP_DungeonGenerator : MonoBehaviour {
 			isValid = true;
 			Vector2 curDir = dirs[curDirIndex];
 
-			//            int exitRoom = 0;
-			// initialize another vector array with unit positions based on random direction curDirIndex and random dir perp to that random direction
-			// 0,0 is bottom left of big room
 			if (dirs[curDirIndex] == mNorth)
-			{
-				sectionPositions[0] = origin + curDir + new Vector2(offset, 0);
-			}
+			{ sectionPositions[0] = origin + curDir + new Vector2(offset, 0);}
 			else if (dirs[curDirIndex] == mEast)
-			{
-				sectionPositions[0] = origin + curDir + new Vector2(0, offset);
-			}
+			{ sectionPositions[0] = origin + curDir + new Vector2(0, offset);}
 			else if (dirs[curDirIndex] == mSouth)
-			{
-				sectionPositions[0] = origin + curDir + new Vector2(offset, -1);
-			}
+			{ sectionPositions[0] = origin + curDir + new Vector2(offset, -1);}
 			else // dir[curDirIndex] must equal mWest
-			{
-				sectionPositions[0] = origin + curDir + new Vector2(-1, offset);
-			}
+			{ sectionPositions[0] = origin + curDir + new Vector2(-1, offset);}
 			for(int i = 1; i < 4; i++)                                          // using 0,0 as bottom left, setup other section positions
-			{
-				sectionPositions[i] = sectionPositions[0] + sectionOffsets[i];
-			}
+			{ sectionPositions[i] = sectionPositions[0] + sectionOffsets[i];}
 			// iterate through vector2 array. if all positions are free space, continue
 			for(int r = 0; r < 4; r++)
 			{
@@ -199,19 +178,8 @@ public class AP_DungeonGenerator : MonoBehaviour {
 					}
 				}
 			}
-		} while (!isValid && curDirIndex < 4);
+		} while (!isValid && curDirIndex < 4);								// repeat trying different positioning of big room until valid position is found
 
-		for(int i = 0; i < 4; i++)                                               // iterate through array again, generating a room at each unit position
-		{                                   
-			AP_Room r = CreateRoom(sectionPositions[i]);
-			r.SetRoomType(((isEndRoom) ? AP_Room.RoomType.end : AP_Room.RoomType.mid));
-		}
-		// merge the four created rooms
-		GetRoomAtPos(sectionPositions[0]).MergeRoom(GetRoomAtPos(sectionPositions[1]));
-		GetRoomAtPos(sectionPositions[0]).MergeRoom(GetRoomAtPos(sectionPositions[3]));
-		GetRoomAtPos(sectionPositions[2]).MergeRoom(GetRoomAtPos(sectionPositions[1]));
-		GetRoomAtPos(sectionPositions[2]).MergeRoom(GetRoomAtPos(sectionPositions[3]));
-		// then connect origin room with adjacent room
 		if (curDirIndex > 3)                                                     //reload level if big room fails to generate in current conditions
 		{
 			SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
@@ -221,12 +189,25 @@ public class AP_DungeonGenerator : MonoBehaviour {
 			do {
 			} while(Application.isLoadingLevel);
 
-			return; // return from this function so no other lines in this function run
+			return; // return from this function so no other lines in this function run, this should theoretically be unnecessary?
 		}
 
-		AP_Room entryRoom = GetRoomAtPos(origin);
+		for(int i = 0; i < 4; i++)                                          // iterate through array again, generating a room at each chosen unit position
+		{                                   
+			AP_Room r = CreateRoom(sectionPositions[i]);
+			r.SetRoomType(((isEndRoom) ? AP_Room.RoomType.end : AP_Room.RoomType.mid));
+			// consider expanding rooms of big room using add door to end, to enable potential branching from big room
+
+		}
+		// merge the four created rooms
+		GetRoomAtPos(sectionPositions[0]).MergeRoom(GetRoomAtPos(sectionPositions[1]));
+		GetRoomAtPos(sectionPositions[0]).MergeRoom(GetRoomAtPos(sectionPositions[3]));
+		GetRoomAtPos(sectionPositions[2]).MergeRoom(GetRoomAtPos(sectionPositions[1]));
+		GetRoomAtPos(sectionPositions[2]).MergeRoom(GetRoomAtPos(sectionPositions[3]));
+
+		AP_Room entryRoom = GetRoomAtPos(origin);						
 		AP_Room midRoomNode = GetRoomAtPos(origin + dirs[curDirIndex]);
-		entryRoom.ConnectRoom(midRoomNode);
+		entryRoom.ConnectRoom(midRoomNode);									// connect this big room with the last main path room generated
 
 		if (!isEndRoom)
 		{
@@ -246,8 +227,6 @@ public class AP_DungeonGenerator : MonoBehaviour {
 					ExpandMainPathDoors(GetRoomAtPos(sectionPositions[i]));
 			}
 			ExpandMainPathDoors(GetRoomAtPos(sectionPositions[exitDoor]));
-
-			// still need to expand other rooms for potential branches
 		}
 	}
 
@@ -279,27 +258,18 @@ public class AP_DungeonGenerator : MonoBehaviour {
 		ShuffleDoors();
 		List<AP_Room> 	branchEndRooms = new List<AP_Room> ();
 		List<int> 		branchLengths = new List<int> ();
-
-
-		//        print("expandingDoors.count = " + ExpandingDoors.Count);
-		//        print("expandingDoors[0] = " + ExpandingDoors[0]);
-		//        print("expandingDoors[0].origin" + ExpandingDoors[0].GetOrigin());
-
 		int branchCount = Random.Range(mBranches.minimum, mBranches.maximum + 1);						        // get random number of branches to be created
 		//		print ("Branch Count = " + branchCount);
-
-
-		//		branchCount = 1;
-		for(int i = 0; i < branchCount; i++)														// for 0...number of branches
+		for(int i = 0; i < branchCount; i++)														
 		{
-			if (ExpandingDoors.Count == 0)															// if there are no more doors, break
+			if (ExpandingDoors.Count == 0)															// can't branch if there are no available doors
 				break;
 			Vector2 pos = ExpandingDoors[0].GetOrigin() + ExpandingDoors[0].GetDir();				// get proposed new room position
 			if(isSpaceAvailable(pos))																
 			{
 				int length;
 				AP_Room lastRoom;
-				GenerateBranch(out length, out lastRoom);																	// generate branch from that door
+				GenerateBranch(out length, out lastRoom);											// generate branch starting from that door
 				if (length > 0)
 				{
 					branchEndRooms.Add (lastRoom);
@@ -369,7 +339,7 @@ public class AP_DungeonGenerator : MonoBehaviour {
 	void ShuffleDoors()
 	{
 		for (int d = 0; d < ExpandingDoors.Count; d++)
-		{   // randomly shuffle the dirs array
+		{  
 			AP_Door tempDoor = ExpandingDoors[d];
 			int r = Random.Range(d, ExpandingDoors.Count);
 			ExpandingDoors[d] = ExpandingDoors[r];
@@ -380,18 +350,15 @@ public class AP_DungeonGenerator : MonoBehaviour {
 
 	bool ExpandBranchDoors(AP_Room r)
 	{
-		//		print ("expand branch start");
 		Vector2[] dirs = GetRandomDirections();                                     // get shuffled array of cardinal directions
 		for (int i = 0; i < 4; i++)
 		{                                                                           // iterate through array to find first valid direction
 			if (isSpaceAvailable(r, dirs[i]))
 			{
 				AddDoorToFront(r, dirs[i]);
-				//				print ("expand end - successfully");
 				return true;
 			}
 		}
-		//		print ("expand end - fail");
 		return false;
 	}
 
@@ -409,7 +376,6 @@ public class AP_DungeonGenerator : MonoBehaviour {
 		else
 		{
 			print("NO DOORS TO EXPAND FROM");
-
 			return null;
 		}
 
@@ -447,8 +413,7 @@ public class AP_DungeonGenerator : MonoBehaviour {
 
 	AP_Door CreateDoor(AP_Room r, Vector2 dir)
 	{
-		GameObject newDoorObj = new GameObject();
-		AP_Door newDoor = newDoorObj.AddComponent<AP_Door>() as AP_Door;
+		AP_Door newDoor = ScriptableObject.CreateInstance<AP_Door>();
 		newDoor.Setup(r, dir);
 		return newDoor;
 	}
@@ -490,13 +455,12 @@ public class AP_DungeonGenerator : MonoBehaviour {
 	{
 		Vector2[] dirs = { mNorth, mEast, mWest, mSouth };
 		for (int i = 0; i < dirs.Length; i++)
-		{   // randomly shuffle the dirs array
+		{
 			Vector2 temp = dirs[i];
 			int r = Random.Range(i, dirs.Length);
 			dirs[i] = dirs[r];
 			dirs[r] = temp;
 		}
-		//                print("v0 = " + dirs[0] + "v1 = " + dirs[1] + "v2 = " + dirs[2] + "v3 = " + dirs[3]);
 		return dirs;
 	}
 

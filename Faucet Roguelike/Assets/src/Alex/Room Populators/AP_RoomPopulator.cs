@@ -4,32 +4,31 @@ using UnityEngine;
 using System;
 using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine random number generator.
 
-public class AP_RoomPopulator : MonoBehaviour {
+public abstract class AP_RoomPopulator : MonoBehaviour {
 
 
 	public int columns = 12; 										//Number of columns in our game board.
 	public int rows = 12;											//Number of rows in our game board.
 	public Vector3 offset = Vector2.zero;							// offset of pouplating objects, equal to center of associated room
 
-	public AP_Count wallCount = new AP_Count (5, 9);						//Lower and upper limit for our random number of walls per level.
-	public AP_Count foodCount = new AP_Count (1, 5);						//Lower and upper limit for our random number of food items per level.
+	public struct Count
+	{
+		public int minimum, maximum;
+		public Count(int min, int max)
+		{
+			minimum = min;
+			maximum = max;
+		}
+	}
+	public Count wallCount = new Count (5, 9);						//Lower and upper limit for our random number of walls per level.
+	public Count foodCount = new Count (1, 5);						//Lower and upper limit for our random number of food items per level.
 
-	public AP_Count obstacleCount = new AP_Count (5, 9);					// lower and upper limit for random number of obstacles in room
+	public Count obstacleCount = new Count (5, 9);					// lower and upper limit for random number of obstacles in room
+	public Count interactableCount = new Count(1, 4);
 
-	public GameObject exit;											//Prefab to spawn for exit.
-	public GameObject[] floorTiles;									//Array of floor prefabs.
-	public GameObject[] wallTiles;									//Array of wall prefabs.
-	public GameObject[] foodTiles;									//Array of food prefabs.
-	public GameObject[] enemyTiles;									//Array of enemy prefabs.
-	public GameObject[] outerWallTiles;								//Array of outer tile prefabs.
-
-	private Transform boardHolder;									//A variable to store a reference to the transform of our Board object.
 	private List <Vector3> gridPositions = new List <Vector3> ();	//A list of possible locations to place tiles.
 
 	AP_Room room;
-	AP_RoomType rType;
-//ROOM TYPE should be built in to the room populator
-// Room populator should be abstract and each child room type class should then determine its populating items.
 
 	public void Setup(AP_Room r)
 	{
@@ -37,7 +36,6 @@ public class AP_RoomPopulator : MonoBehaviour {
 		rows = r.GetSize () - 3;
 		columns = rows;
 		offset = r.GetPosition ();
-		rType = room.GetComponent<AP_RoomType> ();
 	}
 
 	//Clears our list gridPositions and prepares it to generate a new board.
@@ -101,8 +99,7 @@ public class AP_RoomPopulator : MonoBehaviour {
 	}
 
 
-	//SetupScene initializes our level and calls the previous functions to lay out the game board
-	public void PopulateRoom (int level)
+	public virtual void PopulateRoom (int level)
 	{
 		//Reset our list of gridpositions.
 		InitializeList ();
@@ -110,17 +107,25 @@ public class AP_RoomPopulator : MonoBehaviour {
 		//Instantiate a random number of obstacles based on minimum and maximum, at randomized positions.
 		LayoutObjectAtRandom (room.obstacles, obstacleCount.minimum, obstacleCount.maximum);
 
-		//Instantiate a random number of food tiles based on minimum and maximum, at randomized positions.
-		//		LayoutObjectAtRandom (foodTiles, foodCount.minimum, foodCount.maximum);
+		// Create a random number of inert obstacles, calling Devin's method
+		int obstacleAmount = Random.Range(obstacleCount.minimum, obstacleCount.maximum+1);
+		for (int o = 0; o < obstacleAmount; o++)
+		{
+			print ("Call Devin's get an inert block method");
+		}
 
+		// Create a random number of interactable items, calling Devin's method
+		int interactableAmount = Random.Range(interactableCount.minimum, interactableCount.maximum+1);
+		for (int i = 0; i < interactableAmount; i++)
+		{
+			print ("Call Devin's get interactible method");
+		}
+
+		// Create a semi-random number of enemies, calling Garrett's method.
 		//Determine number of enemies based on current level number, based on a logarithmic progression
 		//		int enemyCount = (int)Mathf.Log(level, 2f);
-
-		//Instantiate a random number of enemies based on minimum and maximum, at randomized positions.
 		//		LayoutObjectAtRandom (enemyTiles, enemyCount, enemyCount);
 
-		//Instantiate the exit tile in the upper right hand corner of our game board
-		//		Instantiate (exit, new Vector3 (columns - 1, rows - 1, 0f), Quaternion.identity);
 	}
 
 

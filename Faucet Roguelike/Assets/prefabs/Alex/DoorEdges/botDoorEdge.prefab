@@ -83,8 +83,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4011549856472704}
-  - component: {fileID: 61308360692469472}
-  - component: {fileID: 61030752104461092}
+  - component: {fileID: 60310858448401280}
+  - component: {fileID: 60050665068830628}
   m_Layer: 0
   m_Name: botDoorEdge
   m_TagString: Wall
@@ -191,8 +191,8 @@ Transform:
   m_Father: {fileID: 4011549856472704}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61030752104461092
-BoxCollider2D:
+--- !u!60 &60050665068830628
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -203,7 +203,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 4, y: -7}
+  m_Offset: {x: -4.5, y: -7}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -213,11 +213,14 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5, y: 1}
-  m_EdgeRadius: 0
---- !u!61 &61308360692469472
-BoxCollider2D:
+  m_Points:
+    m_Paths:
+    - - {x: 2, y: 0.5}
+      - {x: -2, y: 0.5}
+      - {x: -2, y: -0.5}
+      - {x: 3, y: -0.5}
+--- !u!60 &60310858448401280
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -228,7 +231,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4, y: -7}
+  m_Offset: {x: 4.5, y: -7}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -238,9 +241,12 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 5, y: 1}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2, y: 0.5}
+      - {x: -2, y: 0.5}
+      - {x: -3, y: -0.5}
+      - {x: 2, y: -0.5}
 --- !u!212 &212266107692112202
 SpriteRenderer:
   m_ObjectHideFlags: 1

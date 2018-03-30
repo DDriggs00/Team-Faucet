@@ -20,7 +20,7 @@ public class AP_Room : MonoBehaviour
 		EdgeType.wall, EdgeType.wall };     // 0 = north, 1 = west, 2 = south, 3 = east
 	int roomID;                                                     // merged rooms will share roomIDs, used by generator to find all pieces of larger rooms
 
-	public enum RoomType { start, mid, end, mainPath, branch, treasure, trap};
+	public enum RoomType { start, mid, end, mainPath, branch, treasure, trap, baddy};
 	public RoomType roomType;
 	List<AP_Room> mMergedRooms = new List<AP_Room>();
 	AP_RoomPopulator roomPop;
@@ -35,8 +35,7 @@ public class AP_Room : MonoBehaviour
 		SetUnitPos(pos);
 		this.transform.position = pos * mUnitSize;
 		SetID(id);
-// ADD ROOM POPULATOR BASED ON ROOM TYPE
-		roomPop = gameObject.AddComponent<AP_RoomPopulator> ();
+		roomPop = GetRoomPopulator();		// Add room populator based on room type
 		roomPop.Setup (this);
 	}
 
@@ -281,5 +280,39 @@ public class AP_Room : MonoBehaviour
 		}
 	}
 
+	AP_RoomPopulator GetRoomPopulator()
+	{
+		AP_RoomPopulator pop;
+
+		switch (roomType)
+		{
+		case RoomType.start:
+			pop = gameObject.AddComponent<AP_StartRoomPopulator> ();
+			break;
+		case RoomType.mid:
+			pop = gameObject.AddComponent<AP_MidRoomPopulator> ();
+			break;
+		case RoomType.end:
+			pop = gameObject.AddComponent<AP_EndRoomPopulator> ();
+			break;
+		case RoomType.mainPath:
+			pop = gameObject.AddComponent<AP_PathRoomPopulator> ();
+			break;
+		case RoomType.treasure:
+			pop = gameObject.AddComponent<AP_TreasureRoomPopulator> ();
+			break;
+		case RoomType.trap:
+			pop = gameObject.AddComponent<AP_TrapRoomPopulator> ();
+			break;
+		case RoomType.baddy:
+			pop = gameObject.AddComponent<AP_BaddyRoomPopulator> ();
+			break;
+		default:
+			pop = gameObject.AddComponent<AP_BranchRoomPopulator> ();
+			break;
+		}
+		 
+		return pop;
+	}
 
 }
