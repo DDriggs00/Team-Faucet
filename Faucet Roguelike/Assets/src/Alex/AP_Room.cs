@@ -20,6 +20,7 @@ public class AP_Room : MonoBehaviour
 		EdgeType.wall, EdgeType.wall };     // 0 = north, 1 = west, 2 = south, 3 = east
 	int roomID;                                                     // merged rooms will share roomIDs, used by generator to find all pieces of larger rooms
 
+	public float trapChance = 0.25f;
 	public enum RoomType { start, mid, end, mainPath, branch, treasure, trap, baddy};
 	public RoomType roomType;
 	public DD_GenObstacle obstacleGenerator;
@@ -242,7 +243,14 @@ public class AP_Room : MonoBehaviour
 	}
 
 	public void SetRoomType(RoomType rType)
-	{ 
+	{
+		if (rType == RoomType.mainPath || rType == RoomType.branch)
+		{
+			if (Random.value <= trapChance)
+			{
+				rType = ((Random.value < 0.5f) ? RoomType.trap : RoomType.baddy);
+			}
+		}
 		roomType = rType;
 		roomPop = GetRoomPopulator();		// Add room populator based on room type
 		roomPop.Setup (this, obstacleGenerator);
@@ -295,13 +303,9 @@ public class AP_Room : MonoBehaviour
 			pop = gameObject.AddComponent<AP_StartRoomPopulator> ();
 			break;
 		case RoomType.mid:
-			pop = gameObject.AddComponent<AP_MidRoomPopulator> ();
-			break;
+			// break left out intentionally, both mid and end rooms should use the AP_BigRoomPopulator
 		case RoomType.end:
-			pop = gameObject.AddComponent<AP_EndRoomPopulator> ();
-			break;
-		case RoomType.mainPath:
-			pop = gameObject.AddComponent<AP_PathRoomPopulator> ();
+			pop = gameObject.AddComponent<AP_BigRoomPopulator> ();
 			break;
 		case RoomType.treasure:
 			pop = gameObject.AddComponent<AP_TreasureRoomPopulator> ();
@@ -312,8 +316,10 @@ public class AP_Room : MonoBehaviour
 		case RoomType.baddy:
 			pop = gameObject.AddComponent<AP_BaddyRoomPopulator> ();
 			break;
-		default:
-			pop = gameObject.AddComponent<AP_BranchRoomPopulator> ();
+		case RoomType.mainPath:
+			// break left out intentionally, both main path and branch rooms should have the AP_PathRoomPopulator script attached to them
+		default:	// must be a branch room
+			pop = gameObject.AddComponent<AP_PathRoomPopulator> ();
 			break;
 		}
 		 

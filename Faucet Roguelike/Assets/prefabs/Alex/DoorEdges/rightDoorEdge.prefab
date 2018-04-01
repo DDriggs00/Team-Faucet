@@ -35,8 +35,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4326008056476656}
-  - component: {fileID: 61041097913677842}
   - component: {fileID: 61548960767548788}
+  - component: {fileID: 60521875542771992}
   m_Layer: 0
   m_Name: rightDoorEdge
   m_TagString: Wall
@@ -191,8 +191,8 @@ Transform:
   m_Father: {fileID: 4326008056476656}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61041097913677842
-BoxCollider2D:
+--- !u!60 &60521875542771992
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -203,7 +203,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7, y: -4}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -213,9 +213,12 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 5}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 7.5, y: -1.5}
+      - {x: 6.5, y: -2.5}
+      - {x: 6.5, y: -6.5}
+      - {x: 7.5, y: -6.5}
 --- !u!61 &61548960767548788
 BoxCollider2D:
   m_ObjectHideFlags: 1
