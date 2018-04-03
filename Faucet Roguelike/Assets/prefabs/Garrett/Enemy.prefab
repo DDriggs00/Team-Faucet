@@ -72,7 +72,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -99,12 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddef450f25efc41168d3ecedd36234bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerDamage: 50
-  moveSpeed: 2
-  isWalking: 0
-  walkTime: 0.5
-  waitTime: 0.1
-  walkZone: {fileID: 0}
+  mDifficulty: 1
+  mWalkZone: {fileID: 0}
 --- !u!212 &212600242737767768
 SpriteRenderer:
   m_ObjectHideFlags: 1

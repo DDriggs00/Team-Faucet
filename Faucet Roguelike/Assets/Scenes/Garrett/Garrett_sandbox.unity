@@ -180,6 +180,26 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dadc9cdac5b024a30824a586853e8ec0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &563031062 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1797081524455374, guid: a3d224968189b4088a072a8ce318edf5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1197782386}
+--- !u!114 &563031065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 563031062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddef450f25efc41168d3ecedd36234bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mDifficulty: 1
+  mWalkTime: 0.5
+  mWaitTime: 0.1
+  mWalkZone: {fileID: 137900491}
 --- !u!1001 &855222281
 Prefab:
   m_ObjectHideFlags: 0
@@ -307,7 +327,53 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114651100256206064, guid: a3d224968189b4088a072a8ce318edf5,
+        type: 2}
+      propertyPath: isWalking
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114651100256206064, guid: a3d224968189b4088a072a8ce318edf5,
+        type: 2}
+      propertyPath: difficulty
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61383333679917806, guid: a3d224968189b4088a072a8ce318edf5,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61383333679917806, guid: a3d224968189b4088a072a8ce318edf5,
+        type: 2}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50409388468658344, guid: a3d224968189b4088a072a8ce318edf5,
+        type: 2}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61383333679917806, guid: a3d224968189b4088a072a8ce318edf5,
+        type: 2}
+      propertyPath: m_AutoTiling
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61383333679917806, guid: a3d224968189b4088a072a8ce318edf5,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61383333679917806, guid: a3d224968189b4088a072a8ce318edf5,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50409388468658344, guid: a3d224968189b4088a072a8ce318edf5,
+        type: 2}
+      propertyPath: m_Simulated
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114651100256206064, guid: a3d224968189b4088a072a8ce318edf5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: a3d224968189b4088a072a8ce318edf5, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1460869887
@@ -391,20 +457,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1571377137 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1976745522409038, guid: dadc9cdac5b024a30824a586853e8ec0,
-    type: 2}
-  m_PrefabInternal: {fileID: 270396017}
---- !u!114 &1571377139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1571377137}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b157b4b5b1e6947d59b3243bf9e66a16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkArea: {fileID: 0}

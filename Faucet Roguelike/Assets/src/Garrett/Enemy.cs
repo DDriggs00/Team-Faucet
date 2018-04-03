@@ -5,33 +5,34 @@ using System.Collections;
 public class Enemy : MonoBehaviour
 {
 	//Variable Declarations
-	public int playerDamage;                          
 
-	public float moveSpeed;
-	private float moveSpeedX;
-	private float moveSpeedY;
-	private Vector2 minWalkPoint;
-	private Vector3 maxWalkPoint;
+	public int mDifficulty;
+	private int mPlayerDamage;                          
 
-	private Rigidbody2D myRigidbody;
+	private float mMoveSpeed;
+	private float mMoveSpeedX;
+	private float mMoveSpeedY;
+	private Vector2 mMinWalkPoint;
+	private Vector3 mMaxWalkPoint;
 
-	public bool isWalking;
+	private Rigidbody2D mMyRigidBody;
 
-	public float walkTime;
-	private float walkCounter;
+	private bool mIsWalking;
 
-	public float waitTime;
-	private float waitCounter;
+	private float mWalkTime = 0.5f;
+	private float mWalkCounter;
 
-	private int WalkDirection;
-	private int oldWalkDirection;
+	private float mWaitTime = 0.1f;
+	private float mWaitCounter;
 
-	public Collider2D walkZone;
+	private int mWalkDirection;
 
-	private bool hasWalkZone;
+	public Collider2D mWalkZone;
+
+	private bool mHasWalkZone;
 
 
-	private Transform target;
+	private Transform mTarget;
 	//** End Variable Declarations ** //
 
 
@@ -39,117 +40,123 @@ public class Enemy : MonoBehaviour
 
 	void Start()
 	{
-		myRigidbody = GetComponent<Rigidbody2D> ();
-		target = GameObject.FindWithTag("Player").transform;
 
-		waitCounter = waitTime;
-		walkCounter = walkTime;
+		if (mDifficulty!=null)
+		{
+			mMoveSpeed = mDifficulty;
+			mPlayerDamage = mDifficulty * 5;
+		}
+		mMyRigidBody = GetComponent<Rigidbody2D> ();
+		mTarget = GameObject.FindWithTag("Player").transform;
+
+		mWaitCounter = mWaitTime;
+		mWalkCounter = mWalkTime;
 
 
 		chooseDirection();
 
-		if (walkZone != null)
+		if (mWalkZone != null)
 		{
-			minWalkPoint = walkZone.bounds.min;
-			maxWalkPoint = walkZone.bounds.max;
-			hasWalkZone = true;
+			mMinWalkPoint = mWalkZone.bounds.min;
+			mMaxWalkPoint = mWalkZone.bounds.max;
+			mHasWalkZone = true;
 		}
-			
+
 
 	}
 
 
 	void Update()
 	{
-		if (target)
+		if (mTarget)
 		{
 			attackPlayer ();
 		} else
 		{
 			walk ();
-			target = GameObject.FindWithTag("Player").transform;
-			if ((target.position.y > maxWalkPoint.y) ||
-			    (target.position.x > maxWalkPoint.x) || (target.position.y < minWalkPoint.y) ||
-			    (target.position.x < minWalkPoint.x))
+			mTarget = GameObject.FindWithTag("Player").transform;
+			if ((mTarget.position.y > mMaxWalkPoint.y) ||
+				(mTarget.position.x > mMaxWalkPoint.x) || (mTarget.position.y < mMinWalkPoint.y) ||
+				(mTarget.position.x < mMinWalkPoint.x))
 			{
-				target = null;
+				mTarget = null;
 			}
 		}
 	}
-		
+
 
 
 
 
 	private void walk()
 	{
-		if (isWalking) 
+		if (mIsWalking) 
 		{
-			walkCounter -= Time.deltaTime;
+			mWalkCounter -= Time.deltaTime;
 
 
-			switch (WalkDirection)
+			switch (mWalkDirection)
 			{
 			case 0:
-				myRigidbody.velocity = new Vector2 (0, moveSpeed);
-				myRigidbody.rotation = 180;
-				if (hasWalkZone && transform.position.y > maxWalkPoint.y)
+				mMyRigidBody.velocity = new Vector2 (0, mMoveSpeed);
+				mMyRigidBody.rotation = 180;
+				if (mHasWalkZone && transform.position.y > mMaxWalkPoint.y)
 				{
-					myRigidbody.velocity = new Vector2 (0, -moveSpeed);
-					isWalking = false;
-					waitCounter = waitTime;
+					mMyRigidBody.velocity = new Vector2 (0, -mMoveSpeed);
+					mIsWalking = false;
+					mWaitCounter = mWaitTime;
 
 				}
 				break;
 			case 1:
-				myRigidbody.velocity = new Vector2 (moveSpeed, 0);
-				myRigidbody.rotation = 90;
-				if (hasWalkZone && transform.position.x > maxWalkPoint.x)
+				mMyRigidBody.velocity = new Vector2 (mMoveSpeed, 0);
+				mMyRigidBody.rotation = 90;
+				if (mHasWalkZone && transform.position.x > mMaxWalkPoint.x)
 				{
-					myRigidbody.velocity = new Vector2 (-moveSpeed, 0);
-					isWalking = false;
-					waitCounter = waitTime;
+					mMyRigidBody.velocity = new Vector2 (-mMoveSpeed, 0);
+					mIsWalking = false;
+					mWaitCounter = mWaitTime;
 
 				}
 				break;
 			case 2:
-				myRigidbody.velocity = new Vector2 (0, -moveSpeed);
-				myRigidbody.rotation = 0;
-				if (hasWalkZone && transform.position.y < minWalkPoint.y)
+				mMyRigidBody.velocity = new Vector2 (0, -mMoveSpeed);
+				mMyRigidBody.rotation = 0;
+				if (mHasWalkZone && transform.position.y < mMinWalkPoint.y)
 				{
-					myRigidbody.velocity = new Vector2 (0, moveSpeed);
-					isWalking = false;
-					waitCounter = waitTime;
+					mMyRigidBody.velocity = new Vector2 (0, mMoveSpeed);
+					mIsWalking = false;
+					mWaitCounter = mWaitTime;
 
 				}
 				break;
 			case 3:
-				myRigidbody.velocity = new Vector2 (-moveSpeed, 0);
-				myRigidbody.rotation = 270;
-				if (hasWalkZone && transform.position.x < minWalkPoint.x)
+				mMyRigidBody.velocity = new Vector2 (-mMoveSpeed, 0);
+				mMyRigidBody.rotation = 270;
+				if (mHasWalkZone && transform.position.x < mMinWalkPoint.x)
 				{
-					myRigidbody.velocity = new Vector2 (moveSpeed, 0);
-					isWalking = false;
-					waitCounter = waitTime;
+					mMyRigidBody.velocity = new Vector2 (mMoveSpeed, 0);
+					mIsWalking = false;
+					mWaitCounter = mWaitTime;
 
 				}
 				break;
 			}
 
-			if (walkCounter < 0)
+			if (mWalkCounter < 0)
 			{
-				isWalking = false;
-				waitCounter = waitTime;
+				mIsWalking = false;
+				mWaitCounter = mWaitTime;
 			}
 
 		} 
 		else
 		{
-			waitCounter -= Time.deltaTime;
+			mWaitCounter -= Time.deltaTime;
 
-			myRigidbody.velocity = Vector2.zero;
+			mMyRigidBody.velocity = Vector2.zero;
 
-			if (waitCounter < 0)
+			if (mWaitCounter < 0)
 			{
 				chooseDirection ();
 
@@ -163,9 +170,9 @@ public class Enemy : MonoBehaviour
 
 	public void chooseDirection()
 	{
-		WalkDirection = Random.Range (0, 4);
-		isWalking = true;
-		walkCounter = walkTime;
+		mWalkDirection = Random.Range (0, 4);
+		mIsWalking = true;
+		mWalkCounter = mWalkTime;
 
 
 	}
@@ -174,60 +181,72 @@ public class Enemy : MonoBehaviour
 	{
 
 
-		if (hasWalkZone)
+		if (mHasWalkZone)
 		{
-			if ((transform.position.y > maxWalkPoint.y) ||
-				(transform.position.x > maxWalkPoint.x) || (transform.position.y < minWalkPoint.y) ||
-				(transform.position.x < minWalkPoint.x))
+			if ((transform.position.y > mMaxWalkPoint.y) ||
+				(transform.position.x > mMaxWalkPoint.x) || (transform.position.y < mMinWalkPoint.y) ||
+				(transform.position.x < mMinWalkPoint.x))
 			{
 
-				target = null;
+				mTarget = null;
 				return;
 			}
 
-		
+
 		}
 
 
-		if (target.position.x < myRigidbody.position.x)
+		if (mTarget.position.x < mMyRigidBody.position.x)
 		{
-			moveSpeedX = -moveSpeed;
-		} else if (target.position.x > myRigidbody.position.x)
+			mMoveSpeedX = -mMoveSpeed;
+		} else if (mTarget.position.x > mMyRigidBody.position.x)
 		{
-			moveSpeedX = moveSpeed;
+			mMoveSpeedX = mMoveSpeed;
 		} else
 		{
-			moveSpeedX = 0;
+			mMoveSpeedX = 0;
 		}
 
-		if (target.position.y < myRigidbody.position.y)
+		if (mTarget.position.y < mMyRigidBody.position.y)
 		{
-			moveSpeedY = -moveSpeed;
-		} else if (target.position.y > myRigidbody.position.y)
+			mMoveSpeedY = -mMoveSpeed;
+		} else if (mTarget.position.y > mMyRigidBody.position.y)
 		{
-			moveSpeedY = moveSpeed;
+			mMoveSpeedY = mMoveSpeed;
 		} else
 		{
-			moveSpeedY = 0;
+			mMoveSpeedY = 0;
 		}
 
-		myRigidbody.velocity = new Vector2 (moveSpeedX, moveSpeedY);
+		mMyRigidBody.velocity = new Vector2 (mMoveSpeedX, mMoveSpeedY);
 
 		//set the rotation
-		Vector3 dir = target.position - myRigidbody.transform.position;
+		Vector3 dir = mTarget.position - mMyRigidBody.transform.position;
 		float angle = Mathf.Atan2(dir.y,dir.x) * Mathf.Rad2Deg + 90;
-		myRigidbody.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+		mMyRigidBody.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
 	}
-		
+
 
 
 	public void setRoom(Collider2D r)
 	{
-		walkZone = r;
+		mWalkZone = r;
 	}
 
+	private void OnTriggerEnter2D(Collider2D collision)
+	{
 
+		uint damage = (uint)(int)mPlayerDamage;
+		if (collision.tag == "Player")
+		{
+			LH_Health playerHP = collision.gameObject.GetComponent<LH_Health> ();
+			playerHP.doDamage (damage);
+			Destroy (gameObject);
+
+		}
+
+	}
 
 
 }
