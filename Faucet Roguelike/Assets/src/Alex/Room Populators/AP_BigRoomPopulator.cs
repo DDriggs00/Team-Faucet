@@ -17,7 +17,7 @@ public class AP_BigRoomPopulator : AP_RoomPopulator {
 			handleBoss = true;
 	}
 
-	public virtual void PopulateRoom (int level)
+	public override void PopulateRoom (int level)
 	{
 		//Reset our list of gridpositions.
 		InitializeList ();
