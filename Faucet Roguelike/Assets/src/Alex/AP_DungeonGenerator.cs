@@ -89,16 +89,17 @@ public class AP_DungeonGenerator : MonoBehaviour {
 
 		SpawnPlayer ();
 		Debug.Log ("DG Log - Spawned player object");
-		PopulateItems ();
-		Debug.Log ("DG Log - Populate item for testing");
-		PopulateEnemies ();
-		Debug.Log ("DG Log - Populate enemy for testing");
-
+//		PopulateItems ();
+//		Debug.Log ("DG Log - Populate item for testing");
+//		PopulateEnemies ();
+//		Debug.Log ("DG Log - Populate enemy for testing");
+		MakeExit();
+		Debug.Log ("DG Log - Made Exit Ladder");
 
 		if (populate)
 		{
 			PopulateDungeon ();
-			Debug.Log ("DG Log - Populate dungeon");
+			Debug.Log ("DG Log - Populated dungeon");
 		}
 
 		Debug.Log ("DG Log - DG FINISHED");
@@ -200,8 +201,8 @@ public class AP_DungeonGenerator : MonoBehaviour {
 
 			//            Application.LoadLevel(Application.loadedLevelName);
 			print("RELOAD LEVEL " + ((isEndRoom) ? "END ROOM" : "MID ROOM") + " FAILED");
-			do {
-			} while(Application.isLoadingLevel);
+//			do {
+//			} while(Application.isLoadingLevel);
 
 			return; // return from this function so no other lines in this function run, this should theoretically be unnecessary?
 		}
@@ -214,11 +215,22 @@ public class AP_DungeonGenerator : MonoBehaviour {
 
 		}
 		// merge the four created rooms
-		GetRoomAtPos(sectionPositions[0]).MergeRoom(GetRoomAtPos(sectionPositions[1]));
+
+		AP_Room[] otherRooms = new AP_Room[3];
+		for (int i = 0; i < 3; i++)
+		{
+			otherRooms [i] = GetRoomAtPos (sectionPositions [i + 1]);
+		}
+		GetRoomAtPos (sectionPositions [0]).MergeRoom (otherRooms);
+		//GetRoomAtPos (sectionPositions [0]).MergeRoom (	GetRoomAtPos (sectionPositions [1]), 
+		//												GetRoomAtPos (sectionPositions [2]),
+		//												GetRoomAtPos (sectionPositions [3]));
+
+		/*GetRoomAtPos(sectionPositions[0]).MergeRoom(GetRoomAtPos(sectionPositions[1]));
 		GetRoomAtPos(sectionPositions[0]).MergeRoom(GetRoomAtPos(sectionPositions[3]));
 		GetRoomAtPos(sectionPositions[2]).MergeRoom(GetRoomAtPos(sectionPositions[1]));
 		GetRoomAtPos(sectionPositions[2]).MergeRoom(GetRoomAtPos(sectionPositions[3]));
-
+		*/
 		AP_Room entryRoom = GetRoomAtPos(origin);						
 		AP_Room midRoomNode = GetRoomAtPos(origin + dirs[curDirIndex]);
 		entryRoom.ConnectRoom(midRoomNode);									// connect this big room with the last main path room generated
@@ -493,22 +505,35 @@ public class AP_DungeonGenerator : MonoBehaviour {
 		p.transform.position = GetStartingRoom ().GetPosition ();
 	}
 
-	void PopulateEnemies()
+//	void PopulateEnemies()
+//	{
+//		GameObject newEnemy = Instantiate (enemy);
+//		newEnemy.transform.position = DungeonRooms [2].GetPosition ();
+//		Collider2D roomCol = DungeonRooms [2].GetComponent<Collider2D> ();
+//		newEnemy.GetComponent<Enemy> ().setRoom (roomCol);
+//		// create dummy
+//		GameObject d = Instantiate (dummy);
+//		d.transform.position = DungeonRooms [3].GetPosition ();
+//	}
+//
+//	void PopulateItems()
+//	{
+//		GameObject item = Instantiate (interactable);
+//		item.transform.position = DungeonRooms [1].GetPosition ();
+//
+//		Vector2 endRoomCenter = Vector2.zero;
+//		foreach (AP_Room r in DungeonRooms)
+//		{
+//			if (r.roomType == AP_Room.RoomType.end)
+//				endRoomCenter += r.GetPosition ();
+//		}
+//		endRoomCenter /= 4;
+//		GameObject ex = Instantiate (exit);
+//		ex.transform.position = endRoomCenter;
+//	}
+		
+	void MakeExit()
 	{
-		GameObject newEnemy = Instantiate (enemy);
-		newEnemy.transform.position = DungeonRooms [2].GetPosition ();
-		Collider2D roomCol = DungeonRooms [2].GetComponent<Collider2D> ();
-		newEnemy.GetComponent<Enemy> ().setRoom (roomCol);
-		// create dummy
-		GameObject d = Instantiate (dummy);
-		d.transform.position = DungeonRooms [3].GetPosition ();
-	}
-
-	void PopulateItems()
-	{
-		GameObject item = Instantiate (interactable);
-		item.transform.position = DungeonRooms [1].GetPosition ();
-
 		Vector2 endRoomCenter = Vector2.zero;
 		foreach (AP_Room r in DungeonRooms)
 		{
@@ -519,13 +544,13 @@ public class AP_DungeonGenerator : MonoBehaviour {
 		GameObject ex = Instantiate (exit);
 		ex.transform.position = endRoomCenter;
 	}
-		
 	void PopulateDungeon()
 	{
 		foreach (AP_Room r in DungeonRooms)
 		{
-			AP_RoomPopulator pop = r.GetPop ();
-			pop.PopulateRoom (1);
+			r.Populate (1);
+//			AP_RoomPopulator pop = r.GetPop ();
+//			pop.PopulateRoom (1);
 		}
 	}
 

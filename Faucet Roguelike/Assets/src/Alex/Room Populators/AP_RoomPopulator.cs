@@ -8,7 +8,6 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 
 
 	protected int rows, columns; 										//Number of rows and columns in our game board.
-	protected Vector3 offset = Vector2.zero;							// offset of pouplating objects, equal to center of associated room
 
 	private List <Vector3> gridPositions = new List <Vector3> ();	//A list of possible locations to place tiles.
 
@@ -21,7 +20,6 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 		room = r;
 		rows = r.GetSize () - 3;
 		columns = rows;
-		offset = r.GetPosition ();
 	}
 
 	//Clears our list gridPositions and prepares it to generate a new board.
@@ -101,7 +99,7 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 
 	}
 
-	protected void Set(GameObject thing)
+	protected virtual void Set(GameObject thing)
 	{
 		Vector3 randomPosition = RandomPosition ();
 		thing.transform.parent = room.transform;

@@ -104,7 +104,31 @@ public class AP_Room : MonoBehaviour
 	public void SetOpen(Vector2 d)
 	{ mRoomEdges[GetEdgeIndex(d)] = EdgeType.open; }
 
+	public void MergeRoom(AP_Room [] r)
+	{ //0 1, 0 3, 2 1, 2 3
+		MergeRoom(r[0]);
+		MergeRoom (r[2]);
+		r[1].MergeRoom (r[0]);
+		r[1].MergeRoom (r[2]);
 
+		for (int i = 0; i < 3; i++)
+		{
+			AP_RoomPopulator rp = r [i].GetComponent<AP_RoomPopulator> ();
+			if (rp != null)
+			{
+				Debug.Log ("DESTROYED ROOM POPULATOR");
+				Destroy (rp);
+			}
+			r [i].roomPop = null;
+			Destroy (r [i].GetComponent<BoxCollider2D> ());
+		}
+
+		BoxCollider2D col = GetComponent<BoxCollider2D> ();
+		float newSize = 2 * mUnitSize - 2;
+		col.size = new Vector2 (newSize, newSize);
+		float newOffset = mUnitSize / 2f;
+		col.offset = new Vector2 (newOffset, newOffset);
+	}
 	public void MergeRoom(AP_Room r)
 	{
 		Vector2 mergeDir = r.GetUnitPos() - GetUnitPos();
@@ -113,6 +137,7 @@ public class AP_Room : MonoBehaviour
 			print("Rooms not orthogonally adjacent, merge failed");
 			return;
 		}
+
 		MergeRoom(r, GetID());
 		r.MergeRoom(this, GetID());
 	}
@@ -291,6 +316,12 @@ public class AP_Room : MonoBehaviour
 
 			}
 		}
+	}
+
+	public void Populate(int level)
+	{
+		if (roomPop != null)
+			roomPop.PopulateRoom (level);
 	}
 
 	AP_RoomPopulator GetRoomPopulator()
