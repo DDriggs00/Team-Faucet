@@ -57,3 +57,4 @@ MonoBehaviour:
   - {fileID: 1177484476955890, guid: 416b2fb0d775f0147bc6ff63eadf6d16, type: 2}
   rocks:
   - {fileID: 1300970728636512, guid: d8c3e93b3df5b564ab5684ef7b6ea8bf, type: 2}
+  Exit: {fileID: 1207163981715554, guid: 5a60183268e21b640b7c212f9a4df36d, type: 2}

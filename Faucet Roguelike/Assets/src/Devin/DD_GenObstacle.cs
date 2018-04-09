@@ -8,6 +8,7 @@ public class DD_GenObstacle : MonoBehaviour
 	public List<GameObject> goodInteractables;
 	public List<GameObject> badInteractables;
 	public List<GameObject> rocks;
+	public GameObject Exit;
 
 	public GameObject generateInteractable(int weight) {
 		// Weight is an integer between 0 and 100, where 100 = always good and 0 = always bad
@@ -23,5 +24,8 @@ public class DD_GenObstacle : MonoBehaviour
 	}
 	public GameObject generateRock() {
 		return rocks[Random.Range(0,rocks.Count)];
+	}
+	public GameObject generateExit() {
+		return Exit;
 	}
 }
