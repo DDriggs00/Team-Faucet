@@ -19,11 +19,12 @@ public class SlotController : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        transform.parent.GetComponent<InventoryController>().selectedSlot = this.transform;
+         transform.parent.GetComponent<InventoryController>().selectedSlot = this.transform;
     }
 
     private void OnMouseExit()
     {
-        transform.parent.GetComponent<InventoryController>().selectedSlot = null;
+        if (!transform.parent.parent.GetComponent<InventoryController>().canDragItem)
+            transform.parent.GetComponent<InventoryController>().selectedSlot = null;
     }
 }

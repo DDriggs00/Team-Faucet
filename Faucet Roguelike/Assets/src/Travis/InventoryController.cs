@@ -73,7 +73,9 @@ public class InventoryController : MonoBehaviour
                        (selectedItem.GetComponent<Item>().type == Item.Type.consumable || //stackable items
                        (selectedItem.GetComponent<Item>().type == Item.Type.misc)))       //stackable items
                     {
-                        Debug.Log("We stacked 2 items");
+                        Debug.Log("We stacked 2 consumable or misc items");
+                        selectedItem.GetComponent<Item>().IncreaseAmount(selectedSlot.GetChild(0).GetComponent<Item>().amount);
+                        Destroy(selectedSlot.GetChild(0).gameObject);
                     }
                     //Swappable Items  
                     else
