@@ -5,10 +5,16 @@ using UnityEngine.SceneManagement;	// For the ability to reset the level
 
 public class DD_LevelExit : DD_Obstacle 
 {
-	bool mUnlocked = true;	// Whether exit can be used
+	private bool mUnlocked = true;	// Whether exit can be used
+	private bool mFinalExit = false;
+	// private static int mNumExits = 0;
 
 	DD_LevelExit()
 	{	
+		// if(mNumExits >= 3) {
+		// 	mFinalExit = true;
+		// 	Debug.Log("FINAL Exit Created");
+		// }
 		Debug.Log("Level Exit Created");
 		SetObstacleType(ObstacleType.levelExit);
 		addObstacle(); 
@@ -21,8 +27,13 @@ public class DD_LevelExit : DD_Obstacle
 
 		if(collision.tag == "Player" && mUnlocked) //if Exit is unlocked and player is colliding
 		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name);	//reload scene
-			Debug.Log("Level Ended");
+			// if(mFinalExit) {
+			// 	//Finish game, show score
+			// }
+			// else {
+				SceneManager.LoadScene(SceneManager.GetActiveScene().name);	//reload scene
+				Debug.Log("Level Ended");
+			// }
 		}
 	}
 }
