@@ -10,7 +10,14 @@ public class DD_Obstacle : MonoBehaviour
 
 	public enum ObstacleType
 	{
-		spikeTrap, healSpot, levelExit, pressurePlate, lever
+		spikeTrap, healSpot, 
+		levelExit, dodoEgg, 
+		pressurePlate, lever, 
+		doubleDamage, halfDamage,
+		doubleArmor, halfArmor,
+		doubleSpeed, halfSpeed,
+		healthPotion, hurtPotion,
+		invulnerabilityPotion
 	};
 
 	private ObstacleType mObsType;
