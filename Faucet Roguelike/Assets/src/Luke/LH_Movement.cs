@@ -8,12 +8,15 @@ public class LH_Movement : MonoBehaviour
 	public int mSpeedCoefficient=5;
     Vector2 mUserInput;
 
+    
+
 
     // Use this for initialization
     void Start () 
 	{
 		//Debug.Log("The Player is here!");
         mRigidPlayer = GetComponent<Rigidbody2D>();
+        //mAnimator = GetComponent<Animator>();
 
 	}
 
@@ -41,5 +44,10 @@ public class LH_Movement : MonoBehaviour
         dir.Normalize();
 		mRigidPlayer.velocity=dir*mSpeedCoefficient;
 	}
+    
+    public void changeSpeed(int percent)
+    {
+        mSpeedCoefficient = (mSpeedCoefficient*percent)/100;
+    }
 }
 

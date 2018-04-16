@@ -4,6 +4,9 @@ using UnityEngine;
 using System;
 public class LH_Health : MonoBehaviour {
 	private int mHealthPoints = 100;
+	private int mHealthCoefficient = 100;
+	private int mSecondsCounter = 0;
+	private int mMaxSeconds = 10;
 	LH_Attack mAttack;
     void Start()
     {
@@ -37,12 +40,21 @@ public class LH_Health : MonoBehaviour {
 	{
 		int a = Convert.ToInt32(dmgAmt);
 		//play sound
-		changeHealth(-a);
+		changeHealth( (-a*mHealthCoefficient)/100 );
 	}
 	public void Heal(int healAmt)
 	{
-		changeHealth(healAmt);
+		changeHealth( (healAmt*mHealthCoefficient)/100 );
 		//play sound
+	}
+	public void changeArmor(int percent)  
+	{
+		mHealthCoefficient = (mHealthCoefficient * percent)/100;
+		mSecondsCounter = 0; 
+	}
+	public void makeInvincible(int seconds)
+	{
+		mAttack.setInvincible(seconds);
 	}
 	public int getHP()
 	{
