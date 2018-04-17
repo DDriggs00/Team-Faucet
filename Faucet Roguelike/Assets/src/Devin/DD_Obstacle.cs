@@ -6,7 +6,7 @@ public class DD_Obstacle : MonoBehaviour
 {
 
 	private static int mTotalNumObstacles = 0;
-	// private static int mtempSeed = mTotalNumObstacles + 12345;
+	private static int mLevelNumber = 0;
 
 	public enum ObstacleType
 	{

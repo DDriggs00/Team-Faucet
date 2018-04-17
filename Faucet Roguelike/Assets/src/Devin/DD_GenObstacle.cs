@@ -8,7 +8,9 @@ public class DD_GenObstacle : MonoBehaviour
 	public List<GameObject> goodInteractables;
 	public List<GameObject> badInteractables;
 	public List<GameObject> rocks;
+	public GameObject Lever;
 	public GameObject Exit;
+	public GameObject DodoEgg;
 
 	public GameObject generateInteractable(int weight) {
 		// Weight is an integer between 0 and 100, where 100 = always good and 0 = always bad
