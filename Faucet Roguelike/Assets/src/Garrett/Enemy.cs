@@ -7,9 +7,9 @@ public class Enemy : MonoBehaviour
 	//Variable Declarations
 
 	public int mDifficulty;
-	private int mPlayerDamage;                          
+	protected int mPlayerDamage;                          
 
-	private float mMoveSpeed;
+	protected float mMoveSpeed;
 	private float mMoveSpeedX;
 	private float mMoveSpeedY;
 	private Vector2 mMinWalkPoint;
@@ -41,6 +41,14 @@ public class Enemy : MonoBehaviour
 	void Start()
 	{
 
+		initiate ();
+
+
+	}
+
+	protected void initiate()
+	{
+
 		if (mDifficulty!=null)
 		{
 			mMoveSpeed = mDifficulty;
@@ -68,6 +76,12 @@ public class Enemy : MonoBehaviour
 
 	void Update()
 	{
+		updateEnemy ();
+	}
+
+
+	protected void updateEnemy()
+	{
 		if (mTarget)
 		{
 			attackPlayer ();
@@ -82,8 +96,10 @@ public class Enemy : MonoBehaviour
 				mTarget = null;
 			}
 		}
-	}
 
+
+
+	}
 
 
 
