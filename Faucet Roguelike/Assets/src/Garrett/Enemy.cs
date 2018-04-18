@@ -85,6 +85,12 @@ public class Enemy : MonoBehaviour
 		if (mTarget)
 		{
 			attackPlayer ();
+			if ((mTarget.position.y > mMaxWalkPoint.y) ||
+				(mTarget.position.x > mMaxWalkPoint.x) || (mTarget.position.y < mMinWalkPoint.y) ||
+				(mTarget.position.x < mMinWalkPoint.x))
+			{
+				mTarget = null;
+			}
 		} else
 		{
 			walk ();
