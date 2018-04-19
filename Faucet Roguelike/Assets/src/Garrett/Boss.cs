@@ -12,7 +12,7 @@ public class Boss : Enemy {
 	void Start()
 	{
 		initiate ();
-		if (mDifficulty!=null)
+		if (mDifficulty>0)
 		{
 			mMoveSpeed = (float)mDifficulty/2;
 			mPlayerDamage = mDifficulty * 15;

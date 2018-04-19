@@ -49,7 +49,7 @@ public class Enemy : MonoBehaviour
 	protected void initiate()
 	{
 
-		if (mDifficulty!=null)
+		if (mDifficulty>0)
 		{
 			mMoveSpeed = mDifficulty;
 			mPlayerDamage = mDifficulty * 5;

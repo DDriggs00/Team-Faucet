@@ -5,18 +5,22 @@ using UnityEngine;
 public class GiveEnemy : MonoBehaviour {
 
 	private int newEnemy = 0;
-	public Boss mBoss;
-	public Minion mMinion;
+	public int mDifficulty = 1;
+//	public Boss mBoss;
+//	public Minion mMinion;
+	public GameObject mMinion;
+	public GameObject mBoss;
 
 	// Use this for initialization
 	void Start () {
 
 
-		for(int i=0;i<5;i++)
+		for (int i = 0; i < 5; i++)
 		{
 			generate ();
-
 		}
+
+
 		
 	}
 	
@@ -29,15 +33,26 @@ public class GiveEnemy : MonoBehaviour {
 
 	public void generate()
 	{
-		
+		newEnemy = Random.Range (0, 4);
 		if(newEnemy==0)
 		{
-			Minion minionCopy = (Minion)Instantiate(mMinion,new Vector3(1 * 2.0F, 0, 0), Quaternion.identity);
+
+//				Boss bossCopy = (Boss)Instantiate(mBoss, new Vector3(Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
+			GameObject bossCopy = (GameObject)Instantiate(mBoss, new Vector3(Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
+			Boss newBoss = bossCopy.GetComponent<Boss> ();
+
+			newBoss.mDifficulty = mDifficulty;
 		}
 		else
 		{
-			//Boss bossCopy = (Boss)Instantiate(mBoss, new Vector3(1 * 2.0F, 0, 0), Quaternion.identity);
+			
+//			Minion minionCopy = (Minion)Instantiate (mMinion, new Vector3 (Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
+			GameObject minionCopy = (GameObject)Instantiate (mMinion, new Vector3 (Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
 
+			Minion newMinion = minionCopy.GetComponent<Minion> ();
+			newMinion.mDifficulty = mDifficulty;
+
+		
 		}
 
 
