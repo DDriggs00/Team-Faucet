@@ -7,7 +7,7 @@ using Random = UnityEngine.Random; 		//Tells Random to use the Unity Engine rand
 public abstract class AP_RoomPopulator : MonoBehaviour {
 
 
-	protected int rows, columns; 										//Number of rows and columns in our game board.
+	protected int rows, columns; 							//Number of rows and columns that objects can be generated to, not size of room itself
 
 	private List <Vector3> gridPositions = new List <Vector3> ();	//A list of possible locations to place tiles.
 
@@ -18,7 +18,7 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 	{
 		obstacleGenerator = g;
 		room = r;
-		rows = r.GetSize () - 3;
+		rows = r.GetSize () - 3;		// -3 accomodates an inset such that objects are generated at least 1 unit away from the room's walls
 		columns = rows;
 	}
 
@@ -58,10 +58,10 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 		
 	public virtual void PopulateRoom (int level)
 	{
-		
+		// each room type will populate differently and will have PopulateRoom dynamically called
 	}
 
-	protected virtual void PopulateRocks(int min, int max)
+	protected virtual void PopulateRocks(int min, int max)		// rocks are inert objects
 	{
 		int obstacleAmount = Random.Range(min, max+1);
 		for (int o = 0; o < obstacleAmount; o++)
@@ -71,10 +71,10 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 		}
 	}
 
-	protected virtual void PopulateInteractables(int min, int max, int chanceGood)
-	{
-		int interactableAmount = Random.Range(min, max+1);
-		for (int i = 0; i < interactableAmount; i++)
+	protected virtual void PopulateInteractables(int min, int max, int chanceGood)	// these interactibles can be either good for the player or bad
+	{																				// when chanceGood = 0, we're guaranteed a bad item
+		int interactableAmount = Random.Range(min, max+1);							// when chanceGood = 100, we're guaranteed a good item
+		for (int i = 0; i < interactableAmount; i++)								// numbers in between are the probability of a good item generating
 		{
 			GameObject interactable = Instantiate (obstacleGenerator.generateInteractable(chanceGood));
 			Set (interactable);
@@ -82,19 +82,15 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 	}
 
 	protected virtual void PopulateEnemies(int min, int max)
-	{
-		//Determine number of enemies based on current level number, based on a logarithmic progression
-		//		int enemyCount = (int)Mathf.Log(level, 2f);
-		//		LayoutObjectAtRandom (enemyTiles, enemyCount, enemyCount);
-//TEMP CODE
-		GameObject e = FindObjectOfType<AP_DungeonGenerator>().enemy;
+	{		// code to be used until Garrett's class/method for providing an enemy object is in place
+		GameObject e = FindObjectOfType<AP_DungeonGenerator>().enemy;	// currently grabbing enemy object that I know dungeon generator has to instantiate
 		int enemyAmount = Random.Range (min, max + 1);
 		for (int i = 0; i < enemyAmount; i++)
 		{
 			GameObject enemy = Instantiate (e);
 			Collider2D roomCol = this.gameObject.GetComponent<Collider2D> ();
-			enemy.GetComponent<Enemy> ().setRoom (roomCol);
-			Set (enemy);
+			enemy.GetComponent<Enemy> ().setRoom (roomCol);				// enemy objects want to have the collider of the room they belong to, so 
+			Set (enemy);												// they know the bounds they can wander
 		}
 
 	}
@@ -103,8 +99,8 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 	{
 		Vector3 randomPosition = RandomPosition ();
 		thing.transform.parent = room.transform;
-		thing.transform.localPosition = randomPosition;
-	}
+		thing.transform.localPosition = randomPosition;					// local position sets the position of the object relative to its parent
+	}																	// as if parent's center is the 0,0 position. this way no need to worry about offset
 
 
 
