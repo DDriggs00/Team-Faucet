@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class AP_DungeonGenerator : MonoBehaviour {
+public sealed class AP_DungeonGenerator : MonoBehaviour {
 	/*	*Expand – means to generate a connecting room with its own exits, adding those exits to a list for further expansion.
         Step 1: Generate starting room and exits
         Step 2: Expand dungeon through one valid exit, add other exits to a list. 
@@ -22,6 +22,27 @@ public class AP_DungeonGenerator : MonoBehaviour {
         As far as this class is concerned, a room that is actually 15x15 centered at position (0, 30) in scene looks like a 1x1 room at (0,2)
         i'm calling this 1x1 a unit size, and this (0,2) the unit position
     */
+
+
+	// Singleton Implementation
+	private static AP_DungeonGenerator dunGen;
+
+	public static AP_DungeonGenerator instance
+	{
+		get 
+		{
+			if (!dunGen)
+			{
+				dunGen = FindObjectOfType (typeof(AP_DungeonGenerator)) as AP_DungeonGenerator;
+				if (!dunGen)
+				{
+					Debug.LogError ("There needs to be one active AP_DungeonGenerator script on a game object in your scene");
+				} 
+			}
+			return dunGen;
+		}
+	}
+
 
 	int mRoomCount = 0;  // this increments with each new room and is used to assign room IDs
 	// cardinal directions used throughout generation
