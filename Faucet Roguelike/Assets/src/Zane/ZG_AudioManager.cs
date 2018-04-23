@@ -5,11 +5,13 @@ using UnityEngine.Audio;
 
 public class ZG_AudioManager : MonoBehaviour
 {
-
+    
     public ZG_DynamicSounds[] cDynamicSounds;
     public ZG_FixedPitchSounds[] cFixedPitchSounds;
     public ZG_Music[] cMusic;
 
+    // static instance of sound manager ensures that it will persist between scenes rather than 
+    // being destroyed/loaded each time
     public static ZG_AudioManager instance;
 
 
@@ -17,6 +19,9 @@ public class ZG_AudioManager : MonoBehaviour
     // Loop through array of sounds and create a sound object for each one
     void Awake()
     {
+
+        // make sure there is only ever one instance of the sound manager
+        // in a scnen at one time, and if not, destroy the duplicate
         if (instance == null)
         {
             instance = this;
@@ -26,8 +31,12 @@ public class ZG_AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        // sound manager persists between scenes rather than being reloaded
         DontDestroyOnLoad(gameObject);
 
+
+        // Loop through each array of sounds and instantiate them
+        // as well as setting their sound properties
         for (int i = 0; i < cDynamicSounds.Length; i++)
         {
             cDynamicSounds[i].source = gameObject.AddComponent<AudioSource>();
@@ -64,19 +73,19 @@ public class ZG_AudioManager : MonoBehaviour
 
 
     /******************************************************
-    * playSound function                                  *
-    *  argument(s): string name                           *
+    * playDynamicSound function                           *
+    * argument(s): string name                            *
     *                                                     *
     * pass the name of the sound that is to be played     *
     * if sound exists, it will play with random pitch     *
     ******************************************************/
-
     public void playDynamicSound(string name)
     {
         for (int i = 0; i < cDynamicSounds.Length; i++)
         {
             if (cDynamicSounds[i].mClipName == name)
             {
+                // offsets the pitch slightly each call to avoid repition on frequently called sounds
                 cDynamicSounds[i].source.pitch = Random.Range(.6f, 1.0f);
                 cDynamicSounds[i].source.volume = Random.Range(.9f, 1.0f);
                 cDynamicSounds[i].source.Play();
@@ -86,13 +95,21 @@ public class ZG_AudioManager : MonoBehaviour
         }
     }
 
-
+    /******************************************************
+    * playFixedSound function                             *
+    * argument(s): string name                            *
+    *                                                     *
+    * Similar to Dynamic Sound function, but there is no  *
+    * pitch change, this is for sounds that need to be    *
+    * the same (UI navigation, Powerups, etc.)            *
+    ******************************************************/
     public void playFixedSound(string name)
     {
         for (int i = 0; i < cFixedPitchSounds.Length; i++)
         {
             if (cFixedPitchSounds[i].mClipName == name)
             { 
+                //although pitch is fixed, slight fluctuations in volume can increse immersion
                 cFixedPitchSounds[i].source.volume = Random.Range(.9f, 1.0f);
                 cFixedPitchSounds[i].source.Play();
                 return;
@@ -106,10 +123,9 @@ public class ZG_AudioManager : MonoBehaviour
    * playMusic function                                  *
    *  argument(s): int level                             *
    *                                                     *
-   * function takes the current level number and plays   *
-   * the appropriate background music until the user     *
-   * reaches a difficulty in which the music does not    *
-   * need to be further adjusted                         *
+   * plays appropriate background music or otherwise,    *
+   * as specified by the argument; music persists        *
+   * through scenes.                                     *
    * ****************************************************/
 
     public void playMusic(string name)
