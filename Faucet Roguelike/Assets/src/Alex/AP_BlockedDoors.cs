@@ -50,6 +50,7 @@ public class AP_BlockedDoors : MonoBehaviour {
 
 	public void BreakBlocks()
 	{
+		FindObjectOfType<ZG_AudioManager> ().playDynamicSound ("boulderBreak");
 		foreach (GameObject b in doorBlocks)
 		{
 			b.GetComponent<Animator> ().enabled = true;
