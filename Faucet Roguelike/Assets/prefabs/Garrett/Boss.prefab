@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1663998489249636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 580.81024, y: 279.17236, z: -18.100487}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
@@ -86,7 +86,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3, y: 3}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &114979383126547902
 MonoBehaviour:
@@ -99,9 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c7fd194cc22548bbba0a6aa200d1418, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mDifficulty: 0
+  mDifficulty: 1
   mWalkZone: {fileID: 0}
-  difficulty: 0
 --- !u!212 &212223166339282314
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -10,15 +10,12 @@ public class GiveEnemy : MonoBehaviour {
 //	public Minion mMinion;
 	public GameObject mMinion;
 	public GameObject mBoss;
+	private GameObject newtBoss;
 
 	// Use this for initialization
 	void Start () {
 
 
-		for (int i = 0; i < 5; i++)
-		{
-			generate ();
-		}
 
 
 		
@@ -34,11 +31,12 @@ public class GiveEnemy : MonoBehaviour {
 	public void generate()
 	{
 		newEnemy = Random.Range (0, 4);
+	
 		if(newEnemy==0)
 		{
 
 //				Boss bossCopy = (Boss)Instantiate(mBoss, new Vector3(Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
-			GameObject bossCopy = (GameObject)Instantiate(mBoss, new Vector3(Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
+			GameObject bossCopy = (GameObject)Instantiate (mBoss, new Vector3 (Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
 			Boss newBoss = bossCopy.GetComponent<Boss> ();
 
 			newBoss.mDifficulty = mDifficulty;
@@ -54,6 +52,25 @@ public class GiveEnemy : MonoBehaviour {
 
 		
 		}
+
+
+	}
+
+
+	public GameObject getEnemy()
+	{
+
+		return mMinion;
+
+
+
+	}
+
+
+	public GameObject getBoss()
+	{
+
+		return mBoss;
 
 
 	}
