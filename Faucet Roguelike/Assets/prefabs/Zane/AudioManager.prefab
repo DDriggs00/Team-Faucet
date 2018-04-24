@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4359591731004240}
   - component: {fileID: 114257071628968534}
+  - component: {fileID: 114474617767235000}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -58,37 +59,37 @@ MonoBehaviour:
     source: {fileID: 0}
     mClipName: enemyPursuit1
     mLoop: 0
-  - mVolume: 0
+  - mVolume: 1
     mPitch: 0
     clip: {fileID: 8300000, guid: 2517bf0a7b2d30b498aeaa0a009019be, type: 3}
     source: {fileID: 0}
     mClipName: enemyPursuit2
     mLoop: 0
-  - mVolume: 0
+  - mVolume: 1
     mPitch: 0
     clip: {fileID: 8300000, guid: 9b0f1d6bc32158c49a128ba7f98839ad, type: 3}
     source: {fileID: 0}
     mClipName: enemyTakeDamage1
     mLoop: 0
-  - mVolume: 0
+  - mVolume: 1
     mPitch: 0
     clip: {fileID: 8300000, guid: 74777c76bdf479942a02e280c12f9634, type: 3}
     source: {fileID: 0}
     mClipName: playerTakeDamage1
     mLoop: 0
-  - mVolume: 0
+  - mVolume: 1
     mPitch: 0
     clip: {fileID: 8300000, guid: 50ea4736e8ac5914da98d42dd0bb0df9, type: 3}
     source: {fileID: 0}
     mClipName: swordConnect
     mLoop: 0
-  - mVolume: 0
+  - mVolume: 1
     mPitch: 0
     clip: {fileID: 8300000, guid: 35fd023d70c08554abb2a8f4f26acb36, type: 3}
     source: {fileID: 0}
     mClipName: swordSwing
     mLoop: 0
-  - mVolume: 0
+  - mVolume: 1
     mPitch: 0
     clip: {fileID: 8300000, guid: 1028548576282b7438a863b071d62ebb, type: 3}
     source: {fileID: 0}
@@ -116,8 +117,22 @@ MonoBehaviour:
     mClipName: uiSelect
     mLoop: 0
   cMusic:
-  - mVolume: 0.5
+  - mVolume: 0.2
     clip: {fileID: 8300000, guid: 87d12a47c2e8dbe44bcc40d3b37994a8, type: 3}
     source: {fileID: 0}
     mClipName: backgroundMusic1
     mLoop: 1
+  runStressTest: 0
+--- !u!114 &114474617767235000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1620626735803128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9ae2f85dd4d934e85cabb2d83a5f9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  runStressTest: 1

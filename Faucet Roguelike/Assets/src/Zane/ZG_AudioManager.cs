@@ -5,10 +5,12 @@ using UnityEngine.Audio;
 
 public class ZG_AudioManager : MonoBehaviour
 {
+
     
     public ZG_DynamicSounds[] cDynamicSounds;
     public ZG_FixedPitchSounds[] cFixedPitchSounds;
     public ZG_Music[] cMusic;
+    public bool runStressTest = false;
 
     // static instance of sound manager ensures that it will persist between scenes rather than 
     // being destroyed/loaded each time
@@ -21,7 +23,7 @@ public class ZG_AudioManager : MonoBehaviour
     {
 
         // make sure there is only ever one instance of the sound manager
-        // in a scnen at one time, and if not, destroy the duplicate
+        // in a scene at one time, and if not, destroy the duplicate
         if (instance == null)
         {
             instance = this;
@@ -68,6 +70,12 @@ public class ZG_AudioManager : MonoBehaviour
     private void Start()
     {
         playMusic("backgroundMusic1");
+        if (runStressTest == true)
+        {
+            zgStressTest();
+        }
+        else
+            return;
     }
 
 
@@ -86,8 +94,8 @@ public class ZG_AudioManager : MonoBehaviour
             if (cDynamicSounds[i].mClipName == name)
             {
                 // offsets the pitch slightly each call to avoid repition on frequently called sounds
-                cDynamicSounds[i].source.pitch = Random.Range(.6f, 1.0f);
-                cDynamicSounds[i].source.volume = Random.Range(.9f, 1.0f);
+                cDynamicSounds[i].source.pitch = Random.Range(.7f, 1.0f);
+                cDynamicSounds[i].source.volume = Random.Range(.3f, .5f);
                 cDynamicSounds[i].source.Play();
                 return;
             }
@@ -110,7 +118,7 @@ public class ZG_AudioManager : MonoBehaviour
             if (cFixedPitchSounds[i].mClipName == name)
             { 
                 //although pitch is fixed, slight fluctuations in volume can increse immersion
-                cFixedPitchSounds[i].source.volume = Random.Range(.9f, 1.0f);
+                cFixedPitchSounds[i].source.volume = Random.Range(.3f, .5f);
                 cFixedPitchSounds[i].source.Play();
                 return;
             }
@@ -137,34 +145,29 @@ public class ZG_AudioManager : MonoBehaviour
                 cMusic[i].source.Play();
                 return;
             }
-
-           
         }
-
     }
-
-
-
 
 
 
     /****        Stress Test for Audio Manager            *****
-     *                                                        *
-     * This function plays ambient sounds indefinitely with   *
-     * random play intervals, random volumes and pitches,     * 
-     * and random stereo panning. This function can be called *
-     * multiple times to stress test the game, as the sounds  *
-     * stack rather than get replaced or overwritten.         *
-     *                                                        *
-     * *******************************************************/
+ *                                                        *
+ * This function plays ambient sounds indefinitely with   *
+ * random play intervals, random volumes and pitches,     * 
+ * and random stereo panning. This function can be called *
+ * multiple times to stress test the game, as the sounds  *
+ * stack rather than get replaced or overwritten.         *
+ *                                                        *
+ * *******************************************************/
     public void zgStressTest()
     {
         // starts a coroutine so that wait can be used between audio calls
-        StartCoroutine(AudioStressTest());
+        StartCoroutine(DynamicStressTest());
+        StartCoroutine(FixedStressTest());
     }
 
     // test audio
-    IEnumerator AudioStressTest()
+    IEnumerator FixedStressTest()
     {
         // initiate constant looping ambience before random sounds are called
 
@@ -172,23 +175,47 @@ public class ZG_AudioManager : MonoBehaviour
         // with various volumes/pitches/panning
         while (true)
         {
-            float randPlayIntervals = Random.Range(4.0f, 9.0f);
+            float randPlayIntervals = Random.Range(1.0f, 3.0f);
+
+            yield return new WaitForSeconds(randPlayIntervals);
+
+            for (int i = 0; i < cFixedPitchSounds.Length; i++)
+            {
+                cFixedPitchSounds[i].source.panStereo = Random.Range(-.5f, .5f);
+                cFixedPitchSounds[i].source.volume = Random.Range(.3f, .5f);
+
+            }
+            cFixedPitchSounds[Random.Range(0, cFixedPitchSounds.Length)].source.Play();
+
+        }
+
+    }
+
+    IEnumerator DynamicStressTest()
+    {
+        // initiate constant looping ambience before random sounds are called
+
+        // this loop calls a random sound, waits a random time, and repeats
+        // with various volumes/pitches/panning
+        while (true)
+        {
+            float randPlayIntervals = Random.Range(1.0f, 3.0f);
 
             yield return new WaitForSeconds(randPlayIntervals);
 
             for (int i = 0; i < cDynamicSounds.Length; i++)
             {
-                cDynamicSounds[i].source.pitch = Random.Range(.6f, 1.0f);
-                cDynamicSounds[i].source.volume = Random.Range(.2f, .3f);
-                cDynamicSounds[i].source.panStereo = Random.Range(-1.0f, 1.0f);
-
+                cDynamicSounds[i].source.pitch = Random.Range(.7f, 1.0f);
+                cDynamicSounds[i].source.panStereo = Random.Range(-.5f, .5f);
+                cDynamicSounds[i].source.volume = Random.Range(.3f, .5f);
 
             }
-            cDynamicSounds[Random.Range(0, 10)].source.Play();
+            cDynamicSounds[Random.Range(0, cDynamicSounds.Length)].source.Play();
 
         }
 
     }
+
 }
 
 

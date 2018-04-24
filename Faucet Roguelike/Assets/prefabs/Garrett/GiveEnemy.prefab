@@ -51,6 +51,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b718f005c6c0848b5b6794344cf0202c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mDifficulty: 0
-  mMinion: {fileID: 0}
-  mBoss: {fileID: 0}
+  mDifficulty: 1
+  mMinion: {fileID: 1903193787251118, guid: 8d2a23fcafcf440b39d58ccbf35a66d4, type: 2}
+  mBoss: {fileID: 1663998489249636, guid: 78b7e4c7088f94528afb47db5ed4b46e, type: 2}
