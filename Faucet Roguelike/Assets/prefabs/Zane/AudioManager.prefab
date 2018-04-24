@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4359591731004240}
-  - component: {fileID: 114720557360370334}
+  - component: {fileID: 114257071628968534}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114720557360370334
+--- !u!114 &114257071628968534
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -48,62 +48,76 @@ MonoBehaviour:
   m_GameObject: {fileID: 1620626735803128}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efae274564236b141b31aba556659936, type: 3}
+  m_Script: {fileID: 11500000, guid: 41c047f49cc4da448b3ef3a6dac52e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds:
-  - volume: 0
-    pitch: 0
-    clip: {fileID: 8300000, guid: 64ab4b86fe44cda4c8404e551f77b5b6, type: 3}
+  cDynamicSounds:
+  - mVolume: 0
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 4373f08dc42d6dc4a87fc9ea3fb7dcc9, type: 3}
     source: {fileID: 0}
-    name: 
-    loop: 0
-  - volume: 0
-    pitch: 0
-    clip: {fileID: 8300000, guid: 557c1a1bc2dd6f147b918af826526818, type: 3}
+    mClipName: enemyPursuit1
+    mLoop: 0
+  - mVolume: 0
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 2517bf0a7b2d30b498aeaa0a009019be, type: 3}
     source: {fileID: 0}
-    name: 
-    loop: 0
-  - volume: 0
-    pitch: 0
-    clip: {fileID: 8300000, guid: 59b428849a462bb4e85b526fe4ed5c16, type: 3}
+    mClipName: enemyPursuit2
+    mLoop: 0
+  - mVolume: 0
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 9b0f1d6bc32158c49a128ba7f98839ad, type: 3}
     source: {fileID: 0}
-    name: 
-    loop: 0
-  - volume: 0
-    pitch: 0
-    clip: {fileID: 8300000, guid: 64ab4b86fe44cda4c8404e551f77b5b6, type: 3}
+    mClipName: enemyTakeDamage1
+    mLoop: 0
+  - mVolume: 0
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 74777c76bdf479942a02e280c12f9634, type: 3}
     source: {fileID: 0}
-    name: 
-    loop: 0
-  - volume: 0
-    pitch: 0
-    clip: {fileID: 8300000, guid: 5857fd0da8654bc428a846721e80f9e3, type: 3}
+    mClipName: playerTakeDamage1
+    mLoop: 0
+  - mVolume: 0
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 50ea4736e8ac5914da98d42dd0bb0df9, type: 3}
     source: {fileID: 0}
-    name: 
-    loop: 0
-  - volume: 0.05
-    pitch: 1
-    clip: {fileID: 8300000, guid: c5ebaeaa48758154c82c56cbf23caf67, type: 3}
+    mClipName: swordConnect
+    mLoop: 0
+  - mVolume: 0
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 35fd023d70c08554abb2a8f4f26acb36, type: 3}
     source: {fileID: 0}
-    name: 
-    loop: 1
-  - volume: 0
-    pitch: 0
-    clip: {fileID: 8300000, guid: 5105ced06e40adf4cb1c9ae825b08ac9, type: 3}
+    mClipName: swordSwing
+    mLoop: 0
+  - mVolume: 0
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 1028548576282b7438a863b071d62ebb, type: 3}
     source: {fileID: 0}
-    name: 
-    loop: 1
-  - volume: 0
-    pitch: 0
-    clip: {fileID: 8300000, guid: 2b4d5a649efa9b5468a199005cb384bd, type: 3}
+    mClipName: boulderBreak
+    mLoop: 0
+  cFixedPitchSounds:
+  - mVolume: 0
+    clip: {fileID: 8300000, guid: dc9db47536708984f91ce7e280592b32, type: 3}
     source: {fileID: 0}
-    name: swordSwing
-    loop: 0
-  - volume: 0
-    pitch: 0
-    clip: {fileID: 8300000, guid: e99f1cf1399580446852a19cce663da7, type: 3}
+    mClipName: gameOver
+    mLoop: 0
+  - mVolume: 0
+    clip: {fileID: 8300000, guid: 5227682d7d480b04e88f71375317d6d5, type: 3}
     source: {fileID: 0}
-    name: levelFinish
-    loop: 0
-  placeHolderTheme: 0
+    mClipName: powerupPickup
+    mLoop: 0
+  - mVolume: 0
+    clip: {fileID: 8300000, guid: 293fd3a1f2adc8440b841d08998b72ca, type: 3}
+    source: {fileID: 0}
+    mClipName: uiNavigate
+    mLoop: 0
+  - mVolume: 0
+    clip: {fileID: 8300000, guid: 15da06fbd50b3a94fbf8fc7cedcc6522, type: 3}
+    source: {fileID: 0}
+    mClipName: uiSelect
+    mLoop: 0
+  cMusic:
+  - mVolume: 0.5
+    clip: {fileID: 8300000, guid: 87d12a47c2e8dbe44bcc40d3b37994a8, type: 3}
+    source: {fileID: 0}
+    mClipName: backgroundMusic1
+    mLoop: 1
