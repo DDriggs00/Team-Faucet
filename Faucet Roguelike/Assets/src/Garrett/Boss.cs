@@ -5,9 +5,6 @@ using UnityEngine;
 public class Boss : Enemy {
 
 
-
-
-	public int difficulty;
 	// Use this for initialization
 	void Start()
 	{

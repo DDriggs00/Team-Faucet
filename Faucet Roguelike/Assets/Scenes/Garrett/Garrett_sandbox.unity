@@ -180,7 +180,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dadc9cdac5b024a30824a586853e8ec0, type: 2}
   m_IsPrefabParent: 0
---- !u!1001 &540921712
+--- !u!1001 &300041418
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -218,23 +218,6 @@ Prefab:
     - target: {fileID: 4448575713936034, guid: df86628830840450ebd1ddbc412d6ac4, type: 2}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114940313197462600, guid: df86628830840450ebd1ddbc412d6ac4,
-        type: 2}
-      propertyPath: mBoss
-      value: 
-      objectReference: {fileID: 1663998489249636, guid: 78b7e4c7088f94528afb47db5ed4b46e,
-        type: 2}
-    - target: {fileID: 114940313197462600, guid: df86628830840450ebd1ddbc412d6ac4,
-        type: 2}
-      propertyPath: mMinion
-      value: 
-      objectReference: {fileID: 1903193787251118, guid: 8d2a23fcafcf440b39d58ccbf35a66d4,
-        type: 2}
-    - target: {fileID: 114940313197462600, guid: df86628830840450ebd1ddbc412d6ac4,
-        type: 2}
-      propertyPath: mDifficulty
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: df86628830840450ebd1ddbc412d6ac4, type: 2}
