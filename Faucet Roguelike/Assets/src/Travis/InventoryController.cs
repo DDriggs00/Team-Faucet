@@ -18,7 +18,7 @@ public class InventoryController : MonoBehaviour
     void Start()
     {
         for (int x = 1; x <= inventorySize.x; x++)
-        {
+        {                                                   //Nested loop making slots using x and y values
             for (int y = 1; y <= inventorySize.y; y++)
             {
                 GameObject slot = Instantiate(slotPrefab) as GameObject;
@@ -26,9 +26,9 @@ public class InventoryController : MonoBehaviour
                 slot.name = "slot_" + x + "_" + y; //slot name is x and y value
                 slot.GetComponent<RectTransform>().anchoredPosition = new Vector3(windowSize.x / (inventorySize.x + 1) * x, windowSize.y / (inventorySize.y + 1) * -y, 0);
 
+                /*FILLS INVENTORY WITH ITEMS*/
                 if (y <= GameDB.itemList.Count)
                 {
-
                     GameObject item = Instantiate(itemPrefab) as GameObject;
                     item.transform.SetParent(slot.transform);
                     item.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
@@ -64,7 +64,7 @@ public class InventoryController : MonoBehaviour
         {
             canDragItem = false;
 
-            if (selectedSlot == null) selectedItem.SetParent(originalSlot); //if no selected parent is original
+            if (selectedSlot == null) selectedItem.SetParent(originalSlot); //if no new selection then parent is original
             else
             {
                 if (selectedSlot.childCount > 0)
@@ -80,8 +80,8 @@ public class InventoryController : MonoBehaviour
                     //Swappable Items  
                     else
                     {
-                       selectedSlot.GetChild(0).SetParent(originalSlot);
-                       foreach (Transform t in originalSlot) t.localPosition = Vector3.zero;
+                        selectedSlot.GetChild(0).SetParent(originalSlot);
+                        foreach (Transform t in originalSlot) t.localPosition = Vector3.zero;
                     }
                 }
                 selectedItem.SetParent(selectedSlot); //parent is selected slot

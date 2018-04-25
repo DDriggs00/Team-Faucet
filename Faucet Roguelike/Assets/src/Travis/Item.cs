@@ -27,13 +27,19 @@ public class Item : MonoBehaviour
 
     private void OnMouseEnter()
     {
-        if (!transform.parent.parent.GetComponent<InventoryController>().canDragItem)
-            transform.parent.parent.GetComponent<InventoryController>().selectedItem = this.transform;
+        if (tag != "Interactable")
+        {
+            if (!transform.parent.parent.GetComponent<InventoryController>().canDragItem)
+                transform.parent.parent.GetComponent<InventoryController>().selectedItem = this.transform;
+        }
     }
     private void OnMouseExit()
     {
-        if (!transform.parent.parent.GetComponent<InventoryController>().canDragItem)
-            transform.parent.GetComponent<InventoryController>().selectedSlot = null;
+        if (tag != "Interactable")
+        {
+            if (!transform.parent.parent.GetComponent<InventoryController>().canDragItem)
+                transform.parent.GetComponent<InventoryController>().selectedSlot = null;
+        }
     }
     public void IncreaseAmount(int a)
     {

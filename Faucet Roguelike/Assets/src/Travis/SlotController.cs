@@ -19,7 +19,7 @@ public class SlotController : MonoBehaviour
 
     private void OnMouseEnter()
     {
-         transform.parent.GetComponent<InventoryController>().selectedSlot = this.transform;
+        transform.parent.GetComponent<InventoryController>().selectedSlot = this.transform;
     }
 
     private void OnMouseExit()

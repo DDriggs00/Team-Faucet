@@ -5,13 +5,15 @@ using UnityEngine;
 
 public class GameDB : MonoBehaviour
 {
-
+    public static GameDB _instance;
     public Sprite[] sprites;
     public static List<Item> itemList = new List<Item>();
 
     // Use this for initialization
     void Awake()
     {
+        _instance = this;//makes instance any of these
+
         ///////////////////////Weapons
         Item i0 = gameObject.AddComponent<Item>();
         i0.name = "Sword Lv 1";
@@ -183,6 +185,10 @@ public class GameDB : MonoBehaviour
 
     }
 
+    public void AddItem(Item item)
+    {
+        itemList.Add(item);
+    }
     // Update is called once per frame
     void Update()
     {
