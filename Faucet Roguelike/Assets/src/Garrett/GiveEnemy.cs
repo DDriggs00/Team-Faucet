@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class GiveEnemy : MonoBehaviour {
 
-	private int newEnemy = 0;
-	public int mDifficulty = 1;
-//	public Boss mBoss;
-//	public Minion mMinion;
+	//Variable declarations
+	private int newEnemy = 0;  //variable to determine which type of enemy to generate in the generate() function.
+	public int mDifficulty = 1;  //variable to set the difficulty of the enemies that are spawned in the generate() function
 	public GameObject mMinion;
 	public GameObject mBoss;
-	private GameObject newtBoss;
+	//End variable declarations
 
 	// Use this for initialization
 	void Start () {
@@ -27,28 +26,28 @@ public class GiveEnemy : MonoBehaviour {
 	}
 
 
-
+	//This function is used for testing purposes.  It generates an Enemy and will generate either a Minion or a Boss. 
+	//There is a 1/4 chance of generating a Boss and a 3/4 chance of generating a Minion.  
 	public void generate()
 	{
 		newEnemy = Random.Range (0, 4);
 	
 		if(newEnemy==0)
 		{
-
-//				Boss bossCopy = (Boss)Instantiate(mBoss, new Vector3(Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
+			
 			GameObject bossCopy = (GameObject)Instantiate (mBoss, new Vector3 (Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
 			Boss newBoss = bossCopy.GetComponent<Boss> ();
 
-			newBoss.mDifficulty = mDifficulty;
+			newBoss.mDifficulty = mDifficulty; //set the difficulty of the new Boss 
 		}
 		else
 		{
 			
-//			Minion minionCopy = (Minion)Instantiate (mMinion, new Vector3 (Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
+
 			GameObject minionCopy = (GameObject)Instantiate (mMinion, new Vector3 (Random.Range (0, 4) * 2.0F, 0, 0), Quaternion.identity);
 
 			Minion newMinion = minionCopy.GetComponent<Minion> ();
-			newMinion.mDifficulty = mDifficulty;
+			newMinion.mDifficulty = mDifficulty; //set the difficulty of the new Minion
 
 		
 		}
@@ -56,7 +55,7 @@ public class GiveEnemy : MonoBehaviour {
 
 	}
 
-
+	//return a Minion to be spawned in the level
 	public GameObject getEnemy()
 	{
 
@@ -66,7 +65,7 @@ public class GiveEnemy : MonoBehaviour {
 
 	}
 
-
+	//return a Boss to be spawned in the level
 	public GameObject getBoss()
 	{
 
