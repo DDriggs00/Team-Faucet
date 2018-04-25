@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This is a tile that heals the player when they walk on top of it.
 public class DD_SpikeTrap : DD_Obstacle 
 {
 	private uint mDamage = 10;

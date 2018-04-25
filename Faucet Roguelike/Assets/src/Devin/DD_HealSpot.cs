@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// This is a tile that heals the player when they walk on top of it.
 public class DD_HealSpot : DD_Obstacle 
 {
 	private int mHealing;	//Amount of HP to heal

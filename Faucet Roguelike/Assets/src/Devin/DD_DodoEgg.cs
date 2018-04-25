@@ -14,12 +14,14 @@ public class DD_DodoEgg : DD_Obstacle
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		if(collision.tag == "Player") //if player is colliding
+		if(collision.tag == "Player") // If player touches egg (ignore mobs)
 		{
+			FindObjectOfType<ZG_AudioManager>().playFixedSound("gameOver"); // No Dodo egg sound yet
+			// Commented code is not implemented by teammates
 			// bool mGameOver = WinGui();
 			// if(mGameOver)
 			// {
-				Application.Quit();
+				Application.Quit(); //Ends the game
 			// }
 			// else {
 			// 	SceneManager.LoadScene(SceneManager.GetActiveScene().name);	//reload scene

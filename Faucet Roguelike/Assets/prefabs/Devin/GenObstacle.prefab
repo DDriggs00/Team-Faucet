@@ -56,5 +56,13 @@ MonoBehaviour:
   badInteractables:
   - {fileID: 1177484476955890, guid: 416b2fb0d775f0147bc6ff63eadf6d16, type: 2}
   rocks:
+  - {fileID: 1300970728636512, guid: 20cef2851a161fc40934f8c76497478a, type: 2}
+  - {fileID: 1300970728636512, guid: 9cdfeec14660fcc478c3807b1d038268, type: 2}
   - {fileID: 1300970728636512, guid: d8c3e93b3df5b564ab5684ef7b6ea8bf, type: 2}
-  Exit: {fileID: 1207163981715554, guid: 5a60183268e21b640b7c212f9a4df36d, type: 2}
+  - {fileID: 1300970728636512, guid: 6ebee0b0afa924e4e8b14545af0586e9, type: 2}
+  - {fileID: 1300970728636512, guid: b00c3ae0020263242a104251359f8040, type: 2}
+  - {fileID: 1300970728636512, guid: d0154fcaa98c0754581a9303c1d3e16d, type: 2}
+  - {fileID: 1300970728636512, guid: edeb7e9a85962354889a6c313a5c0c30, type: 2}
+  lever: {fileID: 0}
+  exit: {fileID: 1207163981715554, guid: 5a60183268e21b640b7c212f9a4df36d, type: 2}
+  dodoEgg: {fileID: 1750027944688224, guid: 9970ed522fa2b004a9e8385527494de0, type: 2}

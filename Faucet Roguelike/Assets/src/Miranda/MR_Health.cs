@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         playerAudio = GetComponent<AudioSource>();
         playerMovement = GetComponent<LH_Health>();
         playerShooting = GetComponentInChildren<LH_Health>();
-        playerHealth = get
+        // playerHealth = get
          
         anim = GetComponent<Animator>();
         // Set the initial health of the player.

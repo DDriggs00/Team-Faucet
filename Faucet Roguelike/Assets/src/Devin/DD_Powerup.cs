@@ -16,14 +16,14 @@ public class DD_Powerup : DD_Obstacle
 	{
 		
 		Debug.Log("Random Powerup Created");
-		SetObstacleType(ObstacleType.healSpot);
+		SetObstacleType(ObstacleType.doubleSpeed);
 		addObstacle();
 	}
 	DD_Powerup(bool good)
 	{
 		
 		Debug.Log("Random good Powerup Created");
-		SetObstacleType(ObstacleType.healSpot);
+		SetObstacleType(ObstacleType.doubleSpeed);
 		addObstacle();
 	}
 
@@ -31,7 +31,7 @@ public class DD_Powerup : DD_Obstacle
 	{
 		
 		Debug.Log("Powerup Created");
-		SetObstacleType(ObstacleType.healSpot);
+		SetObstacleType(ObstacleType.halfSpeed);
 		addObstacle();
 	}
 
