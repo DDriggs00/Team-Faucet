@@ -16,14 +16,14 @@ public class DD_LevelExit : DD_Obstacle
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
-		// Prompt to exit
-		// Save
+		// Prompt to exit Gui not completed
+		
 
 		if(collision.tag == "Player" && mUnlocked) //if Exit is unlocked and player is colliding
 		{
 			// AudioManager mSound;
-			// mSound.playSound("levelFinish");
-			SceneManager.LoadScene(SceneManager.GetActiveScene().name);	//reload scene
+			FindObjectOfType<ZG_AudioManager>().playFixedSound("gameOver"); // Play Zane's sound
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);	// Reload scene
 			Debug.Log("Level Ended");
 		}
 	}

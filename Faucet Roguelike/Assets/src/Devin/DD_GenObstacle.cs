@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class DD_GenObstacle : MonoBehaviour
 {
-
+	// 
 	public List<GameObject> goodInteractables;
 	public List<GameObject> badInteractables;
 	public List<GameObject> rocks;
-	public GameObject Lever;
-	public GameObject Exit;
-	public GameObject DodoEgg;
+	public GameObject lever;
+	public GameObject exit;
+	public GameObject dodoEgg;
 
 	public GameObject generateInteractable(int weight) {
 		// Weight is an integer between 0 and 100, where 100 = always good and 0 = always bad
@@ -28,6 +28,12 @@ public class DD_GenObstacle : MonoBehaviour
 		return rocks[Random.Range(0,rocks.Count)];
 	}
 	public GameObject generateExit() {
-		return Exit;
+		return exit;
+	}
+	public GameObject generateLever() {
+		return lever;
+	}
+	public GameObject generateDodoEgg() {
+		return dodoEgg;
 	}
 }
