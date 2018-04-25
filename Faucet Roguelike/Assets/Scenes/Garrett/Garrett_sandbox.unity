@@ -113,6 +113,133 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &130576011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1620626735803128, guid: 48d9e42ff2c52a74584473e1515295c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 130576014}
+  - component: {fileID: 130576013}
+  - component: {fileID: 130576012}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &130576012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114474617767235000, guid: 48d9e42ff2c52a74584473e1515295c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130576011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &130576013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114257071628968534, guid: 48d9e42ff2c52a74584473e1515295c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130576011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41c047f49cc4da448b3ef3a6dac52e4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cDynamicSounds:
+  - mVolume: 1
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 4373f08dc42d6dc4a87fc9ea3fb7dcc9, type: 3}
+    source: {fileID: 0}
+    mClipName: enemyPursuit1
+    mLoop: 0
+  - mVolume: 1
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 2517bf0a7b2d30b498aeaa0a009019be, type: 3}
+    source: {fileID: 0}
+    mClipName: enemyPursuit2
+    mLoop: 0
+  - mVolume: 1
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 9b0f1d6bc32158c49a128ba7f98839ad, type: 3}
+    source: {fileID: 0}
+    mClipName: enemyTakeDamage1
+    mLoop: 0
+  - mVolume: 1
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 74777c76bdf479942a02e280c12f9634, type: 3}
+    source: {fileID: 0}
+    mClipName: playerTakeDamage1
+    mLoop: 0
+  - mVolume: 1
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 50ea4736e8ac5914da98d42dd0bb0df9, type: 3}
+    source: {fileID: 0}
+    mClipName: swordConnect
+    mLoop: 0
+  - mVolume: 1
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 35fd023d70c08554abb2a8f4f26acb36, type: 3}
+    source: {fileID: 0}
+    mClipName: swordSwing
+    mLoop: 0
+  - mVolume: 1
+    mPitch: 0
+    clip: {fileID: 8300000, guid: 1028548576282b7438a863b071d62ebb, type: 3}
+    source: {fileID: 0}
+    mClipName: boulderBreak
+    mLoop: 0
+  cFixedPitchSounds:
+  - mVolume: 0
+    clip: {fileID: 8300000, guid: dc9db47536708984f91ce7e280592b32, type: 3}
+    source: {fileID: 0}
+    mClipName: gameOver
+    mLoop: 0
+  - mVolume: 0
+    clip: {fileID: 8300000, guid: 5227682d7d480b04e88f71375317d6d5, type: 3}
+    source: {fileID: 0}
+    mClipName: powerupPickup
+    mLoop: 0
+  - mVolume: 0
+    clip: {fileID: 8300000, guid: 293fd3a1f2adc8440b841d08998b72ca, type: 3}
+    source: {fileID: 0}
+    mClipName: uiNavigate
+    mLoop: 0
+  - mVolume: 0
+    clip: {fileID: 8300000, guid: 15da06fbd50b3a94fbf8fc7cedcc6522, type: 3}
+    source: {fileID: 0}
+    mClipName: uiSelect
+    mLoop: 0
+  cMusic:
+  - mVolume: 0.2
+    clip: {fileID: 8300000, guid: 87d12a47c2e8dbe44bcc40d3b37994a8, type: 3}
+    source: {fileID: 0}
+    mClipName: backgroundMusic1
+    mLoop: 1
+  runStressTest: 0
+--- !u!4 &130576014
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4359591731004240, guid: 48d9e42ff2c52a74584473e1515295c7,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 130576011}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &137900491 stripped
 BoxCollider2D:
   m_PrefabParentObject: {fileID: 61828746598614346, guid: dadc9cdac5b024a30824a586853e8ec0,

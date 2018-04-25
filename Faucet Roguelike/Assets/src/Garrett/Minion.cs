@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Minion : Enemy {
 
-	// Use this for initialization
+//MINION - subclass of Enemy that can be modified without affecting the Enemy superclass; currently there are no modifications other than graphics
+public class Minion : Enemy {
+	
+
 	void Start () {
-		initiate ();
+		initiate ();  //utilize the same initiation function as Enemy
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		updateEnemy ();
+		updateEnemy ();  //utilize the same update function as Enemy
 	}
-}
+}	
