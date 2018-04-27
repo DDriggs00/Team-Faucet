@@ -12,7 +12,7 @@ public class GameDB : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        _instance = this;//makes instance any of these
+       dynamic _instance = this;//makes instance any of these
 
         ///////////////////////Weapons
         Item i0 = gameObject.AddComponent<Item>();
