@@ -24,6 +24,7 @@ public class AP_Room : MonoBehaviour
 	public enum RoomType { start, mid, end, mainPath, branch, treasure, trap, baddy};
 	public RoomType roomType;
 	public DD_GenObstacle obstacleGenerator;
+	public GiveEnemy enemyGenerator;
 
 	List<AP_Room> mMergedRooms = new List<AP_Room>();
 	AP_RoomPopulator roomPop;
@@ -278,7 +279,7 @@ public class AP_Room : MonoBehaviour
 		}
 		roomType = rType;
 		roomPop = GetRoomPopulator();		// Add room populator based on room type
-		roomPop.Setup (this, obstacleGenerator);
+		roomPop.Setup (this, obstacleGenerator, enemyGenerator);
 	}
 	public RoomType GetRoomType()
 	{ return roomType; }

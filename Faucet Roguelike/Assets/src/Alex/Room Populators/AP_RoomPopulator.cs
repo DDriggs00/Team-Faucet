@@ -13,10 +13,12 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 
 	protected AP_Room room;
 	protected DD_GenObstacle obstacleGenerator;
+	protected GiveEnemy enemyGenerator;
 
-	public virtual void Setup(AP_Room r, DD_GenObstacle g)
+	public virtual void Setup(AP_Room r, DD_GenObstacle g, GiveEnemy e)
 	{
 		obstacleGenerator = g;
+		enemyGenerator = e;
 		room = r;
 		rows = r.GetSize () - 3;		// -3 accomodates an inset such that objects are generated at least 1 unit away from the room's walls
 		columns = rows;
@@ -83,11 +85,11 @@ public abstract class AP_RoomPopulator : MonoBehaviour {
 
 	protected virtual void PopulateEnemies(int min, int max)
 	{		// code to be used until Garrett's class/method for providing an enemy object is in place
-		GameObject e = FindObjectOfType<AP_DungeonGenerator>().enemy;	// currently grabbing enemy object that I know dungeon generator has to instantiate
+		//GameObject e = FindObjectOfType<AP_DungeonGenerator>().enemy;	// currently grabbing enemy object that I know dungeon generator has to instantiate
 		int enemyAmount = Random.Range (min, max + 1);
 		for (int i = 0; i < enemyAmount; i++)
 		{
-			GameObject enemy = Instantiate (e);
+			GameObject enemy = Instantiate(enemyGenerator.getEnemy ());
 			Collider2D roomCol = this.gameObject.GetComponent<Collider2D> ();
 			enemy.GetComponent<Enemy> ().setRoom (roomCol);				// enemy objects want to have the collider of the room they belong to, so 
 			Set (enemy);												// they know the bounds they can wander

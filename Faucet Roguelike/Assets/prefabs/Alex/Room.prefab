@@ -113,8 +113,11 @@ MonoBehaviour:
   - {fileID: 1478018013749662, guid: 62c1debb5ce98bf4bbbca6f7be597ef1, type: 2}
   - {fileID: 1263490088965640, guid: 28d1cadfa46761749979f9d80f24a8b2, type: 2}
   mUnitSize: 15
+  trapChance: 0.25
   roomType: 0
   obstacleGenerator: {fileID: 114615532332060096, guid: 6f338297707bc8348b3e4943c3ac6038,
+    type: 2}
+  enemyGenerator: {fileID: 114940313197462600, guid: df86628830840450ebd1ddbc412d6ac4,
     type: 2}
   traps: []
   treasure: []
