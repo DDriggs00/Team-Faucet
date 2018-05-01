@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/sandbox.unity
-    guid: 847d22b7ab84edb42b5412616efed6f5
+    path: Assets/Menu.unity
+    guid: 5582e16c1efb7ac4b8efb91a2d335b51
+  - enabled: 1
+    path: Assets/Scenes/Alex/Alex_sandbox.unity
+    guid: 3001c33c25c1a504d9397727348ddf93
