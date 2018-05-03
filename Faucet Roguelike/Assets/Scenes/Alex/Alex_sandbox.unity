@@ -357,6 +357,10 @@ Prefab:
       propertyPath: m_ReferencePixelsPerUnit
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 1585768587491792, guid: ac868bcf781f5054e9decc12a8855ac1, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ac868bcf781f5054e9decc12a8855ac1, type: 2}
   m_IsPrefabParent: 0
@@ -521,6 +525,11 @@ Prefab:
         type: 2}
       propertyPath: populate
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114993663877110278, guid: 83df35597aaae2147b394d1fc0967114,
+        type: 2}
+      propertyPath: displayPath
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 83df35597aaae2147b394d1fc0967114, type: 2}
