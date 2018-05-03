@@ -12,6 +12,7 @@ public class LH_Interact : MonoBehaviour
     // Use this for initialization
     private List<DD_Lever> mInteractibleObjects;
     private bool mIsInteracting;
+	private static Item otherItem;
 
     DD_Lever mInteractible;
     void Start()
@@ -85,9 +86,10 @@ public class LH_Interact : MonoBehaviour
         if (other.tag == "Interactable")
         {
             print("we picked up " + other.name);
-            GameDB._instance.AddItem(other.GetComponent<Item>()); //delegation of _instance from GameDB observer pattern add remove notify
+           	//GameDB._instance.AddItem(other.GetComponent<Item>()); //delegation of _instance from GameDB observer pattern add remove notify
             GameObject.Destroy(other.gameObject, 0.1f);           // DESTROY GAME OBJECT AFTER PICKUP
-            /*GameDB.AddItem(other);                             
+			otherItem = other.GetComponent<Item>();
+			GameDB._instance.AddItem(otherItem);
             if (y <= GameDB.itemList.Count)
             {
 
@@ -100,14 +102,18 @@ public class LH_Interact : MonoBehaviour
                 item.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
                 Item i = item.GetComponent<Item>();
 
-                i.name = GameDB.itemList[(x + (y - 1) * 6) - 1].name;
-                i.type = GameDB.itemList[(x + (y - 1) * 6) - 1].type;
-                i.sprite = GameDB.itemList[(x + (y - 1) * 6) - 1].sprite;
+				i.name = GameDB.itemList[0].name;
+				i.type = GameDB.itemList[0].type;
+				i.sprite = GameDB.itemList[0].sprite;
+
+//                i.name = GameDB.itemList[(x + (y - 1) * 6) - 1].name;
+//                i.type = GameDB.itemList[(x + (y - 1) * 6) - 1].type;
+//                i.sprite = GameDB.itemList[(x + (y - 1) * 6) - 1].sprite;
 
                 item.name = i.name;
                 item.GetComponent<Image>().sprite = i.sprite;
 
-            }*/
+            }
         }
     }
 }
