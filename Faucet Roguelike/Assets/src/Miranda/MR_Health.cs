@@ -16,19 +16,19 @@ public class MR_Health : MonoBehaviour
     {
         healthscript = FindObjectOfType<LH_Health>();
         //healthscript = this.gameObject.GetComponent<LH_Health>();
-
+       
     }
 
     // Update is called once per frame
     void Update()
-    {
-        mHealth = healthscript.getHP();
+     {
+        mHealth= healthscript.getHP();
 
         //GameObject.Find("heath").GetComponent<LH_Health>().getHP();
         //Debug.Log("Health bar: " + mHealth);
         //        healthSlider.value = healthscript.getHP();
         UpdateSlider();
-    }
+     }
 
     void UpdateSlider()
     {
@@ -36,7 +36,7 @@ public class MR_Health : MonoBehaviour
     }
     void SliderChangedFunctionName()
     {
-
+       
         healthscript.getHP();
     }
 }
