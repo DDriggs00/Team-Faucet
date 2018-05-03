@@ -7,21 +7,33 @@ public class MR_Health : MonoBehaviour
 {
     public Slider healthSlider;
     private LH_Health healthscript;
+    private int mHealth;
+    [SerializeField]
+    Image sliderImage;
+
     // Use this for initialization
     void Start()
     {
-        healthscript = this.gameObject.GetComponent<LH_Health>();
+        healthscript = FindObjectOfType<LH_Health>();
+        //healthscript = this.gameObject.GetComponent<LH_Health>();
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        GameObject.Find("heath").GetComponent<LH_Health>().getHP();
+        mHealth = healthscript.getHP();
 
-        healthSlider.value = healthscript.getHP() / 100;
+        //GameObject.Find("heath").GetComponent<LH_Health>().getHP();
+        //Debug.Log("Health bar: " + mHealth);
+        //        healthSlider.value = healthscript.getHP();
+        UpdateSlider();
     }
 
+    void UpdateSlider()
+    {
+        sliderImage.fillAmount = mHealth / 100f;
+    }
     void SliderChangedFunctionName()
     {
 
